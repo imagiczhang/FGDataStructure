@@ -18,6 +18,8 @@
 		65223EA31CCB39DD003FC03F /* FGBSTreeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 65223EA21CCB39DD003FC03F /* FGBSTreeNode.m */; };
 		65223EAA1CCED89E003FC03F /* FGStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 65223EA91CCED89E003FC03F /* FGStack.m */; };
 		65223EAE1CCEEF88003FC03F /* FGQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 65223EAD1CCEEF88003FC03F /* FGQueue.m */; };
+		65223EB21CCEF66D003FC03F /* FGHashTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 65223EB11CCEF66D003FC03F /* FGHashTable.m */; };
+		65223EBD1CCF21CB003FC03F /* FGHashTableTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 65223EBC1CCF21CB003FC03F /* FGHashTableTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,9 @@
 		65223EA91CCED89E003FC03F /* FGStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FGStack.m; path = Stack/FGStack.m; sourceTree = "<group>"; };
 		65223EAC1CCEEF88003FC03F /* FGQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FGQueue.h; path = Queue/FGQueue.h; sourceTree = "<group>"; };
 		65223EAD1CCEEF88003FC03F /* FGQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FGQueue.m; path = Queue/FGQueue.m; sourceTree = "<group>"; };
+		65223EB01CCEF66D003FC03F /* FGHashTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FGHashTable.h; path = HashTable/FGHashTable.h; sourceTree = "<group>"; };
+		65223EB11CCEF66D003FC03F /* FGHashTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FGHashTable.m; path = HashTable/FGHashTable.m; sourceTree = "<group>"; };
+		65223EBC1CCF21CB003FC03F /* FGHashTableTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGHashTableTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +99,7 @@
 		65223E6F1CCB362F003FC03F /* FGDataStructure */ = {
 			isa = PBXGroup;
 			children = (
+				65223EAF1CCEF657003FC03F /* HashTable */,
 				65223EAB1CCEEF7B003FC03F /* Queue */,
 				65223EA71CCED88B003FC03F /* Stack */,
 				65223E9A1CCB3954003FC03F /* Sorting */,
@@ -124,6 +130,7 @@
 			children = (
 				65223E8A1CCB362F003FC03F /* FGDataStructureTests.m */,
 				65223E8C1CCB362F003FC03F /* Info.plist */,
+				65223EBC1CCF21CB003FC03F /* FGHashTableTest.m */,
 			);
 			path = FGDataStructureTests;
 			sourceTree = "<group>";
@@ -163,6 +170,15 @@
 				65223EAD1CCEEF88003FC03F /* FGQueue.m */,
 			);
 			name = Queue;
+			sourceTree = "<group>";
+		};
+		65223EAF1CCEF657003FC03F /* HashTable */ = {
+			isa = PBXGroup;
+			children = (
+				65223EB01CCEF66D003FC03F /* FGHashTable.h */,
+				65223EB11CCEF66D003FC03F /* FGHashTable.m */,
+			);
+			name = HashTable;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				65223EA31CCB39DD003FC03F /* FGBSTreeNode.m in Sources */,
+				65223EB21CCEF66D003FC03F /* FGHashTable.m in Sources */,
 				65223EAE1CCEEF88003FC03F /* FGQueue.m in Sources */,
 				65223E9D1CCB399B003FC03F /* FGBSTree.m in Sources */,
 				65223E781CCB362F003FC03F /* ViewController.m in Sources */,
@@ -280,6 +297,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				65223E8B1CCB362F003FC03F /* FGDataStructureTests.m in Sources */,
+				65223EBD1CCF21CB003FC03F /* FGHashTableTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,6 +486,7 @@
 				65223E911CCB362F003FC03F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		65223E921CCB362F003FC03F /* Build configuration list for PBXNativeTarget "FGDataStructureTests" */ = {
 			isa = XCConfigurationList;
@@ -476,6 +495,7 @@
 				65223E941CCB362F003FC03F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
