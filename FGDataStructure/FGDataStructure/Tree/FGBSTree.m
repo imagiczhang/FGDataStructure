@@ -32,9 +32,9 @@
     if (!self.root) {
         [self createRootWithObject:object];
     } else {
-        FGBSTreeNode *node = [[FGBSTreeNode alloc] initWithObject:object];
+        FGBSTreeNode *node = [[FGBSTreeNode alloc] initWithData:object];
         
-        NSCompareResult *compareResult = [NSCompareResult alloc] ini
+//        NSCompareResult *compareResult = [NSCompareResult alloc] ini
     }
 }
 
@@ -42,7 +42,7 @@
 
 - (void)createRootWithObject:(NSObject *)object
 {
-    self.root = [[FGBSTreeNode alloc] initWithObject:object];
+    self.root = [[FGBSTreeNode alloc] initWithData:object];
     
 }
 

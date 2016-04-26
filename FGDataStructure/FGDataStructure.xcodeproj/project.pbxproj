@@ -17,6 +17,7 @@
 		65223E9D1CCB399B003FC03F /* FGBSTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 65223E9C1CCB399B003FC03F /* FGBSTree.m */; };
 		65223EA31CCB39DD003FC03F /* FGBSTreeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 65223EA21CCB39DD003FC03F /* FGBSTreeNode.m */; };
 		65223EAA1CCED89E003FC03F /* FGStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 65223EA91CCED89E003FC03F /* FGStack.m */; };
+		65223EAE1CCEEF88003FC03F /* FGQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 65223EAD1CCEEF88003FC03F /* FGQueue.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,8 @@
 		65223EA41CCD6F41003FC03F /* FGBSTreeType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGBSTreeType.h; sourceTree = "<group>"; };
 		65223EA81CCED89E003FC03F /* FGStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FGStack.h; path = Stack/FGStack.h; sourceTree = "<group>"; };
 		65223EA91CCED89E003FC03F /* FGStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FGStack.m; path = Stack/FGStack.m; sourceTree = "<group>"; };
+		65223EAC1CCEEF88003FC03F /* FGQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FGQueue.h; path = Queue/FGQueue.h; sourceTree = "<group>"; };
+		65223EAD1CCEEF88003FC03F /* FGQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FGQueue.m; path = Queue/FGQueue.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +94,7 @@
 		65223E6F1CCB362F003FC03F /* FGDataStructure */ = {
 			isa = PBXGroup;
 			children = (
+				65223EAB1CCEEF7B003FC03F /* Queue */,
 				65223EA71CCED88B003FC03F /* Stack */,
 				65223E9A1CCB3954003FC03F /* Sorting */,
 				65223E991CCB394C003FC03F /* Tree */,
@@ -150,6 +154,15 @@
 				65223EA91CCED89E003FC03F /* FGStack.m */,
 			);
 			name = Stack;
+			sourceTree = "<group>";
+		};
+		65223EAB1CCEEF7B003FC03F /* Queue */ = {
+			isa = PBXGroup;
+			children = (
+				65223EAC1CCEEF88003FC03F /* FGQueue.h */,
+				65223EAD1CCEEF88003FC03F /* FGQueue.m */,
+			);
+			name = Queue;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				65223EA31CCB39DD003FC03F /* FGBSTreeNode.m in Sources */,
+				65223EAE1CCEEF88003FC03F /* FGQueue.m in Sources */,
 				65223E9D1CCB399B003FC03F /* FGBSTree.m in Sources */,
 				65223E781CCB362F003FC03F /* ViewController.m in Sources */,
 				65223E751CCB362F003FC03F /* AppDelegate.m in Sources */,
