@@ -25,8 +25,8 @@
     [super tearDown];
 }
 
-- (void)testHashTable {
-    FGHashTable *hashTable = [[FGHashTable alloc] initWithSize:1001];
+- (void)testSetNewObjectForHashTable {
+    FGHashTable *hashTable = [[FGHashTable alloc] initWithSize:20];
     [hashTable setObject:@"Hello 1" forKey:@"Test1"];
     [hashTable setObject:@"Hello 2" forKey:@"Test2"];
     [hashTable setObject:@"Hello 3" forKey:@"Test3"];
@@ -44,13 +44,39 @@
     XCTAssertEqual([hashTable objectForKey:@"Test6"], @"Hello 6");
     XCTAssertEqual([hashTable objectForKey:@"Test7"], @"Hello 7");
     XCTAssertEqual([hashTable objectForKey:@"Test8"], @"Hello 8");
-    
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
+- (void)testSetExistedObjectForHashTable {
+    FGHashTable *hashTable = [[FGHashTable alloc] initWithSize:20];
+    [hashTable setObject:@"Hello 1" forKey:@"Test1"];
+    [hashTable setObject:@"Hello 2" forKey:@"Test2"];
+    
+    XCTAssertEqual([hashTable objectForKey:@"Test1"], @"Hello 1");
+    XCTAssertEqual([hashTable objectForKey:@"Test2"], @"Hello 2");
+    
+    [hashTable setObject:@"Hello 3" forKey:@"Test1"];
+    [hashTable setObject:@"Hello 4" forKey:@"Test2"];
+    
+    XCTAssertEqual([hashTable objectForKey:@"Test1"], @"Hello 3");
+    XCTAssertEqual([hashTable objectForKey:@"Test2"], @"Hello 4");
 }
+
+- (void)testRemoveExistedObjectForHashTable {
+    FGHashTable *hashTable = [[FGHashTable alloc] initWithSize:20];
+    [hashTable setObject:@"Hello 1" forKey:@"Test1"];
+    [hashTable setObject:@"Hello 2" forKey:@"Test2"];
+    
+    XCTAssertEqual([hashTable objectForKey:@"Test1"], @"Hello 1");
+    XCTAssertEqual([hashTable objectForKey:@"Test2"], @"Hello 2");
+    
+    [hashTable removeObjectForKey:@"Test1"];
+    [hashTable removeObjectForKey:@"Test2"];
+    
+    
+    XCTAssertEqual([hashTable objectForKey:@"Test1"], nil);
+    XCTAssertEqual([hashTable objectForKey:@"Test2"], nil);
+}
+
 
 - (void)testPerformanceExample {
     // This is an example of a performance test case.

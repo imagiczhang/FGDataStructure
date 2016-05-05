@@ -10,4 +10,13 @@
 
 @implementation FGHashTableNode
 
+- (instancetype)initWithObject:(NSObject *)object key:(NSString *)key {
+    if (self = [super init]) {
+        _object = object;
+        _key = key;
+    }
+    
+    return self;
+}
+
 @end

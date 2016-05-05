@@ -57,7 +57,7 @@
 
 - (BOOL)isFull
 {
-    return [self size] == self.capacity - 1;
+    return [self size] == self.capacity;
 }
 
 - (NSInteger)size

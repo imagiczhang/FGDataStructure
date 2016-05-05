@@ -7,11 +7,12 @@
 //
 
 #import "FGHashTable.h"
+#import "FGHashTableNode.h"
 
 @interface FGHashTable ()
 
 @property (nonatomic, assign) NSUInteger size;
-@property (nonatomic, strong) NSMutableArray *hashTable;
+@property (nonatomic, strong) NSMutableArray<NSMutableArray *> *hashTable;
 
 @end
 
@@ -30,22 +31,57 @@
 
 - (NSObject *)objectForKey:(NSString *)key
 {
-    if (_hashTable.count == 0) return nil;
+    NSUInteger index = [self indexForKey:key];
+    NSMutableArray<FGHashTableNode *> *list = _hashTable[index];
     
-    return [_hashTable objectAtIndex:[self indexForKey:key]];
+    FGHashTableNode *node = [self findNodeWithList:list forKey:key];
+    
+    if (node) {
+        return node.object;
+    }
+    
+    return nil;
 }
 
 - (void)setObject:(NSObject *)object forKey:(NSString *)key
 {
-    [_hashTable insertObject:object atIndex:[self indexForKey:key]];
+    NSUInteger index = [self indexForKey:key];
+    NSMutableArray<FGHashTableNode *> *list = _hashTable[index];
+    
+    FGHashTableNode *node = [self findNodeWithList:list forKey:key];
+    
+    if (node) {
+        [node setObject:object];
+    } else {
+        FGHashTableNode *newNode = [[FGHashTableNode alloc] initWithObject:object key:key];
+        [list addObject:newNode];
+    }
 }
 
 - (void)removeObjectForKey:(NSString *)key
 {
-    [_hashTable removeObjectAtIndex:[self indexForKey:key]];
+    NSUInteger index = [self indexForKey:key];
+    NSMutableArray<FGHashTableNode *> *list = _hashTable[index];
+    
+    FGHashTableNode *node = [self findNodeWithList:list forKey:key];
+    if (node) {
+        [list removeObject:node];
+    }
 }
 
 #pragma mark - Internal methods
+
+- (FGHashTableNode *)findNodeWithList:(NSMutableArray<FGHashTableNode *> *)list forKey:(NSString *)key
+{
+    for (NSInteger index = 0; list.count; index++) {
+        FGHashTableNode *node = list[index];
+        if ([node.key isEqualToString:key]) {
+            return node;
+        }
+    }
+    
+    return nil;
+}
 
 - (NSInteger)indexForKey:(NSString *)key
 {
@@ -56,7 +92,7 @@
 - (void)initHashTable
 {
     for (NSInteger count = 0; count < self.size; count ++) {
-        [_hashTable addObject:[NSNull null]];
+        [_hashTable addObject:[NSMutableArray array]];
     }
 }
 

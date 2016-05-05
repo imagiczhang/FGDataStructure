@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6506356F1CD02FA2000347E7 /* FGHeap.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506356E1CD02FA2000347E7 /* FGHeap.m */; };
+		650635ED1CD17B86000347E7 /* FGListedList.m in Sources */ = {isa = PBXBuildFile; fileRef = 650635EC1CD17B86000347E7 /* FGListedList.m */; };
 		65223E721CCB362F003FC03F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 65223E711CCB362F003FC03F /* main.m */; };
 		65223E751CCB362F003FC03F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 65223E741CCB362F003FC03F /* AppDelegate.m */; };
 		65223E781CCB362F003FC03F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65223E771CCB362F003FC03F /* ViewController.m */; };
@@ -20,6 +22,12 @@
 		65223EAE1CCEEF88003FC03F /* FGQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 65223EAD1CCEEF88003FC03F /* FGQueue.m */; };
 		65223EB21CCEF66D003FC03F /* FGHashTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 65223EB11CCEF66D003FC03F /* FGHashTable.m */; };
 		65223EBD1CCF21CB003FC03F /* FGHashTableTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 65223EBC1CCF21CB003FC03F /* FGHashTableTest.m */; };
+		65223ED31CCF528C003FC03F /* FGHashTableNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 65223ED21CCF528C003FC03F /* FGHashTableNode.m */; };
+		65223ED51CD0234F003FC03F /* FGStackTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 65223ED41CD0234F003FC03F /* FGStackTest.m */; };
+		654D8EAC1CD9B83D00B89F86 /* NSArray+FGHRArrayDS.m in Sources */ = {isa = PBXBuildFile; fileRef = 654D8EAB1CD9B83D00B89F86 /* NSArray+FGHRArrayDS.m */; };
+		654D8EAE1CD9BA3400B89F86 /* FGHRArrayDSTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 654D8EAD1CD9BA3400B89F86 /* FGHRArrayDSTest.m */; };
+		654D8EB11CD9CE7C00B89F86 /* FGHR2DArrayDS.m in Sources */ = {isa = PBXBuildFile; fileRef = 654D8EB01CD9CE7C00B89F86 /* FGHR2DArrayDS.m */; };
+		654D8EBD1CDAC4C300B89F86 /* FGHR2DArrayDSTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 654D8EBC1CDAC4C300B89F86 /* FGHR2DArrayDSTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +41,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6506356D1CD02FA2000347E7 /* FGHeap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FGHeap.h; path = Heap/FGHeap.h; sourceTree = "<group>"; };
+		6506356E1CD02FA2000347E7 /* FGHeap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FGHeap.m; path = Heap/FGHeap.m; sourceTree = "<group>"; };
+		650635EB1CD17B86000347E7 /* FGListedList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FGListedList.h; path = LinkedList/FGListedList.h; sourceTree = "<group>"; };
+		650635EC1CD17B86000347E7 /* FGListedList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FGListedList.m; path = LinkedList/FGListedList.m; sourceTree = "<group>"; };
 		65223E6D1CCB362F003FC03F /* FGDataStructure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FGDataStructure.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65223E711CCB362F003FC03F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		65223E731CCB362F003FC03F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -58,6 +70,15 @@
 		65223EB01CCEF66D003FC03F /* FGHashTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FGHashTable.h; path = HashTable/FGHashTable.h; sourceTree = "<group>"; };
 		65223EB11CCEF66D003FC03F /* FGHashTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FGHashTable.m; path = HashTable/FGHashTable.m; sourceTree = "<group>"; };
 		65223EBC1CCF21CB003FC03F /* FGHashTableTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGHashTableTest.m; sourceTree = "<group>"; };
+		65223ED11CCF528C003FC03F /* FGHashTableNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FGHashTableNode.h; path = HashTable/FGHashTableNode.h; sourceTree = "<group>"; };
+		65223ED21CCF528C003FC03F /* FGHashTableNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FGHashTableNode.m; path = HashTable/FGHashTableNode.m; sourceTree = "<group>"; };
+		65223ED41CD0234F003FC03F /* FGStackTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGStackTest.m; sourceTree = "<group>"; };
+		654D8EAA1CD9B83D00B89F86 /* NSArray+FGHRArrayDS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSArray+FGHRArrayDS.h"; path = "Array/NSArray+FGHRArrayDS.h"; sourceTree = "<group>"; };
+		654D8EAB1CD9B83D00B89F86 /* NSArray+FGHRArrayDS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+FGHRArrayDS.m"; path = "Array/NSArray+FGHRArrayDS.m"; sourceTree = "<group>"; };
+		654D8EAD1CD9BA3400B89F86 /* FGHRArrayDSTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGHRArrayDSTest.m; sourceTree = "<group>"; };
+		654D8EAF1CD9CE7C00B89F86 /* FGHR2DArrayDS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FGHR2DArrayDS.h; path = Array/FGHR2DArrayDS.h; sourceTree = "<group>"; };
+		654D8EB01CD9CE7C00B89F86 /* FGHR2DArrayDS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FGHR2DArrayDS.m; path = Array/FGHR2DArrayDS.m; sourceTree = "<group>"; };
+		654D8EBC1CDAC4C300B89F86 /* FGHR2DArrayDSTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGHR2DArrayDSTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +99,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6506356C1CD02F94000347E7 /* Heap */ = {
+			isa = PBXGroup;
+			children = (
+				6506356D1CD02FA2000347E7 /* FGHeap.h */,
+				6506356E1CD02FA2000347E7 /* FGHeap.m */,
+			);
+			name = Heap;
+			sourceTree = "<group>";
+		};
+		650635EA1CD17B6E000347E7 /* ListedList */ = {
+			isa = PBXGroup;
+			children = (
+				650635EB1CD17B86000347E7 /* FGListedList.h */,
+				650635EC1CD17B86000347E7 /* FGListedList.m */,
+			);
+			name = ListedList;
+			sourceTree = "<group>";
+		};
 		65223E641CCB362F003FC03F = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +138,9 @@
 		65223E6F1CCB362F003FC03F /* FGDataStructure */ = {
 			isa = PBXGroup;
 			children = (
+				654D8EA81CD9B81500B89F86 /* HackerRank */,
+				650635EA1CD17B6E000347E7 /* ListedList */,
+				6506356C1CD02F94000347E7 /* Heap */,
 				65223EAF1CCEF657003FC03F /* HashTable */,
 				65223EAB1CCEEF7B003FC03F /* Queue */,
 				65223EA71CCED88B003FC03F /* Stack */,
@@ -131,6 +173,9 @@
 				65223E8A1CCB362F003FC03F /* FGDataStructureTests.m */,
 				65223E8C1CCB362F003FC03F /* Info.plist */,
 				65223EBC1CCF21CB003FC03F /* FGHashTableTest.m */,
+				65223ED41CD0234F003FC03F /* FGStackTest.m */,
+				654D8EAD1CD9BA3400B89F86 /* FGHRArrayDSTest.m */,
+				654D8EBC1CDAC4C300B89F86 /* FGHR2DArrayDSTest.m */,
 			);
 			path = FGDataStructureTests;
 			sourceTree = "<group>";
@@ -177,8 +222,29 @@
 			children = (
 				65223EB01CCEF66D003FC03F /* FGHashTable.h */,
 				65223EB11CCEF66D003FC03F /* FGHashTable.m */,
+				65223ED11CCF528C003FC03F /* FGHashTableNode.h */,
+				65223ED21CCF528C003FC03F /* FGHashTableNode.m */,
 			);
 			name = HashTable;
+			sourceTree = "<group>";
+		};
+		654D8EA81CD9B81500B89F86 /* HackerRank */ = {
+			isa = PBXGroup;
+			children = (
+				654D8EA91CD9B81800B89F86 /* Array */,
+			);
+			path = HackerRank;
+			sourceTree = "<group>";
+		};
+		654D8EA91CD9B81800B89F86 /* Array */ = {
+			isa = PBXGroup;
+			children = (
+				654D8EAA1CD9B83D00B89F86 /* NSArray+FGHRArrayDS.h */,
+				654D8EAB1CD9B83D00B89F86 /* NSArray+FGHRArrayDS.m */,
+				654D8EAF1CD9CE7C00B89F86 /* FGHR2DArrayDS.h */,
+				654D8EB01CD9CE7C00B89F86 /* FGHR2DArrayDS.m */,
+			);
+			name = Array;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,13 +347,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65223ED31CCF528C003FC03F /* FGHashTableNode.m in Sources */,
 				65223EA31CCB39DD003FC03F /* FGBSTreeNode.m in Sources */,
 				65223EB21CCEF66D003FC03F /* FGHashTable.m in Sources */,
 				65223EAE1CCEEF88003FC03F /* FGQueue.m in Sources */,
+				6506356F1CD02FA2000347E7 /* FGHeap.m in Sources */,
+				654D8EAC1CD9B83D00B89F86 /* NSArray+FGHRArrayDS.m in Sources */,
 				65223E9D1CCB399B003FC03F /* FGBSTree.m in Sources */,
 				65223E781CCB362F003FC03F /* ViewController.m in Sources */,
+				650635ED1CD17B86000347E7 /* FGListedList.m in Sources */,
 				65223E751CCB362F003FC03F /* AppDelegate.m in Sources */,
 				65223E721CCB362F003FC03F /* main.m in Sources */,
+				654D8EB11CD9CE7C00B89F86 /* FGHR2DArrayDS.m in Sources */,
 				65223EAA1CCED89E003FC03F /* FGStack.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,7 +368,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				65223E8B1CCB362F003FC03F /* FGDataStructureTests.m in Sources */,
+				654D8EBD1CDAC4C300B89F86 /* FGHR2DArrayDSTest.m in Sources */,
+				654D8EAE1CD9BA3400B89F86 /* FGHRArrayDSTest.m in Sources */,
 				65223EBD1CCF21CB003FC03F /* FGHashTableTest.m in Sources */,
+				65223ED51CD0234F003FC03F /* FGStackTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

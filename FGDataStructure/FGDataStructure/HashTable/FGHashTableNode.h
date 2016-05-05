@@ -10,4 +10,9 @@
 
 @interface FGHashTableNode : NSObject
 
+@property (nonatomic, strong) NSObject *object;
+@property (nonatomic, strong, readonly) NSString *key;
+
+- (instancetype)initWithObject:(NSObject *)object key:(NSString *)key;
+
 @end
