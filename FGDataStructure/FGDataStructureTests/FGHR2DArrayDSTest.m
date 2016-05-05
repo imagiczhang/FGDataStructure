@@ -25,7 +25,7 @@
     [super tearDown];
 }
 
-- (void)testResult {
+- (void)testResultPositive {
     FGHR2DArrayDSModel *row1 = [[FGHR2DArrayDSModel alloc] initWithArray:@[@1, @1, @1, @0, @0, @0]];
     FGHR2DArrayDSModel *row2 = [[FGHR2DArrayDSModel alloc] initWithArray:@[@0, @1, @0, @0, @0, @0]];
     FGHR2DArrayDSModel *row3 = [[FGHR2DArrayDSModel alloc] initWithArray:@[@1, @1, @1, @0, @0, @0]];
@@ -36,6 +36,19 @@
     NSArray<FGHR2DArrayDSModel *> *rows = @[row1, row2, row3, row4, row5, row6];
     
     XCTAssertTrue([FGHR2DArrayDS resultFromArray:rows] == 19);
+}
+
+- (void)testResultNegative {
+    FGHR2DArrayDSModel *row1 = [[FGHR2DArrayDSModel alloc] initWithArray:@[@0, @-4, @-6, @0, @-7, @-6]];
+    FGHR2DArrayDSModel *row2 = [[FGHR2DArrayDSModel alloc] initWithArray:@[@-1, @-2, @-6, @-8, @-3, @-1]];
+    FGHR2DArrayDSModel *row3 = [[FGHR2DArrayDSModel alloc] initWithArray:@[@-8, @-4, @-2, @-8, @-8, @-6]];
+    FGHR2DArrayDSModel *row4 = [[FGHR2DArrayDSModel alloc] initWithArray:@[@-3, @-1, @-2, @-5, @-7, @-4]];
+    FGHR2DArrayDSModel *row5 = [[FGHR2DArrayDSModel alloc] initWithArray:@[@-3, @-5, @-3, @-6, @-6, @-6]];
+    FGHR2DArrayDSModel *row6 = [[FGHR2DArrayDSModel alloc] initWithArray:@[@-3, @-6, @0, @-8, @-6, @-7]];
+    
+    NSArray<FGHR2DArrayDSModel *> *rows = @[row1, row2, row3, row4, row5, row6];
+    
+    XCTAssertTrue([FGHR2DArrayDS resultFromArray:rows] == -19);
 }
 
 @end

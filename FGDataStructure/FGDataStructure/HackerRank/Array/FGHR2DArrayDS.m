@@ -21,6 +21,7 @@
 
     for (int i = 0; i < array.count - 2; i++) {
         for (int j = 0; j < ((FGHR2DArrayDSModel *)array[i]).array.count - 2; j++) {
+            
             NSInteger sum = 0;
             sum += ((NSNumber *)array[i].array[j]).integerValue;
             sum += ((NSNumber *)array[i].array[j+1]).integerValue;
@@ -30,7 +31,7 @@
             sum += ((NSNumber *)array[i+2].array[j+1]).integerValue;
             sum += ((NSNumber *)array[i+2].array[j+2]).integerValue;
             
-            if (sum > largest) {
+            if (sum > largest || ((i == 0) && (j == 0))) {
                 largest = sum;
             }
         }
