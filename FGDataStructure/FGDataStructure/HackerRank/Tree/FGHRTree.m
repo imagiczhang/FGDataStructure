@@ -41,11 +41,75 @@
     [self inOrder:self.node];
     return [self print];
 }
+
+- (int)height {
+    return [self heightWithNode:self.node];
+}
+
+- (int)heightWithNode:(FGHRTreeNode *)node {
+    if (!node) {
+        return -1;
+    }
+    
+    int leftHeight = [self heightWithNode:node.left];
+    int rightHeight = [self heightWithNode:node.right];
+    
+    if (leftHeight > rightHeight) {
+        return leftHeight + 1;
+    } else {
+        return rightHeight + 1;
+    }
+}
+
+- (NSString *)printTopView {
+    self.elements = [NSMutableArray array];
+    NSMutableArray *leftArray = [NSMutableArray array];
+    
+    FGHRTreeNode *leftNode = self.node.left;
+    FGHRTreeNode *rightNode = self.node.right;
+    
+    while (leftNode) {
+        [leftArray addObject:@(leftNode.data)];
+        leftNode = leftNode.left;
+    }
+    
+    for (NSInteger i = leftArray.count - 1; i >=0; i--) {
+        [self.elements addObject:leftArray[i]];
+    }
+    
+    [self.elements addObject:@(self.node.data)];
+    
+    while (rightNode) {
+        [self.elements addObject:@(rightNode.data)];
+        rightNode = rightNode.right;
+    }
+    
+    return [self print];
+}
+
+- (NSString *)printLevelOrder {
+    self.elements = [NSMutableArray array];
+    
+    [self levelOrderFromArray:[@[self.node] mutableCopy]];
+    
+    return [self print];
+}
+
+- (void)levelOrderFromArray:(NSMutableArray<FGHRTreeNode *> *)array {
+    NSMutableArray<FGHRTreeNode *> *next = [NSMutableArray array];
+    for (FGHRTreeNode *node in array) {
+        [self.elements addObject:@(node.data)];
+        if (node.left) [next addObject:node.left];
+        if (node.right) [next addObject:node.right];
+    }
+    
+    if ([next count] > 0) [self levelOrderFromArray:next];
+}
+
 #pragma mark - Privarte
 - (NSString *)print {
     return [self.elements componentsJoinedByString:@" "];
 }
-
 
 - (void)preOrder:(FGHRTreeNode *)node {
     FGHRTreeNode *currentNode = node;
@@ -100,6 +164,17 @@
     }
     
     return self;
+}
+
+- (id)copyWithZone:(NSZone *)zone {
+    FGHRTreeNode *nodeCopy = [[FGHRTreeNode allocWithZone:zone] init];
+    
+    nodeCopy.left = _left.copy;
+    nodeCopy.right = _right.copy;
+    nodeCopy.data = _data;
+    
+    return nodeCopy;
+    
 }
 
 @end

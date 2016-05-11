@@ -46,6 +46,29 @@
     XCTAssertTrue([[tree printInOrder] isEqualToString:@"1 5 4 3 6 2"]);
 }
 
+- (void)testHeight {
+    FGHRTreeNode *node1 = [self data1];
+    FGHRTree *tree1 = [[FGHRTree alloc] initWithTreeNode:node1];
+    XCTAssertTrue([tree1 height] == 2);
+    
+    FGHRTreeNode *node2 = [self data2];
+    FGHRTree *tree2 = [[FGHRTree alloc] initWithTreeNode:node2];
+    XCTAssertTrue([tree2 height] == 3);
+}
+
+- (void)testTopView {
+    FGHRTreeNode *node1 = [self data3];
+    FGHRTree *tree1 = [[FGHRTree alloc] initWithTreeNode:node1];
+    
+    XCTAssertTrue([[tree1 printTopView] isEqualToString:@"1 5 3 2 7"]);
+}
+
+- (void)testLevelOrder {
+    FGHRTreeNode *node1 = [self data3];
+    FGHRTree *tree1 = [[FGHRTree alloc] initWithTreeNode:node1];
+    
+    XCTAssertTrue([[tree1 printLevelOrder] isEqualToString:@"3 5 2 1 4 6 7 9 8"]);
+}
 
 #pragma mark - data
 
@@ -69,6 +92,55 @@
     FGHRTreeNode *node6 = [[FGHRTreeNode alloc] initWitData:3 left:node3 right:node5];
     
     return node6;
+}
+
+/**
+ *          3
+ *         / \
+ *        2   5
+ *       /   / \
+ *      1   4   6
+ *               \
+ *                7
+ *
+ *  @return `FGHRTreeNode` tree data 2
+ */
+- (FGHRTreeNode *)data2 {
+    FGHRTreeNode *node7 = [[FGHRTreeNode alloc] initWitData:7 left:nil right:nil];
+    FGHRTreeNode *node6 = [[FGHRTreeNode alloc] initWitData:6 left:nil right:node7];
+    
+    FGHRTreeNode *node4 = [[FGHRTreeNode alloc] initWitData:4 left:nil right:nil];
+    FGHRTreeNode *node5 = [[FGHRTreeNode alloc] initWitData:5 left:node4 right:node6];
+    
+    FGHRTreeNode *node1 = [[FGHRTreeNode alloc] initWitData:1 left:nil right:nil];
+    FGHRTreeNode *node2 = [[FGHRTreeNode alloc] initWitData:2 left:node1 right:nil];
+    
+    FGHRTreeNode *node3 = [[FGHRTreeNode alloc] initWitData:2 left:node2 right:node5];
+    
+    return node3;
+}
+
+/**
+ *       3
+ *     /   \
+ *    5     2
+ *   / \   / \
+ *  1   4 6   7
+ *   \       /
+ *    9     8
+ */
+- (FGHRTreeNode *)data3 {
+    FGHRTreeNode *node9 = [[FGHRTreeNode alloc] initWitData:9 left:nil right:nil];
+    FGHRTreeNode *node1 = [[FGHRTreeNode alloc] initWitData:1 left:nil right:node9];
+    FGHRTreeNode *node4 = [[FGHRTreeNode alloc] initWitData:4 left:nil right:nil];
+    FGHRTreeNode *node5 = [[FGHRTreeNode alloc] initWitData:5 left:node1 right:node4];
+    
+    FGHRTreeNode *node8 = [[FGHRTreeNode alloc] initWitData:8 left:nil right:nil];
+    FGHRTreeNode *node7 = [[FGHRTreeNode alloc] initWitData:7 left:node8 right:nil];
+    FGHRTreeNode *node6 = [[FGHRTreeNode alloc] initWitData:6 left:nil right:nil];
+    FGHRTreeNode *node2 = [[FGHRTreeNode alloc] initWitData:2 left:node6 right:node7];
+    
+    return [[FGHRTreeNode alloc] initWitData:3 left:node5 right:node2];
 }
 
 @end
