@@ -106,6 +106,29 @@
     if ([next count] > 0) [self levelOrderFromArray:next];
 }
 
+- (void)insert:(int)data {
+    FGHRTreeNode *currentNode = self.node;
+    FGHRTreeNode *newNode = [[FGHRTreeNode alloc] initWitData:data left:nil right:nil];
+    
+    while (YES) {
+        if (currentNode.data < data) {
+            if (currentNode.right) {
+                currentNode = currentNode.right;
+            } else {
+                currentNode.right = newNode;
+                break;
+            }
+        } else {
+            if (currentNode.left) {
+                currentNode = currentNode.left;
+            } else {
+                currentNode.left = newNode;
+                break;
+            }
+        }
+    }
+}
+
 #pragma mark - Privarte
 - (NSString *)print {
     return [self.elements componentsJoinedByString:@" "];

@@ -70,6 +70,14 @@
     XCTAssertTrue([[tree1 printLevelOrder] isEqualToString:@"3 5 2 1 4 6 7 9 8"]);
 }
 
+- (void)testInsertion {
+    FGHRTreeNode *node1 = [self data2];
+    FGHRTree *tree1 = [[FGHRTree alloc] initWithTreeNode:node1];
+    XCTAssertTrue([[tree1 printLevelOrder] isEqualToString:@"3 2 5 1 4 6 7"]);
+    [tree1 insert:8];
+    XCTAssertTrue([[tree1 printLevelOrder] isEqualToString:@"3 2 5 1 4 6 7 8"]);
+}
+
 #pragma mark - data
 
 /**
@@ -115,7 +123,7 @@
     FGHRTreeNode *node1 = [[FGHRTreeNode alloc] initWitData:1 left:nil right:nil];
     FGHRTreeNode *node2 = [[FGHRTreeNode alloc] initWitData:2 left:node1 right:nil];
     
-    FGHRTreeNode *node3 = [[FGHRTreeNode alloc] initWitData:2 left:node2 right:node5];
+    FGHRTreeNode *node3 = [[FGHRTreeNode alloc] initWitData:3 left:node2 right:node5];
     
     return node3;
 }
