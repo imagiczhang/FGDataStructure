@@ -110,6 +110,8 @@
     FGHRTreeNode *currentNode = self.node;
     FGHRTreeNode *newNode = [[FGHRTreeNode alloc] initWitData:data left:nil right:nil];
     
+    if (!self.node) self.node = newNode;
+    
     while (YES) {
         if (currentNode.data < data) {
             if (currentNode.right) {

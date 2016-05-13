@@ -30,6 +30,7 @@
 		654D8EBD1CDAC4C300B89F86 /* FGHR2DArrayDSTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 654D8EBC1CDAC4C300B89F86 /* FGHR2DArrayDSTest.m */; };
 		654D8EC11CDACD5F00B89F86 /* FGHRLinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = 654D8EC01CDACD5F00B89F86 /* FGHRLinkedList.m */; };
 		654D8EC31CDAD7C700B89F86 /* FGHRLinkedListTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 654D8EC21CDAD7C700B89F86 /* FGHRLinkedListTest.m */; };
+		6555C6621CE42F92004DA145 /* FGHRBalancedTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 6555C6611CE42F92004DA145 /* FGHRBalancedTree.m */; };
 		65974CCD1CE1457600B3B340 /* FGHRTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 65974CCC1CE1457600B3B340 /* FGHRTree.m */; };
 		65974CCF1CE1487100B3B340 /* FGHRTreeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 65974CCE1CE1487100B3B340 /* FGHRTreeTest.m */; };
 /* End PBXBuildFile section */
@@ -86,6 +87,8 @@
 		654D8EBF1CDACD5F00B89F86 /* FGHRLinkedList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FGHRLinkedList.h; path = LinkedList/FGHRLinkedList.h; sourceTree = "<group>"; };
 		654D8EC01CDACD5F00B89F86 /* FGHRLinkedList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FGHRLinkedList.m; path = LinkedList/FGHRLinkedList.m; sourceTree = "<group>"; };
 		654D8EC21CDAD7C700B89F86 /* FGHRLinkedListTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGHRLinkedListTest.m; sourceTree = "<group>"; };
+		6555C6601CE42F92004DA145 /* FGHRBalancedTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FGHRBalancedTree.h; path = BalancedTree/FGHRBalancedTree.h; sourceTree = "<group>"; };
+		6555C6611CE42F92004DA145 /* FGHRBalancedTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FGHRBalancedTree.m; path = BalancedTree/FGHRBalancedTree.m; sourceTree = "<group>"; };
 		65974CCB1CE1457600B3B340 /* FGHRTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FGHRTree.h; path = Tree/FGHRTree.h; sourceTree = "<group>"; };
 		65974CCC1CE1457600B3B340 /* FGHRTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FGHRTree.m; path = Tree/FGHRTree.m; sourceTree = "<group>"; };
 		65974CCE1CE1487100B3B340 /* FGHRTreeTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGHRTreeTest.m; sourceTree = "<group>"; };
@@ -243,6 +246,7 @@
 		654D8EA81CD9B81500B89F86 /* HackerRank */ = {
 			isa = PBXGroup;
 			children = (
+				6555C65F1CE42F68004DA145 /* BalancedTree */,
 				65974CCA1CE1456100B3B340 /* Tree */,
 				654D8EBE1CDACD2900B89F86 /* LinkedList */,
 				654D8EA91CD9B81800B89F86 /* Array */,
@@ -268,6 +272,15 @@
 				654D8EC01CDACD5F00B89F86 /* FGHRLinkedList.m */,
 			);
 			name = LinkedList;
+			sourceTree = "<group>";
+		};
+		6555C65F1CE42F68004DA145 /* BalancedTree */ = {
+			isa = PBXGroup;
+			children = (
+				6555C6601CE42F92004DA145 /* FGHRBalancedTree.h */,
+				6555C6611CE42F92004DA145 /* FGHRBalancedTree.m */,
+			);
+			name = BalancedTree;
 			sourceTree = "<group>";
 		};
 		65974CCA1CE1456100B3B340 /* Tree */ = {
@@ -393,6 +406,7 @@
 				654D8EC11CDACD5F00B89F86 /* FGHRLinkedList.m in Sources */,
 				654D8EB11CD9CE7C00B89F86 /* FGHR2DArrayDS.m in Sources */,
 				65223EAA1CCED89E003FC03F /* FGStack.m in Sources */,
+				6555C6621CE42F92004DA145 /* FGHRBalancedTree.m in Sources */,
 				65974CCD1CE1457600B3B340 /* FGHRTree.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
