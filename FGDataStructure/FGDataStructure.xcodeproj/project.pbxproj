@@ -24,6 +24,9 @@
 		65223EBD1CCF21CB003FC03F /* FGHashTableTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 65223EBC1CCF21CB003FC03F /* FGHashTableTest.m */; };
 		65223ED31CCF528C003FC03F /* FGHashTableNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 65223ED21CCF528C003FC03F /* FGHashTableNode.m */; };
 		65223ED51CD0234F003FC03F /* FGStackTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 65223ED41CD0234F003FC03F /* FGStackTest.m */; };
+		65231E431CE7D3F6002B6821 /* FGFBQuestions.m in Sources */ = {isa = PBXBuildFile; fileRef = 65231E421CE7D3F6002B6821 /* FGFBQuestions.m */; };
+		65231E461CE7D422002B6821 /* FGFBClosestPoints.m in Sources */ = {isa = PBXBuildFile; fileRef = 65231E451CE7D422002B6821 /* FGFBClosestPoints.m */; };
+		65231E481CE7DBB0002B6821 /* FGFBClosestPointsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 65231E471CE7DBB0002B6821 /* FGFBClosestPointsTest.m */; };
 		654D8EAC1CD9B83D00B89F86 /* NSArray+FGHRArrayDS.m in Sources */ = {isa = PBXBuildFile; fileRef = 654D8EAB1CD9B83D00B89F86 /* NSArray+FGHRArrayDS.m */; };
 		654D8EAE1CD9BA3400B89F86 /* FGHRArrayDSTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 654D8EAD1CD9BA3400B89F86 /* FGHRArrayDSTest.m */; };
 		654D8EB11CD9CE7C00B89F86 /* FGHR2DArrayDS.m in Sources */ = {isa = PBXBuildFile; fileRef = 654D8EB01CD9CE7C00B89F86 /* FGHR2DArrayDS.m */; };
@@ -78,6 +81,11 @@
 		65223ED11CCF528C003FC03F /* FGHashTableNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FGHashTableNode.h; path = HashTable/FGHashTableNode.h; sourceTree = "<group>"; };
 		65223ED21CCF528C003FC03F /* FGHashTableNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FGHashTableNode.m; path = HashTable/FGHashTableNode.m; sourceTree = "<group>"; };
 		65223ED41CD0234F003FC03F /* FGStackTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGStackTest.m; sourceTree = "<group>"; };
+		65231E411CE7D3F6002B6821 /* FGFBQuestions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FGFBQuestions.h; path = Facebook/FGFBQuestions.h; sourceTree = "<group>"; };
+		65231E421CE7D3F6002B6821 /* FGFBQuestions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FGFBQuestions.m; path = Facebook/FGFBQuestions.m; sourceTree = "<group>"; };
+		65231E441CE7D422002B6821 /* FGFBClosestPoints.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FGFBClosestPoints.h; path = Facebook/FGFBClosestPoints.h; sourceTree = "<group>"; };
+		65231E451CE7D422002B6821 /* FGFBClosestPoints.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FGFBClosestPoints.m; path = Facebook/FGFBClosestPoints.m; sourceTree = "<group>"; };
+		65231E471CE7DBB0002B6821 /* FGFBClosestPointsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGFBClosestPointsTest.m; sourceTree = "<group>"; };
 		654D8EAA1CD9B83D00B89F86 /* NSArray+FGHRArrayDS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSArray+FGHRArrayDS.h"; path = "Array/NSArray+FGHRArrayDS.h"; sourceTree = "<group>"; };
 		654D8EAB1CD9B83D00B89F86 /* NSArray+FGHRArrayDS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+FGHRArrayDS.m"; path = "Array/NSArray+FGHRArrayDS.m"; sourceTree = "<group>"; };
 		654D8EAD1CD9BA3400B89F86 /* FGHRArrayDSTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGHRArrayDSTest.m; sourceTree = "<group>"; };
@@ -151,6 +159,7 @@
 		65223E6F1CCB362F003FC03F /* FGDataStructure */ = {
 			isa = PBXGroup;
 			children = (
+				65231E401CE7D3D7002B6821 /* Facebook */,
 				654D8EA81CD9B81500B89F86 /* HackerRank */,
 				650635EA1CD17B6E000347E7 /* ListedList */,
 				6506356C1CD02F94000347E7 /* Heap */,
@@ -191,6 +200,7 @@
 				654D8EBC1CDAC4C300B89F86 /* FGHR2DArrayDSTest.m */,
 				654D8EC21CDAD7C700B89F86 /* FGHRLinkedListTest.m */,
 				65974CCE1CE1487100B3B340 /* FGHRTreeTest.m */,
+				65231E471CE7DBB0002B6821 /* FGFBClosestPointsTest.m */,
 			);
 			path = FGDataStructureTests;
 			sourceTree = "<group>";
@@ -241,6 +251,17 @@
 				65223ED21CCF528C003FC03F /* FGHashTableNode.m */,
 			);
 			name = HashTable;
+			sourceTree = "<group>";
+		};
+		65231E401CE7D3D7002B6821 /* Facebook */ = {
+			isa = PBXGroup;
+			children = (
+				65231E411CE7D3F6002B6821 /* FGFBQuestions.h */,
+				65231E421CE7D3F6002B6821 /* FGFBQuestions.m */,
+				65231E441CE7D422002B6821 /* FGFBClosestPoints.h */,
+				65231E451CE7D422002B6821 /* FGFBClosestPoints.m */,
+			);
+			name = Facebook;
 			sourceTree = "<group>";
 		};
 		654D8EA81CD9B81500B89F86 /* HackerRank */ = {
@@ -393,6 +414,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				65223ED31CCF528C003FC03F /* FGHashTableNode.m in Sources */,
+				65231E431CE7D3F6002B6821 /* FGFBQuestions.m in Sources */,
 				65223EA31CCB39DD003FC03F /* FGBSTreeNode.m in Sources */,
 				65223EB21CCEF66D003FC03F /* FGHashTable.m in Sources */,
 				65223EAE1CCEEF88003FC03F /* FGQueue.m in Sources */,
@@ -408,6 +430,7 @@
 				65223EAA1CCED89E003FC03F /* FGStack.m in Sources */,
 				6555C6621CE42F92004DA145 /* FGHRBalancedTree.m in Sources */,
 				65974CCD1CE1457600B3B340 /* FGHRTree.m in Sources */,
+				65231E461CE7D422002B6821 /* FGFBClosestPoints.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +439,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				65223E8B1CCB362F003FC03F /* FGDataStructureTests.m in Sources */,
+				65231E481CE7DBB0002B6821 /* FGFBClosestPointsTest.m in Sources */,
 				654D8EC31CDAD7C700B89F86 /* FGHRLinkedListTest.m in Sources */,
 				65974CCF1CE1487100B3B340 /* FGHRTreeTest.m in Sources */,
 				654D8EBD1CDAC4C300B89F86 /* FGHR2DArrayDSTest.m in Sources */,
