@@ -36,6 +36,7 @@
 		6555C6621CE42F92004DA145 /* FGHRBalancedTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 6555C6611CE42F92004DA145 /* FGHRBalancedTree.m */; };
 		65974CCD1CE1457600B3B340 /* FGHRTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 65974CCC1CE1457600B3B340 /* FGHRTree.m */; };
 		65974CCF1CE1487100B3B340 /* FGHRTreeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 65974CCE1CE1487100B3B340 /* FGHRTreeTest.m */; };
+		65EEBAD51CE8312900EA6186 /* FGFBQuestionsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EEBAD41CE8312900EA6186 /* FGFBQuestionsTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +101,7 @@
 		65974CCB1CE1457600B3B340 /* FGHRTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FGHRTree.h; path = Tree/FGHRTree.h; sourceTree = "<group>"; };
 		65974CCC1CE1457600B3B340 /* FGHRTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FGHRTree.m; path = Tree/FGHRTree.m; sourceTree = "<group>"; };
 		65974CCE1CE1487100B3B340 /* FGHRTreeTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGHRTreeTest.m; sourceTree = "<group>"; };
+		65EEBAD41CE8312900EA6186 /* FGFBQuestionsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGFBQuestionsTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +203,7 @@
 				654D8EC21CDAD7C700B89F86 /* FGHRLinkedListTest.m */,
 				65974CCE1CE1487100B3B340 /* FGHRTreeTest.m */,
 				65231E471CE7DBB0002B6821 /* FGFBClosestPointsTest.m */,
+				65EEBAD41CE8312900EA6186 /* FGFBQuestionsTest.m */,
 			);
 			path = FGDataStructureTests;
 			sourceTree = "<group>";
@@ -442,6 +445,7 @@
 				65231E481CE7DBB0002B6821 /* FGFBClosestPointsTest.m in Sources */,
 				654D8EC31CDAD7C700B89F86 /* FGHRLinkedListTest.m in Sources */,
 				65974CCF1CE1487100B3B340 /* FGHRTreeTest.m in Sources */,
+				65EEBAD51CE8312900EA6186 /* FGFBQuestionsTest.m in Sources */,
 				654D8EBD1CDAC4C300B89F86 /* FGHR2DArrayDSTest.m in Sources */,
 				654D8EAE1CD9BA3400B89F86 /* FGHRArrayDSTest.m in Sources */,
 				65223EBD1CCF21CB003FC03F /* FGHashTableTest.m in Sources */,
