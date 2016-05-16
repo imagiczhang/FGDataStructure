@@ -19,4 +19,9 @@
  */
 + (NSArray *)arrayByMovingZeroWithNumbers:(NSArray *)numbers;
 
+/**
+ *  given an array of words, how to eliminate the duplicates?
+ */
++ (NSArray *)removeDuplicatedWords:(NSArray *)words perserveOrder:(BOOL)perserveOrder;
+
 @end

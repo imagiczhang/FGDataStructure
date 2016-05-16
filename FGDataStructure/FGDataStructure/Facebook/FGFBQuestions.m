@@ -31,4 +31,15 @@
     return newNumbers;
 }
 
++ (NSArray *)removeDuplicatedWords:(NSArray *)words perserveOrder:(BOOL)perserveOrder {
+    if (perserveOrder) {
+        NSOrderedSet *wordsSet = [NSOrderedSet orderedSetWithArray:words];
+        return [wordsSet array];
+    } else {
+        NSSet *wordsSet = [NSSet setWithArray:words];
+        return [wordsSet allObjects];
+    }
+
+}
+
 @end

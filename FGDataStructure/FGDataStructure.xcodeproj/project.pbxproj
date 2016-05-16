@@ -37,6 +37,9 @@
 		65974CCD1CE1457600B3B340 /* FGHRTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 65974CCC1CE1457600B3B340 /* FGHRTree.m */; };
 		65974CCF1CE1487100B3B340 /* FGHRTreeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 65974CCE1CE1487100B3B340 /* FGHRTreeTest.m */; };
 		65EEBAD51CE8312900EA6186 /* FGFBQuestionsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EEBAD41CE8312900EA6186 /* FGFBQuestionsTest.m */; };
+		65EEBAD81CE940B400EA6186 /* FGFBNestedArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EEBAD71CE940B400EA6186 /* FGFBNestedArray.m */; };
+		65EEBADA1CE9449200EA6186 /* FGFBNestedArrayTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EEBAD91CE9449200EA6186 /* FGFBNestedArrayTest.m */; };
+		65EEBADD1CE95B2400EA6186 /* FGFBEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EEBADC1CE95B2400EA6186 /* FGFBEnumerator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +105,11 @@
 		65974CCC1CE1457600B3B340 /* FGHRTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FGHRTree.m; path = Tree/FGHRTree.m; sourceTree = "<group>"; };
 		65974CCE1CE1487100B3B340 /* FGHRTreeTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGHRTreeTest.m; sourceTree = "<group>"; };
 		65EEBAD41CE8312900EA6186 /* FGFBQuestionsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGFBQuestionsTest.m; sourceTree = "<group>"; };
+		65EEBAD61CE940B400EA6186 /* FGFBNestedArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FGFBNestedArray.h; path = Facebook/FGFBNestedArray.h; sourceTree = "<group>"; };
+		65EEBAD71CE940B400EA6186 /* FGFBNestedArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FGFBNestedArray.m; path = Facebook/FGFBNestedArray.m; sourceTree = "<group>"; };
+		65EEBAD91CE9449200EA6186 /* FGFBNestedArrayTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGFBNestedArrayTest.m; sourceTree = "<group>"; };
+		65EEBADB1CE95B2400EA6186 /* FGFBEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FGFBEnumerator.h; path = Facebook/FGFBEnumerator.h; sourceTree = "<group>"; };
+		65EEBADC1CE95B2400EA6186 /* FGFBEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FGFBEnumerator.m; path = Facebook/FGFBEnumerator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +212,7 @@
 				65974CCE1CE1487100B3B340 /* FGHRTreeTest.m */,
 				65231E471CE7DBB0002B6821 /* FGFBClosestPointsTest.m */,
 				65EEBAD41CE8312900EA6186 /* FGFBQuestionsTest.m */,
+				65EEBAD91CE9449200EA6186 /* FGFBNestedArrayTest.m */,
 			);
 			path = FGDataStructureTests;
 			sourceTree = "<group>";
@@ -263,6 +272,10 @@
 				65231E421CE7D3F6002B6821 /* FGFBQuestions.m */,
 				65231E441CE7D422002B6821 /* FGFBClosestPoints.h */,
 				65231E451CE7D422002B6821 /* FGFBClosestPoints.m */,
+				65EEBAD61CE940B400EA6186 /* FGFBNestedArray.h */,
+				65EEBAD71CE940B400EA6186 /* FGFBNestedArray.m */,
+				65EEBADB1CE95B2400EA6186 /* FGFBEnumerator.h */,
+				65EEBADC1CE95B2400EA6186 /* FGFBEnumerator.m */,
 			);
 			name = Facebook;
 			sourceTree = "<group>";
@@ -419,6 +432,7 @@
 				65223ED31CCF528C003FC03F /* FGHashTableNode.m in Sources */,
 				65231E431CE7D3F6002B6821 /* FGFBQuestions.m in Sources */,
 				65223EA31CCB39DD003FC03F /* FGBSTreeNode.m in Sources */,
+				65EEBAD81CE940B400EA6186 /* FGFBNestedArray.m in Sources */,
 				65223EB21CCEF66D003FC03F /* FGHashTable.m in Sources */,
 				65223EAE1CCEEF88003FC03F /* FGQueue.m in Sources */,
 				6506356F1CD02FA2000347E7 /* FGHeap.m in Sources */,
@@ -433,6 +447,7 @@
 				65223EAA1CCED89E003FC03F /* FGStack.m in Sources */,
 				6555C6621CE42F92004DA145 /* FGHRBalancedTree.m in Sources */,
 				65974CCD1CE1457600B3B340 /* FGHRTree.m in Sources */,
+				65EEBADD1CE95B2400EA6186 /* FGFBEnumerator.m in Sources */,
 				65231E461CE7D422002B6821 /* FGFBClosestPoints.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -450,6 +465,7 @@
 				654D8EAE1CD9BA3400B89F86 /* FGHRArrayDSTest.m in Sources */,
 				65223EBD1CCF21CB003FC03F /* FGHashTableTest.m in Sources */,
 				65223ED51CD0234F003FC03F /* FGStackTest.m in Sources */,
+				65EEBADA1CE9449200EA6186 /* FGFBNestedArrayTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
