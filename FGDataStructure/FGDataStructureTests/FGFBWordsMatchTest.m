@@ -37,12 +37,28 @@
 }
 
 - (void)testFilterWordsByRegexFromArray {
-    NSArray *filterArray = [FGFB]
+    FGFBWordsMatchDataSet *data = [self data1];
+    NSArray *filterArray = [FGFBWordsMatch filterWordsByRegexFromArray:data.data withPattern:data.pattern];
+    
+    XCTAssertTrue(filterArray.count == 3);
+    XCTAssertTrue([filterArray containsObject:@"cat"]);
+    XCTAssertTrue([filterArray containsObject:@"cut"]);
+    XCTAssertTrue([filterArray containsObject:@"cot"]);
+}
+
+- (void)testFilterWordsByPredicateFromArray {
+    FGFBWordsMatchDataSet *data = [self data1];
+    NSArray *filterArray = [FGFBWordsMatch filterWordsByPredicateFromArray:data.data withPattern:data.pattern];
+    
+    XCTAssertTrue(filterArray.count == 3);
+    XCTAssertTrue([filterArray containsObject:@"cat"]);
+    XCTAssertTrue([filterArray containsObject:@"cut"]);
+    XCTAssertTrue([filterArray containsObject:@"cot"]);
 }
 
 - (FGFBWordsMatchDataSet *)data1 {
     FGFBWordsMatchDataSet *data = [FGFBWordsMatchDataSet new];
-    data.data = @[@"cat", @"dog", @"cut", @"cot", @"cop"];
+    data.data = @[@"cat", @"dog", @"cut", @"cot", @"cop", @"coop"];
     data.pattern = @"c.t";
     
     return data;

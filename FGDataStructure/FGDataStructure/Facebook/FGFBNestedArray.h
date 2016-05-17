@@ -8,6 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
+typedef NS_ENUM(NSUInteger, FGFBNestedArrayComplexityType) {
+    FGFBNestedArrayComplexityTypeQuick,
+    FGFBNestedArrayComplexityTypeSlow
+};
+
 /**
  *  Input: ["a", ["b", "c"], [["d", "e"], "f"]]
  *  nextobject Output:
@@ -17,7 +22,15 @@
 
 @property (nonatomic, copy) NSArray *nestedArray;
 
-- (instancetype)initWithNestedArray:(NSArray *)nestedArray;
+- (instancetype)initWithNestedArray:(NSArray *)nestedArray type:(FGFBNestedArrayComplexityType)type;
 - (NSString *)nextObject;
+- (void)clear;
+
+@end
+
+
+@interface NSArray (Flattern)
+
+- (NSArray *)flatten;
 
 @end

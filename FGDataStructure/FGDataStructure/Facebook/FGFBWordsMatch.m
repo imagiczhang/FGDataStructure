@@ -6,7 +6,7 @@
 //  Copyright © 2016 Feng Guo. All rights reserved.
 //
 
-#import "FBFBWordsMatch.h"
+#import "FGFBWordsMatch.h"
 
 @implementation FGFBWordsMatch
 
@@ -22,6 +22,11 @@
     }
     
     return [filteredWords copy];
+}
+
++ (NSArray *)filterWordsByPredicateFromArray:(NSArray *)words withPattern:(NSString *)pattern {
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF LIKE[c] %@", [pattern stringByReplacingOccurrencesOfString:@"." withString:@"?"]];
+    return [words filteredArrayUsingPredicate:predicate];
 }
 
 @end

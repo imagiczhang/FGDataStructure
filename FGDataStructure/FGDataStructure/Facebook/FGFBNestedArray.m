@@ -12,20 +12,35 @@
 
 @property (nonatomic, strong) NSEnumerator *enumerator;
 @property (nonatomic, strong) FGFBNestedArray *currentArray;
+@property (nonatomic, assign) FGFBNestedArrayComplexityType type;
 
 @end
 
 @implementation FGFBNestedArray
 
-- (instancetype)initWithNestedArray:(NSArray *)nestedArray {
+- (instancetype)initWithNestedArray:(NSArray *)nestedArray type:(FGFBNestedArrayComplexityType)type {
     if (self = [super init]) {
         _nestedArray = nestedArray;
+        _type = type;
     }
     
     return self;
 }
 
 - (NSString *)nextObject {
+    if (self.type == FGFBNestedArrayComplexityTypeQuick) {
+        return [self nextObjectQuick];
+    } else if (self.type == FGFBNestedArrayComplexityTypeSlow) {
+        return [self nextObjectSlow];
+    }
+    
+    NSAssert(NO, @"Add a new implementation");
+    return nil;
+    
+}
+
+#pragma mark - private
+- (NSString *)nextObjectQuick {
     if (!self.enumerator) {
         self.enumerator = [self.nestedArray objectEnumerator];
     }
@@ -53,7 +68,7 @@
     if ([object isKindOfClass:[NSString class]]) {
         return object;
     } else if ([object isKindOfClass:[NSArray class]]) {
-        self.currentArray = [[FGFBNestedArray alloc] initWithNestedArray:object];
+        self.currentArray = [[FGFBNestedArray alloc] initWithNestedArray:object type:FGFBNestedArrayComplexityTypeQuick];
         
         return [self.currentArray nextObject];
     }
@@ -61,8 +76,36 @@
     return nil;
 }
 
+- (NSString *)nextObjectSlow {
+    if (!self.enumerator) {
+        self.enumerator = [[self.nestedArray flatten] objectEnumerator];
+    }
+    
+    return [self.enumerator nextObject];
+}
+
 - (void)clear {
     self.enumerator = nil;
 }
+
+@end
+
+@implementation NSArray (Flattern)
+
+- (NSArray *)flatten {
+    NSMutableArray *flatItems = [NSMutableArray array];
+    for (id subObject in self)
+    {
+        if([subObject isKindOfClass:[NSArray class]]) {
+            [flatItems addObjectsFromArray:[subObject flatten]];
+        }
+        else {
+            [flatItems addObject:subObject];
+        }
+    }
+    
+    return flatItems;
+}
+
 
 @end

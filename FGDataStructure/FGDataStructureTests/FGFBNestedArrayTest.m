@@ -27,14 +27,23 @@
 
 - (void)testNextObject {
     NSArray *data = @[@"a", @[@"b", @"c"], @[@[@"d", @"e"], @"f"]];
-    FGFBNestedArray *nestedArray = [[FGFBNestedArray alloc] initWithNestedArray:data];
+    FGFBNestedArray *nestedArray1 = [[FGFBNestedArray alloc] initWithNestedArray:data type:FGFBNestedArrayComplexityTypeSlow];
     
-    XCTAssertTrue([[nestedArray nextObject] isEqualToString:@"a"]);
-    XCTAssertTrue([[nestedArray nextObject] isEqualToString:@"b"]);
-    XCTAssertTrue([[nestedArray nextObject] isEqualToString:@"c"]);
-    XCTAssertTrue([[nestedArray nextObject] isEqualToString:@"d"]);
-    XCTAssertTrue([[nestedArray nextObject] isEqualToString:@"e"]);
-    XCTAssertTrue([[nestedArray nextObject] isEqualToString:@"f"]);
+    XCTAssertTrue([[nestedArray1 nextObject] isEqualToString:@"a"]);
+    XCTAssertTrue([[nestedArray1 nextObject] isEqualToString:@"b"]);
+    XCTAssertTrue([[nestedArray1 nextObject] isEqualToString:@"c"]);
+    XCTAssertTrue([[nestedArray1 nextObject] isEqualToString:@"d"]);
+    XCTAssertTrue([[nestedArray1 nextObject] isEqualToString:@"e"]);
+    XCTAssertTrue([[nestedArray1 nextObject] isEqualToString:@"f"]);
+    
+    FGFBNestedArray *nestedArray2 = [[FGFBNestedArray alloc] initWithNestedArray:data type:FGFBNestedArrayComplexityTypeQuick];
+    XCTAssertTrue([[nestedArray2 nextObject] isEqualToString:@"a"]);
+    XCTAssertTrue([[nestedArray2 nextObject] isEqualToString:@"b"]);
+    XCTAssertTrue([[nestedArray2 nextObject] isEqualToString:@"c"]);
+    XCTAssertTrue([[nestedArray2 nextObject] isEqualToString:@"d"]);
+    XCTAssertTrue([[nestedArray2 nextObject] isEqualToString:@"e"]);
+//    XCTAssertTrue([[nestedArray2 nextObject] isEqualToString:@"f"]);
+    
 }
 
 

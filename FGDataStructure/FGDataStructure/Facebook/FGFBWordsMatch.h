@@ -10,8 +10,9 @@
 /**
  *  Given a dictionary of words, return an array of the words whose match. (i.e. pattern "c.t" match with "cat", "cut", etc. because the dot notation stand for ANY character).
  */
-@interface FBFBWordsMatch : NSObject
+@interface FGFBWordsMatch : NSObject
 
 + (NSArray *)filterWordsByRegexFromArray:(NSArray *)words withPattern:(NSString *)pattern;
++ (NSArray *)filterWordsByPredicateFromArray:(NSArray *)words withPattern:(NSString *)pattern;
 
 @end

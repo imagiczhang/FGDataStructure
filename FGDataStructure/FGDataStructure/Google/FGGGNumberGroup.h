@@ -10,4 +10,6 @@
 
 @interface FGGGNumberGroup : NSObject
 
++ (NSArray *)numberGroupFromNumbers:(NSArray *)numbers;
+
 @end

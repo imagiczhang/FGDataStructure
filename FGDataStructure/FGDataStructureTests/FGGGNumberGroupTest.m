@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "FGGGNumberGroup.h"
 
 @interface FGGGNumberGroupTest : XCTestCase
 
@@ -24,16 +25,17 @@
     [super tearDown];
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
+- (void)testNumberGroupFromNumbers {
+    NSArray *data1 = @[@1, @2, @3, @10, @25, @26, @30, @31, @32, @33];
+    NSArray *expectResult1 = @[@[@1,@2,@3], @[@10], @[@25, @26], @[@30, @31, @32, @33]];
+    
+    XCTAssertTrue([[FGGGNumberGroup numberGroupFromNumbers:data1] isEqualToArray:expectResult1]);
+    
+    NSArray *data2 = @[@1, @2, @3, @10, @25, @26, @30, @31, @32, @33, @40];
+    NSArray *expectResult2 = @[@[@1,@2,@3], @[@10], @[@25, @26], @[@30, @31, @32, @33], @[@40]];
+    
+    XCTAssertTrue([[FGGGNumberGroup numberGroupFromNumbers:data2] isEqualToArray:expectResult2]);
 }
 
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
-}
 
 @end
