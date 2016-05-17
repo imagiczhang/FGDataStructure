@@ -14,7 +14,9 @@
     NSMutableArray *sortedWords = [NSMutableArray array];
     
     for (NSString *word in words) {
+        // o(n)
         NSArray *characters = [self separateCharacterFromWord:word];
+        // o(nlogn)
         NSArray *sortedCharacters = [characters sortedArrayUsingComparator:^NSComparisonResult(NSString *stringA, NSString *stringB) {
             if ([stringA characterAtIndex:0] > [stringB characterAtIndex:0]) {
                 return NSOrderedDescending;
@@ -25,6 +27,7 @@
             return NSOrderedSame;
         }];
         
+        // o(n)
         NSString *sortedWord = [sortedCharacters componentsJoinedByString:@""];
         [sortedWords addObject:sortedWord];
     }
