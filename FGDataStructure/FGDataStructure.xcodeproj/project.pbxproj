@@ -36,6 +36,7 @@
 		6555C6621CE42F92004DA145 /* FGHRBalancedTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 6555C6611CE42F92004DA145 /* FGHRBalancedTree.m */; };
 		65974CCD1CE1457600B3B340 /* FGHRTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 65974CCC1CE1457600B3B340 /* FGHRTree.m */; };
 		65974CCF1CE1487100B3B340 /* FGHRTreeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 65974CCE1CE1487100B3B340 /* FGHRTreeTest.m */; };
+		65E5C1FA1CEC53C6003E1B26 /* FGAPPLEPopularObjectTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E5C1F91CEC53C6003E1B26 /* FGAPPLEPopularObjectTest.m */; };
 		65EEBAD51CE8312900EA6186 /* FGFBQuestionsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EEBAD41CE8312900EA6186 /* FGFBQuestionsTest.m */; };
 		65EEBAD81CE940B400EA6186 /* FGFBNestedArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EEBAD71CE940B400EA6186 /* FGFBNestedArray.m */; };
 		65EEBADA1CE9449200EA6186 /* FGFBNestedArrayTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EEBAD91CE9449200EA6186 /* FGFBNestedArrayTest.m */; };
@@ -56,6 +57,9 @@
 		65EEBB321CEC038300EA6186 /* FGFBFindMirrorTreeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EEBB311CEC038300EA6186 /* FGFBFindMirrorTreeTest.m */; };
 		65EEBB351CEC163300EA6186 /* FGFBTelephoneKeypad.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EEBB341CEC163300EA6186 /* FGFBTelephoneKeypad.m */; };
 		65EEBB371CEC1E4800EA6186 /* FGFBTelephoneKeypadTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EEBB361CEC1E4800EA6186 /* FGFBTelephoneKeypadTest.m */; };
+		65EEBB3B1CEC30B600EA6186 /* FGGPFibonacciCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EEBB3A1CEC30B600EA6186 /* FGGPFibonacciCalculator.m */; };
+		65EEBB3D1CEC44B200EA6186 /* FGGPFibonacciCalculatorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EEBB3C1CEC44B200EA6186 /* FGGPFibonacciCalculatorTest.m */; };
+		65EEBB431CEC47FE00EA6186 /* FGAPPLEPopularObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EEBB421CEC47FE00EA6186 /* FGAPPLEPopularObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,6 +124,7 @@
 		65974CCB1CE1457600B3B340 /* FGHRTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FGHRTree.h; path = Tree/FGHRTree.h; sourceTree = "<group>"; };
 		65974CCC1CE1457600B3B340 /* FGHRTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FGHRTree.m; path = Tree/FGHRTree.m; sourceTree = "<group>"; };
 		65974CCE1CE1487100B3B340 /* FGHRTreeTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGHRTreeTest.m; sourceTree = "<group>"; };
+		65E5C1F91CEC53C6003E1B26 /* FGAPPLEPopularObjectTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGAPPLEPopularObjectTest.m; sourceTree = "<group>"; };
 		65EEBAD41CE8312900EA6186 /* FGFBQuestionsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGFBQuestionsTest.m; sourceTree = "<group>"; };
 		65EEBAD61CE940B400EA6186 /* FGFBNestedArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FGFBNestedArray.h; path = Facebook/FGFBNestedArray.h; sourceTree = "<group>"; };
 		65EEBAD71CE940B400EA6186 /* FGFBNestedArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FGFBNestedArray.m; path = Facebook/FGFBNestedArray.m; sourceTree = "<group>"; };
@@ -151,6 +156,11 @@
 		65EEBB331CEC163300EA6186 /* FGFBTelephoneKeypad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FGFBTelephoneKeypad.h; path = Facebook/FGFBTelephoneKeypad.h; sourceTree = "<group>"; };
 		65EEBB341CEC163300EA6186 /* FGFBTelephoneKeypad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FGFBTelephoneKeypad.m; path = Facebook/FGFBTelephoneKeypad.m; sourceTree = "<group>"; };
 		65EEBB361CEC1E4800EA6186 /* FGFBTelephoneKeypadTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGFBTelephoneKeypadTest.m; sourceTree = "<group>"; };
+		65EEBB391CEC30B600EA6186 /* FGGPFibonacciCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FGGPFibonacciCalculator.h; path = Groupon/FGGPFibonacciCalculator.h; sourceTree = "<group>"; };
+		65EEBB3A1CEC30B600EA6186 /* FGGPFibonacciCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FGGPFibonacciCalculator.m; path = Groupon/FGGPFibonacciCalculator.m; sourceTree = "<group>"; };
+		65EEBB3C1CEC44B200EA6186 /* FGGPFibonacciCalculatorTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGGPFibonacciCalculatorTest.m; sourceTree = "<group>"; };
+		65EEBB411CEC47FE00EA6186 /* FGAPPLEPopularObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FGAPPLEPopularObject.h; path = Apple/FGAPPLEPopularObject.h; sourceTree = "<group>"; };
+		65EEBB421CEC47FE00EA6186 /* FGAPPLEPopularObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FGAPPLEPopularObject.m; path = Apple/FGAPPLEPopularObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,6 +220,8 @@
 		65223E6F1CCB362F003FC03F /* FGDataStructure */ = {
 			isa = PBXGroup;
 			children = (
+				65EEBB3E1CEC46B100EA6186 /* Apple */,
+				65EEBB381CEC212000EA6186 /* Groupon */,
 				65EEBAE21CE9820300EA6186 /* Google */,
 				65231E401CE7D3D7002B6821 /* Facebook */,
 				654D8EA81CD9B81500B89F86 /* HackerRank */,
@@ -262,6 +274,8 @@
 				65EEBB221CEBC44400EA6186 /* FGFBRemoveDuplicatesTest.m */,
 				65EEBB311CEC038300EA6186 /* FGFBFindMirrorTreeTest.m */,
 				65EEBB361CEC1E4800EA6186 /* FGFBTelephoneKeypadTest.m */,
+				65EEBB3C1CEC44B200EA6186 /* FGGPFibonacciCalculatorTest.m */,
+				65E5C1F91CEC53C6003E1B26 /* FGAPPLEPopularObjectTest.m */,
 			);
 			path = FGDataStructureTests;
 			sourceTree = "<group>";
@@ -427,6 +441,24 @@
 			name = Tree;
 			sourceTree = "<group>";
 		};
+		65EEBB381CEC212000EA6186 /* Groupon */ = {
+			isa = PBXGroup;
+			children = (
+				65EEBB391CEC30B600EA6186 /* FGGPFibonacciCalculator.h */,
+				65EEBB3A1CEC30B600EA6186 /* FGGPFibonacciCalculator.m */,
+			);
+			name = Groupon;
+			sourceTree = "<group>";
+		};
+		65EEBB3E1CEC46B100EA6186 /* Apple */ = {
+			isa = PBXGroup;
+			children = (
+				65EEBB411CEC47FE00EA6186 /* FGAPPLEPopularObject.h */,
+				65EEBB421CEC47FE00EA6186 /* FGAPPLEPopularObject.m */,
+			);
+			name = Apple;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -537,6 +569,8 @@
 				65223EB21CCEF66D003FC03F /* FGHashTable.m in Sources */,
 				65223EAE1CCEEF88003FC03F /* FGQueue.m in Sources */,
 				6506356F1CD02FA2000347E7 /* FGHeap.m in Sources */,
+				65EEBB431CEC47FE00EA6186 /* FGAPPLEPopularObject.m in Sources */,
+				65EEBB3B1CEC30B600EA6186 /* FGGPFibonacciCalculator.m in Sources */,
 				654D8EAC1CD9B83D00B89F86 /* NSArray+FGHRArrayDS.m in Sources */,
 				65EEBB301CEBED5900EA6186 /* FGFBFindMirrorData.m in Sources */,
 				65EEBB261CEBE33000EA6186 /* FGFBFindMirrorTree.m in Sources */,
@@ -563,10 +597,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65E5C1FA1CEC53C6003E1B26 /* FGAPPLEPopularObjectTest.m in Sources */,
 				65EEBB041CEAA82700EA6186 /* FGFBAnagramsFinderTest.m in Sources */,
 				65EEBB091CEACF2400EA6186 /* FGFBMergeSortArrayTest.m in Sources */,
 				65223E8B1CCB362F003FC03F /* FGDataStructureTests.m in Sources */,
 				65231E481CE7DBB0002B6821 /* FGFBClosestPointsTest.m in Sources */,
+				65EEBB3D1CEC44B200EA6186 /* FGGPFibonacciCalculatorTest.m in Sources */,
 				65EEBB321CEC038300EA6186 /* FGFBFindMirrorTreeTest.m in Sources */,
 				654D8EC31CDAD7C700B89F86 /* FGHRLinkedListTest.m in Sources */,
 				65EEBAF51CEA655900EA6186 /* FGFBWordsMatchTest.m in Sources */,
