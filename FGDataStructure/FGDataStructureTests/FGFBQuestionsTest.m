@@ -53,4 +53,13 @@
     XCTAssertTrue([data2Result isEqualToArray:data2ExpectedResult]);
 }
 
+- (void)testHasSumOf3IntsFromArray {
+    NSArray *data1 = @[@3, @10, @2, @(-3), @100, @4, @0, @(-103)];
+    XCTAssertTrue([FGFBQuestions hasSumOf3IntsFromArray:data1 target:10]);
+    XCTAssertTrue([FGFBQuestions hasSumOf3IntsFromArray:data1 target:14]);
+    XCTAssertTrue([FGFBQuestions hasSumOf3IntsFromArray:data1 target:4]);
+    XCTAssertTrue([FGFBQuestions hasSumOf3IntsFromArray:data1 target:0]);
+    XCTAssertFalse([FGFBQuestions hasSumOf3IntsFromArray:data1 target:30]);
+}
+
 @end

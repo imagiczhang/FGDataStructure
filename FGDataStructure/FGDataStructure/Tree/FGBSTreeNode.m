@@ -10,7 +10,7 @@
 
 @implementation FGBSTreeNode
 
-- (instancetype)initWithData:(NSObject *)data
+- (instancetype)initWithData:(FGBSTreeObject *)data
 {
     if (self = [super init]) {
         _data = data;

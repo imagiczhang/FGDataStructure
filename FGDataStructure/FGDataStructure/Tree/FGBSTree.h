@@ -7,9 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "FGBSTreeObject.h"
 
 @interface FGBSTree : NSObject
 
-- (void)addObject:(NSObject *)object;
+- (void)addObject:(FGBSTreeObject *)object;
 
 @end

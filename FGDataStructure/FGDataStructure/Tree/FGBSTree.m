@@ -27,23 +27,41 @@
     return self;
 }
 
-- (void)addObject:(NSObject *)object
+- (void)addObject:(FGBSTreeObject *)object
 {
     if (!self.root) {
         [self createRootWithObject:object];
     } else {
         FGBSTreeNode *node = [[FGBSTreeNode alloc] initWithData:object];
+        FGBSTreeNode *currentNode = self.root;
         
-//        NSCompareResult *compareResult = [NSCompareResult alloc] ini
+        while (YES) {
+            NSComparisonResult result = (NSComparisonResult)[object performSelector:self.compareSelector withObject:self.root.data];
+            if (result == NSOrderedAscending) {
+                if (currentNode.left) {
+                    currentNode = currentNode.left;
+                } else {
+                    currentNode.left = node;
+                    break;
+                }
+            } else {
+                currentNode = currentNode.right;
+                if (currentNode.right) {
+                    currentNode = currentNode.right;
+                } else {
+                    currentNode.right = node;
+                    break;
+                }
+            }
+        }
     }
 }
 
 #pragma mark - Internal
 
-- (void)createRootWithObject:(NSObject *)object
+- (void)createRootWithObject:(FGBSTreeObject *)object
 {
     self.root = [[FGBSTreeNode alloc] initWithData:object];
-    
 }
 
 @end

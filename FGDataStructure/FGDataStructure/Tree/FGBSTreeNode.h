@@ -7,14 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "FGBSTreeObject.h"
 
 @interface FGBSTreeNode : NSObject
 
 @property (nonatomic, strong) FGBSTreeNode *left;
 @property (nonatomic, strong) FGBSTreeNode *right;
 @property (nonatomic, weak) FGBSTreeNode *parent;
-@property (nonatomic, strong) NSObject *data;
+@property (nonatomic, strong) FGBSTreeObject *data;
 
-- (instancetype)initWithData:(NSObject *)data;
+- (instancetype)initWithData:(id)data;
 
 @end

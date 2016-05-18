@@ -42,4 +42,30 @@
 
 }
 
++ (BOOL)hasSumOf3IntsFromArray:(NSArray *)array target:(NSInteger)target {
+    NSArray *sortedArray = [array sortedArrayUsingComparator:^NSComparisonResult(NSNumber *number1, NSNumber *number2) {
+        return [number1 compare:number2];
+    }];
+    
+    for (NSInteger i = 0; i < sortedArray.count; i++) {
+        NSInteger leftIndex = i + 1;
+        NSInteger rightIndex = sortedArray.count - 1;
+
+        while (leftIndex < rightIndex) {
+            NSInteger currentValue = [sortedArray[i] integerValue];
+            NSInteger leftValue = [sortedArray[leftIndex] integerValue];
+            NSInteger rightValue = [sortedArray[rightIndex] integerValue];
+            
+            NSInteger sum = currentValue + leftValue + rightValue;
+            
+            if (sum == target) return YES;
+            
+            if (sum > target) rightIndex--;
+            if (sum < target) leftIndex++;
+        }
+    }
+            
+    return NO;
+}
+
 @end

@@ -37,6 +37,8 @@
 		65974CCD1CE1457600B3B340 /* FGHRTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 65974CCC1CE1457600B3B340 /* FGHRTree.m */; };
 		65974CCF1CE1487100B3B340 /* FGHRTreeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 65974CCE1CE1487100B3B340 /* FGHRTreeTest.m */; };
 		65E5C1FA1CEC53C6003E1B26 /* FGAPPLEPopularObjectTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E5C1F91CEC53C6003E1B26 /* FGAPPLEPopularObjectTest.m */; };
+		65E5C1FD1CECFF10003E1B26 /* FGBSTreeObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E5C1FC1CECFF10003E1B26 /* FGBSTreeObject.m */; };
+		65E5C1FF1CED001B003E1B26 /* FGBSTreeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E5C1FE1CED001B003E1B26 /* FGBSTreeTest.m */; };
 		65EEBAD51CE8312900EA6186 /* FGFBQuestionsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EEBAD41CE8312900EA6186 /* FGFBQuestionsTest.m */; };
 		65EEBAD81CE940B400EA6186 /* FGFBNestedArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EEBAD71CE940B400EA6186 /* FGFBNestedArray.m */; };
 		65EEBADA1CE9449200EA6186 /* FGFBNestedArrayTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EEBAD91CE9449200EA6186 /* FGFBNestedArrayTest.m */; };
@@ -125,6 +127,9 @@
 		65974CCC1CE1457600B3B340 /* FGHRTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FGHRTree.m; path = Tree/FGHRTree.m; sourceTree = "<group>"; };
 		65974CCE1CE1487100B3B340 /* FGHRTreeTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGHRTreeTest.m; sourceTree = "<group>"; };
 		65E5C1F91CEC53C6003E1B26 /* FGAPPLEPopularObjectTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGAPPLEPopularObjectTest.m; sourceTree = "<group>"; };
+		65E5C1FB1CECFF10003E1B26 /* FGBSTreeObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FGBSTreeObject.h; path = Tree/FGBSTreeObject.h; sourceTree = "<group>"; };
+		65E5C1FC1CECFF10003E1B26 /* FGBSTreeObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FGBSTreeObject.m; path = Tree/FGBSTreeObject.m; sourceTree = "<group>"; };
+		65E5C1FE1CED001B003E1B26 /* FGBSTreeTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGBSTreeTest.m; sourceTree = "<group>"; };
 		65EEBAD41CE8312900EA6186 /* FGFBQuestionsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGFBQuestionsTest.m; sourceTree = "<group>"; };
 		65EEBAD61CE940B400EA6186 /* FGFBNestedArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FGFBNestedArray.h; path = Facebook/FGFBNestedArray.h; sourceTree = "<group>"; };
 		65EEBAD71CE940B400EA6186 /* FGFBNestedArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FGFBNestedArray.m; path = Facebook/FGFBNestedArray.m; sourceTree = "<group>"; };
@@ -276,6 +281,7 @@
 				65EEBB361CEC1E4800EA6186 /* FGFBTelephoneKeypadTest.m */,
 				65EEBB3C1CEC44B200EA6186 /* FGGPFibonacciCalculatorTest.m */,
 				65E5C1F91CEC53C6003E1B26 /* FGAPPLEPopularObjectTest.m */,
+				65E5C1FE1CED001B003E1B26 /* FGBSTreeTest.m */,
 			);
 			path = FGDataStructureTests;
 			sourceTree = "<group>";
@@ -288,6 +294,8 @@
 				65223EA11CCB39DD003FC03F /* FGBSTreeNode.h */,
 				65223EA21CCB39DD003FC03F /* FGBSTreeNode.m */,
 				65223EA41CCD6F41003FC03F /* FGBSTreeType.h */,
+				65E5C1FB1CECFF10003E1B26 /* FGBSTreeObject.h */,
+				65E5C1FC1CECFF10003E1B26 /* FGBSTreeObject.m */,
 			);
 			name = Tree;
 			sourceTree = "<group>";
@@ -579,6 +587,7 @@
 				65223E781CCB362F003FC03F /* ViewController.m in Sources */,
 				650635ED1CD17B86000347E7 /* FGListedList.m in Sources */,
 				65EEBAF91CEA76ED00EA6186 /* FGFBAnagramsFinder.m in Sources */,
+				65E5C1FD1CECFF10003E1B26 /* FGBSTreeObject.m in Sources */,
 				65EEBB071CEAC80D00EA6186 /* FGFBMergeSortArray.m in Sources */,
 				65223E751CCB362F003FC03F /* AppDelegate.m in Sources */,
 				65223E721CCB362F003FC03F /* main.m in Sources */,
@@ -612,6 +621,7 @@
 				654D8EBD1CDAC4C300B89F86 /* FGHR2DArrayDSTest.m in Sources */,
 				65EEBAEA1CE98A6B00EA6186 /* FGGGNumberGroupTest.m in Sources */,
 				654D8EAE1CD9BA3400B89F86 /* FGHRArrayDSTest.m in Sources */,
+				65E5C1FF1CED001B003E1B26 /* FGBSTreeTest.m in Sources */,
 				65EEBB371CEC1E4800EA6186 /* FGFBTelephoneKeypadTest.m in Sources */,
 				65223EBD1CCF21CB003FC03F /* FGHashTableTest.m in Sources */,
 				65223ED51CD0234F003FC03F /* FGStackTest.m in Sources */,

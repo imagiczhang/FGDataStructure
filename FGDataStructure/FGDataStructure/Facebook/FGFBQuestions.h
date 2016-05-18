@@ -24,4 +24,11 @@
  */
 + (NSArray *)removeDuplicatedWords:(NSArray *)words perserveOrder:(BOOL)perserveOrder;
 
+/**
+ In an unsorted array of negative and positive integers, write a function, hasSumOf3Ints(array, n), that returns true if you find three numbers in the array that add up to a passed number, "n".
+ 
+ (ie. array of [3,10,2,-3,100,4,0,-103], and n=14, 10, 4, and 0 is found and thus it would return true)
+ */
++ (BOOL)hasSumOf3IntsFromArray:(NSArray *)array target:(NSInteger)target;
+
 @end
