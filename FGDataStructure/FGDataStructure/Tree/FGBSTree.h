@@ -8,9 +8,14 @@
 
 #import <Foundation/Foundation.h>
 #import "FGBSTreeObject.h"
+#import "FGBSTreeType.h"
 
+@class FGBSTreeNode;
 @interface FGBSTree : NSObject
 
+@property (nonatomic, strong) FGBSTreeNode *root;
+
+- (instancetype)initWithCompareSelector:(SEL)selector;
 - (void)addObject:(FGBSTreeObject *)object;
 
 @end

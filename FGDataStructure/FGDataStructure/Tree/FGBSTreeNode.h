@@ -16,6 +16,6 @@
 @property (nonatomic, weak) FGBSTreeNode *parent;
 @property (nonatomic, strong) FGBSTreeObject *data;
 
-- (instancetype)initWithData:(id)data;
+- (instancetype)initWithData:(FGBSTreeObject *)data;
 
 @end

@@ -6,11 +6,11 @@
 //  Copyright © 2016 Feng Guo. All rights reserved.
 //
 
-typedef NS_ENUM(NSUInteger, FGTreeOrder) {
+typedef NS_ENUM(NSUInteger, FGTreeOrderType) {
     /** The ordering is: the left subtree, the current node, the right subtree */
-    FGTreeOrderInOrder,
+    FGTreeOrderTypeInOrder,
     /** The ordering is: the current node, the left subtree, the right subtree */
-    FGTreeOrderPreOrder,
+    FGTreeOrderTypePreOrder,
     /** The ordering is: the left subtree, the right subtree, the current node. */
-    FGTreeOrderPostOrder
+    FGTreeOrderTypePostOrder
 };

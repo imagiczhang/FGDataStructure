@@ -10,4 +10,8 @@
 
 @interface FGBSTreeObject : NSObject
 
+@property (nonatomic, strong) NSNumber *number;
+
+- (instancetype)initWithNumber:(NSNumber *)number;
+
 @end

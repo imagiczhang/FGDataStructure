@@ -27,8 +27,34 @@
     [super tearDown];
 }
 
-- (void)data1 {
+- (void)testTree {
+    FGBSTree *tree = [self data1];
+//    tree.root.ob
+}
+
+/**
+ *      20
+ *     /  \
+ *   10    30
+ *  /  \
+ * 5    40
+ *
+ */
+- (FGBSTree *)data1 {
+    FGBSTreeObject *object40 = [[FGBSTreeObject alloc] initWithNumber:@40];
+    FGBSTreeObject *object30 = [[FGBSTreeObject alloc] initWithNumber:@30];
+    FGBSTreeObject *object20 = [[FGBSTreeObject alloc] initWithNumber:@20];
+    FGBSTreeObject *object10 = [[FGBSTreeObject alloc] initWithNumber:@10];
+    FGBSTreeObject *object5 = [[FGBSTreeObject alloc] initWithNumber:@5];
+
+    FGBSTree *tree = [[FGBSTree alloc] initWithCompareSelector:@selector(compare:)];
+    [tree addObject:object20];
+    [tree addObject:object10];
+    [tree addObject:object30];
+    [tree addObject:object5];
+    [tree addObject:object40];
     
+    return tree;
 }
 
 

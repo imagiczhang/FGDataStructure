@@ -11,7 +11,6 @@
 
 @interface FGBSTree ()
 
-@property (nonatomic, strong) FGBSTreeNode *root;
 @property (nonatomic, assign) SEL compareSelector;
 
 @end
@@ -55,6 +54,13 @@
             }
         }
     }
+}
+
+- (void)enumerateTreeByUsingBlock:(void (^)(FGBSTreeObject *object))block withOrderType:(FGTreeOrderType)type {
+    if (type == FGTreeOrderTypePreOrder) {
+        
+    }
+    
 }
 
 #pragma mark - Internal

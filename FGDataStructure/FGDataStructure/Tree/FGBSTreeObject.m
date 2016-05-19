@@ -10,4 +10,11 @@
 
 @implementation FGBSTreeObject
 
+- (instancetype)initWithNumber:(NSNumber *)number {
+    if (self = [super init]) {
+        _number = number;
+    }
+    return self;
+}
+
 @end
