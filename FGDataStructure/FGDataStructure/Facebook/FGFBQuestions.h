@@ -18,6 +18,7 @@
  *  -> both [ 1, 2, 3, 4, 0, 0, 0] and [ 4, 1, 3, 2, X, Y, Z ] are valid
  */
 + (NSArray *)arrayByMovingZeroWithNumbers:(NSArray *)numbers;
++ (NSArray *)arrayByQuickMovingZeroWithNumbers:(NSArray *)numbers;
 
 /**
  *  given an array of words, how to eliminate the duplicates?

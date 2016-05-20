@@ -19,7 +19,7 @@
         }
     }
     
-    // o(n)
+    // o(n^2)
     NSMutableArray *newNumbers = numbers.mutableCopy;
     [newNumbers removeObject:@0];
     
@@ -29,6 +29,27 @@
     }
     
     return newNumbers;
+}
+
+
++ (NSArray *)arrayByQuickMovingZeroWithNumbers:(NSArray *)numbers {
+    NSMutableArray *mutableNumbers = [numbers mutableCopy];
+    NSInteger zeroIndex = numbers.count - 1;
+    
+    for (NSInteger count = 0; count < mutableNumbers.count; count++) {
+        while ([mutableNumbers[zeroIndex] isEqualToNumber:@0] && zeroIndex > count) {
+            zeroIndex--;
+        }
+        
+        if (count >= zeroIndex) break;
+        
+        if ([mutableNumbers[count] isEqualToNumber:@0]) {
+            [mutableNumbers exchangeObjectAtIndex:count withObjectAtIndex:zeroIndex];
+        }
+    }
+    
+    return [mutableNumbers copy]
+    ;
 }
 
 + (NSArray *)removeDuplicatedWords:(NSArray *)words perserveOrder:(BOOL)perserveOrder {

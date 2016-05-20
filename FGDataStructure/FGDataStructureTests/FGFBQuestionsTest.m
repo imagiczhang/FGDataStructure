@@ -36,6 +36,16 @@
     XCTAssertTrue([data1Result containsObject:@3]);
     XCTAssertTrue([data1Result containsObject:@4]);
     XCTAssertTrue(data1Result.count == 7);
+    
+    NSArray *data2Result = [FGFBQuestions arrayByQuickMovingZeroWithNumbers:data1];
+    XCTAssertTrue([data2Result[4] isEqualToNumber:@0]);
+    XCTAssertTrue([data2Result[5] isEqualToNumber:@0]);
+    XCTAssertTrue([data2Result[6] isEqualToNumber:@0]);
+    XCTAssertTrue([data2Result containsObject:@1]);
+    XCTAssertTrue([data2Result containsObject:@2]);
+    XCTAssertTrue([data2Result containsObject:@3]);
+    XCTAssertTrue([data2Result containsObject:@4]);
+    XCTAssertTrue(data2Result.count == 7);
 }
 
 - (void)testRemoveDuplicatedWords {
