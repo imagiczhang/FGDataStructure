@@ -28,7 +28,7 @@
 }
 
 - (void)testTree {
-    FGBSTree *tree = [self data1];
+//    FGBSTree *tree = [self data1];
 //    tree.root.ob
 }
 

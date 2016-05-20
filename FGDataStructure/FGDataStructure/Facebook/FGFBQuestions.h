@@ -31,4 +31,12 @@
  */
 + (BOOL)hasSumOf3IntsFromArray:(NSArray *)array target:(NSInteger)target;
 
+/**
+ Give the count and the number following in the series.
+ for e.g 1122344
+ first line output : 21221324
+ next line : 12112211121214 and so on...
+ */
++ (NSArray *)countNumbersFromString:(NSString *)string numberOfRecursives:(NSInteger)numberOfRecursives;
+
 @end

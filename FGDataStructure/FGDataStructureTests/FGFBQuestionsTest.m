@@ -62,4 +62,12 @@
     XCTAssertFalse([FGFBQuestions hasSumOf3IntsFromArray:data1 target:30]);
 }
 
+- (void)testCountNumbersFromString {
+    NSString *dataString1 = @"1122344";
+    NSArray *dataResult1 = [FGFBQuestions countNumbersFromString:dataString1 numberOfRecursives:2];
+    
+    XCTAssertTrue([dataResult1[0] isEqualToString:@"21221324"]);
+    XCTAssertTrue([dataResult1[1] isEqualToString:@"12112211131214"]);
+}
+
 @end

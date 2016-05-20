@@ -67,5 +67,34 @@
             
     return NO;
 }
+//1122344
++ (NSArray *)countNumbersFromString:(NSString *)string numberOfRecursives:(NSInteger)numberOfRecursives {
+    NSMutableArray *strings = [NSMutableArray arrayWithCapacity:numberOfRecursives];
+    NSString *previousString = string;
+    for (NSInteger i = 0; i < numberOfRecursives; i++) {
+        NSString *newString = @"";
+        NSString *currentCharacter = @"";
+        NSString *previousCharacter = [previousString substringWithRange:NSMakeRange(0, 1)];;
+        NSInteger count = 1;
+        for (NSInteger j = 1; j < previousString.length; j++) {
+            currentCharacter = [previousString substringWithRange:NSMakeRange(j, 1)];
+            if ([currentCharacter isEqualToString:previousCharacter]) {
+                count++;
+            } else {
+                newString = [NSString stringWithFormat:@"%@%ld%@", newString, (long)count, previousCharacter];
+                count = 1;
+            }
+            
+            previousCharacter = currentCharacter;
+        }
+        
+        newString = [NSString stringWithFormat:@"%@%ld%@", newString, (long)count, previousCharacter];
+        
+        previousString = newString;
+        [strings addObject:newString];
+    }
+    
+    return [strings copy];
+}
 
 @end
