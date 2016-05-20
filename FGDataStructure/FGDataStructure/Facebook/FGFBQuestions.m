@@ -67,7 +67,7 @@
             
     return NO;
 }
-//1122344
+
 + (NSArray *)countNumbersFromString:(NSString *)string numberOfRecursives:(NSInteger)numberOfRecursives {
     NSMutableArray *strings = [NSMutableArray arrayWithCapacity:numberOfRecursives];
     NSString *previousString = string;
@@ -95,6 +95,30 @@
     }
     
     return [strings copy];
+}
+
++ (NSInteger)findLongestSubstringInString:(NSString *)string {
+    NSInteger longestLength = 0;
+    for (NSInteger i = 0; i < string.length; i++) {
+        NSInteger currentLength = 0;
+        NSMutableDictionary *currentDictionary = [NSMutableDictionary dictionary];
+        while (YES) {
+            if ((i + currentLength) == string.length) break;
+            NSString *currentCharacter = [string substringWithRange:NSMakeRange(i + currentLength, 1)];
+            if ([currentDictionary objectForKey:currentCharacter]) {
+                if (currentLength > longestLength) {
+                    longestLength = currentLength;
+                }
+                break;
+            } else {
+                [currentDictionary setObject:@0 forKey:currentCharacter];
+                currentLength++;
+            }
+            
+        }
+    }
+    
+    return longestLength;
 }
 
 @end

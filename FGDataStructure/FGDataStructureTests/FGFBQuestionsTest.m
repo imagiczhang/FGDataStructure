@@ -70,4 +70,9 @@
     XCTAssertTrue([dataResult1[1] isEqualToString:@"12112211131214"]);
 }
 
+- (void)testFindLongestSubstringInString {
+    NSString *data1 = @"abcabcbb";
+    XCTAssertTrue([FGFBQuestions findLongestSubstringInString:data1] == 3);
+}
+
 @end
