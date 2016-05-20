@@ -121,4 +121,73 @@
     return longestLength;
 }
 
++ (NSInteger)binaryNumber1:(NSInteger)binary1 addBinaryNumber2:(NSInteger)binary2 {
+    NSInteger decimal1 = [self decimalFromBinary:binary1];
+    NSInteger decimal2 = [self decimalFromBinary:binary2];
+    
+    return [self binaryFromDecimal:decimal1 + decimal2];
+}
+
++ (NSInteger)quickBinaryNumber1:(NSInteger)binary1 addBinaryNumber2:(NSInteger)binary2 {
+    NSString *result = @"";
+    NSInteger currentExtra = 0;
+    NSInteger previousExra = 0;
+    while (binary1 > 0 || binary2 > 0 || previousExra > 0) {
+        NSInteger remaining1 = 0;
+        NSInteger remaining2 = 0;
+        
+        if (binary1 > 0) {
+            remaining1 = binary1 % 10;
+            binary1 = binary1 / 10;
+        }
+        
+        if (binary2 > 0) {
+            remaining2 = binary2 % 10;
+            binary2 = binary2 / 10;
+        }
+        
+        NSInteger currentSum = remaining1 + remaining2 + previousExra;
+        if (currentSum >= 2) {
+            currentSum = currentSum % 2;
+            currentExtra = 1;
+        } else {
+            currentExtra = 0;
+        }
+        
+        result = [NSString stringWithFormat:@"%ld%@", currentSum, result];
+        previousExra = currentExtra;
+        currentExtra = 0;
+    }
+    
+    return [result integerValue];
+    
+}
+
+#pragma mark - Private
++ (NSInteger)decimalFromBinary:(NSInteger)binary {
+    NSInteger result = 0;
+    NSInteger count = 0;
+    while (binary > 0) {
+        NSInteger remaining = binary % 10;
+        if (remaining == 1) result = pow(2, count) + result;
+        binary = binary / 10;
+        
+        count++;
+    }
+    
+    return result;
+}
+
++ (NSInteger)binaryFromDecimal:(NSInteger)decimal {
+    NSString *result = @"";
+    while (decimal > 1) {
+        result = [NSString stringWithFormat:@"%ld%@", decimal % 2, result];
+        decimal = decimal / 2;
+    }
+    
+    result = [NSString stringWithFormat:@"%ld%@", decimal, result];
+    
+    return [result integerValue];
+}
+
 @end

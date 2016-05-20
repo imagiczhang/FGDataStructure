@@ -44,4 +44,10 @@
  */
 + (NSInteger)findLongestSubstringInString:(NSString *)string;
 
+/**
+ *  Write a program for addition of two binary numbers
+ */
++ (NSInteger)binaryNumber1:(NSInteger)binary1 addBinaryNumber2:(NSInteger)binary2;
++ (NSInteger)quickBinaryNumber1:(NSInteger)binary1 addBinaryNumber2:(NSInteger)binary2;
+
 @end

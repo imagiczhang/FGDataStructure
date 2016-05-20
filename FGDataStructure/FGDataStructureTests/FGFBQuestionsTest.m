@@ -75,4 +75,12 @@
     XCTAssertTrue([FGFBQuestions findLongestSubstringInString:data1] == 3);
 }
 
+- (void)testBinarySum {
+    NSInteger data1 = 10111;
+    NSInteger data2 = 11111;
+    
+    XCTAssertTrue([FGFBQuestions binaryNumber1:data1 addBinaryNumber2:data2] == 110110);
+    XCTAssertTrue([FGFBQuestions quickBinaryNumber1:data1 addBinaryNumber2:data2] == 110110);
+}
+
 @end
