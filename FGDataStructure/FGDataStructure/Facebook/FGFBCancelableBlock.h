@@ -11,7 +11,9 @@
 /**
  *  Impelment cancelable dispatch_after
  *
+ *  dispatch_after_with_cancel to create the dispatch after block
  *
+ *  use cancel_block to cancel it
  */
 
 
@@ -20,7 +22,7 @@
 
 typedef void(^dispatch_after_with_cancel_t)(BOOL shouldCancel);
 
-// return a block
+// create a block and execute 
 dispatch_after_with_cancel_t dispatch_after_with_cancel(dispatch_time_t when, dispatch_queue_t queue, dispatch_block_t block);
 
 
