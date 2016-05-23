@@ -17,15 +17,18 @@
     
     NSMutableArray *pathes = [NSMutableArray array];
     FGFBFindMirrorTreeNode *currentNode = originalNode;
+    
+    // o(l*n)
     while (currentNode.parent) {
         FGFBFindMirrorTreeNode *parent = currentNode.parent;
-        NSInteger currentIndex = [parent.children indexOfObject:currentNode];
+        NSInteger currentIndex = [parent.children indexOfObject:currentNode]; //o(n)
         [pathes addObject:@(currentIndex)];
         currentNode = parent;
     }
     
     NSArray *currentChildren = cloneTree.root.children;
     
+    // o(l)
     for (NSInteger index = pathes.count - 2; index >= 0; index--) {
         NSInteger currentIndex = [pathes[index] integerValue];
         if (currentIndex >= currentChildren.count) {

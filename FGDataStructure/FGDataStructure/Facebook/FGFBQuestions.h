@@ -30,6 +30,7 @@
  
  (ie. array of [3,10,2,-3,100,4,0,-103], and n=14, 10, 4, and 0 is found and thus it would return true)
  */
+// - TODO: NSDICTIONARY
 + (BOOL)hasSumOf3IntsFromArray:(NSArray *)array target:(NSInteger)target;
 
 /**

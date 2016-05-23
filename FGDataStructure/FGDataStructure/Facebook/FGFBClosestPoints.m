@@ -69,6 +69,8 @@
         }
         
         [closestPoints addObject:closestPoint];
+        
+        // o(n)
         [newPoints removeObject:closestPoint];
     }
     

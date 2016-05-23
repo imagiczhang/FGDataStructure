@@ -19,4 +19,10 @@
     return self;
 }
 
+- (id)copyWithZone:(NSZone *)zone
+{
+    FGFBFindMirrorTreeStructure *treeStructure = [[FGFBFindMirrorTreeStructure alloc] initWithRoot:[_root copy]];
+    return treeStructure;
+}
+
 @end

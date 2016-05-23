@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @class FGFBFindMirrorTreeNode;
-@interface FGFBFindMirrorTreeStructure : NSObject
+@interface FGFBFindMirrorTreeStructure : NSObject <NSCopying>
 
 @property (nonatomic, strong) FGFBFindMirrorTreeNode *root;
 
