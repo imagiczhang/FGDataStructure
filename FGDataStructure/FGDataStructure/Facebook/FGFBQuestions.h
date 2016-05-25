@@ -52,4 +52,33 @@
 + (NSInteger)binaryNumber1:(NSInteger)binary1 addBinaryNumber2:(NSInteger)binary2;
 + (NSInteger)quickBinaryNumber1:(NSInteger)binary1 addBinaryNumber2:(NSInteger)binary2;
 
+/**
+ *  Find kth largest in an array
+ */
+// TODo
+
+/**
+ *  Given the following filename/rules:
+ 
+ johndoe_sdfjkldfj_ldfjlkfdsjfds_dfdjklfdsjs.txt
+ 
+ Rules:
+ johndoe is a distinct identifier (not a constant)
+ any following items are tacked on with underscores separating them and each token contains a key value pair. The key is the first character and the value is the remaining characters.
+ 
+ Parse this filename and return a dictionary/hashtable of values, removing any file extensions but also keeping in mind that this filename could end up with incorrect characters or incorrect amounts of characters.
+ 
+ Example input:
+ johndoe_sdfjkldfj_ldfjlkfdsjfds_dfdjklfdsjs.txt
+ 
+ Example output:
+ 
+  @{ @"NAME" : @"johndoe",
+ @"s" : @"dfjkldfj",
+ @"l" : @"dfjlkfdsjfds",
+ @"d": @"fdjklfdsjs"
+ }
+ */
++ (NSDictionary *)dictionaryFromFilename:(NSString *)fileName;
+
 @end

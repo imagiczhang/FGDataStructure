@@ -40,6 +40,7 @@
 		65E5C1FD1CECFF10003E1B26 /* FGBSTreeObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E5C1FC1CECFF10003E1B26 /* FGBSTreeObject.m */; };
 		65E5C1FF1CED001B003E1B26 /* FGBSTreeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E5C1FE1CED001B003E1B26 /* FGBSTreeTest.m */; };
 		65E5C20D1CF2904F003E1B26 /* FGFBCancelableBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E5C20C1CF2904F003E1B26 /* FGFBCancelableBlock.m */; };
+		65E5C2131CF2E846003E1B26 /* FGQuickSelectSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E5C2121CF2E846003E1B26 /* FGQuickSelectSort.m */; };
 		65EEBAD51CE8312900EA6186 /* FGFBQuestionsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EEBAD41CE8312900EA6186 /* FGFBQuestionsTest.m */; };
 		65EEBAD81CE940B400EA6186 /* FGFBNestedArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EEBAD71CE940B400EA6186 /* FGFBNestedArray.m */; };
 		65EEBADA1CE9449200EA6186 /* FGFBNestedArrayTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EEBAD91CE9449200EA6186 /* FGFBNestedArrayTest.m */; };
@@ -134,6 +135,8 @@
 		65E5C2061CEFD73D003E1B26 /* FGFBCancelableBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FGFBCancelableBlock.h; path = Facebook/FGFBCancelableBlock.h; sourceTree = "<group>"; };
 		65E5C20C1CF2904F003E1B26 /* FGFBCancelableBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGFBCancelableBlock.m; sourceTree = "<group>"; };
 		65E5C20E1CF2C904003E1B26 /* FGFBCancelableBlock2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FGFBCancelableBlock2.h; path = Facebook/FGFBCancelableBlock2.h; sourceTree = "<group>"; };
+		65E5C2111CF2E846003E1B26 /* FGQuickSelectSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FGQuickSelectSort.h; path = Sorting/FGQuickSelectSort.h; sourceTree = "<group>"; };
+		65E5C2121CF2E846003E1B26 /* FGQuickSelectSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FGQuickSelectSort.m; path = Sorting/FGQuickSelectSort.m; sourceTree = "<group>"; };
 		65EEBAD41CE8312900EA6186 /* FGFBQuestionsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGFBQuestionsTest.m; sourceTree = "<group>"; };
 		65EEBAD61CE940B400EA6186 /* FGFBNestedArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FGFBNestedArray.h; path = Facebook/FGFBNestedArray.h; sourceTree = "<group>"; };
 		65EEBAD71CE940B400EA6186 /* FGFBNestedArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FGFBNestedArray.m; path = Facebook/FGFBNestedArray.m; sourceTree = "<group>"; };
@@ -308,6 +311,8 @@
 		65223E9A1CCB3954003FC03F /* Sorting */ = {
 			isa = PBXGroup;
 			children = (
+				65E5C2111CF2E846003E1B26 /* FGQuickSelectSort.h */,
+				65E5C2121CF2E846003E1B26 /* FGQuickSelectSort.m */,
 			);
 			name = Sorting;
 			sourceTree = "<group>";
@@ -589,6 +594,7 @@
 				654D8EAC1CD9B83D00B89F86 /* NSArray+FGHRArrayDS.m in Sources */,
 				65EEBB301CEBED5900EA6186 /* FGFBFindMirrorData.m in Sources */,
 				65EEBB261CEBE33000EA6186 /* FGFBFindMirrorTree.m in Sources */,
+				65E5C2131CF2E846003E1B26 /* FGQuickSelectSort.m in Sources */,
 				65EEBB2D1CEBE38500EA6186 /* FGFBFindMirrorTreeStructure.m in Sources */,
 				65223E9D1CCB399B003FC03F /* FGBSTree.m in Sources */,
 				65223E781CCB362F003FC03F /* ViewController.m in Sources */,

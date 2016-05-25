@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "FGBSTreeObject.h"
+#import "FGBSTreeType.h"
 
 @interface FGBSTreeNode : NSObject
 
@@ -17,5 +18,6 @@
 @property (nonatomic, strong) FGBSTreeObject *data;
 
 - (instancetype)initWithData:(FGBSTreeObject *)data;
+- (void)enumerateNodeByUsingBlock:(void (^)(FGBSTreeObject *object))block withOrderType:(FGTreeOrderType)type;
 
 @end

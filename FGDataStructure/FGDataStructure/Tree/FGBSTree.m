@@ -57,8 +57,11 @@
 }
 
 - (void)enumerateTreeByUsingBlock:(void (^)(FGBSTreeObject *object))block withOrderType:(FGTreeOrderType)type {
+    if (!block) return;
     if (type == FGTreeOrderTypePreOrder) {
         
+    } else if (type == FGTreeOrderTypeInOrder) {
+        [self.root enumerateNodeByUsingBlock:block withOrderType:FGTreeOrderTypeInOrder];
     }
     
 }

@@ -184,6 +184,24 @@
     
 }
 
++ (NSDictionary *)dictionaryFromFilename:(NSString *)fileName {
+    NSString *fileNameString = [[fileName componentsSeparatedByString:@"."] firstObject];
+    NSArray *fileNames = [fileNameString componentsSeparatedByString:@"_"];
+    
+    NSMutableDictionary *nameDictionary = [NSMutableDictionary dictionaryWithCapacity:fileNames.count];
+    
+    for (NSString *name in fileNames) {
+        if ([name isEqualToString:@"johndoe"]) {
+            nameDictionary[@"NAME"] = @"johndoe";
+        } else {
+            [nameDictionary setObject:[name substringFromIndex:1] forKey:[name substringWithRange:NSMakeRange(0, 1)]];
+        }
+    }
+    
+    return nameDictionary.copy;
+    
+}
+
 #pragma mark - Private
 + (NSInteger)decimalFromBinary:(NSInteger)binary {
     NSInteger result = 0;

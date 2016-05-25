@@ -93,4 +93,13 @@
     XCTAssertTrue([FGFBQuestions quickBinaryNumber1:data1 addBinaryNumber2:data2] == 110110);
 }
 
+- (void)testDictionaryFromFilename {
+    NSString *data1 = @"johndoe_sdfjkldfj_ldfjlkfdsjfds_dfdjklfdsjs.txt";
+    NSDictionary *data1Result = [FGFBQuestions dictionaryFromFilename:data1];
+    XCTAssertTrue([data1Result[@"NAME"] isEqualToString:@"johndoe"]);
+    XCTAssertTrue([data1Result[@"s"] isEqualToString:@"dfjkldfj"]);
+    XCTAssertTrue([data1Result[@"l"] isEqualToString:@"dfjlkfdsjfds"]);
+    XCTAssertTrue([data1Result[@"d"] isEqualToString:@"fdjklfdsjs"]);
+}
+
 @end

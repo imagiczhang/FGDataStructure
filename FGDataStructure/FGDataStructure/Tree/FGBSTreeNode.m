@@ -19,4 +19,18 @@
     return self;
 }
 
+- (void)enumerateNodeByUsingBlock:(void (^)(FGBSTreeObject *object))block withOrderType:(FGTreeOrderType)type {
+    if (!block) return;
+    if (type == FGTreeOrderTypePreOrder) {
+        
+    } else if (type == FGTreeOrderTypeInOrder) {
+        [self.left enumerateNodeByUsingBlock:block withOrderType:FGTreeOrderTypeInOrder];
+        block(self.data);
+        [self.right enumerateNodeByUsingBlock:block withOrderType:FGTreeOrderTypeInOrder];
+    } else {
+        
+    }
+    
+}
+
 @end

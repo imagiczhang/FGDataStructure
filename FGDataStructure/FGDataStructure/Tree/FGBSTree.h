@@ -17,5 +17,6 @@
 
 - (instancetype)initWithCompareSelector:(SEL)selector;
 - (void)addObject:(FGBSTreeObject *)object;
+- (void)enumerateTreeByUsingBlock:(void (^)(FGBSTreeObject *object))block withOrderType:(FGTreeOrderType)type;
 
 @end
