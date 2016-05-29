@@ -81,4 +81,21 @@
  */
 + (NSDictionary *)dictionaryFromFilename:(NSString *)fileName;
 
+/**
+ *  `this is a test sentence` => `thisisatestsentense`
+ *  `thiis iss a teest seentennce` => `iseen`
+ *  `thiiis iss aa teeest seentennnce` => `ien`
+ *  `thiiiis iss a teeest seeentennncccce` => `ic`
+ */
++ (NSString *)longestConsecutiveCharacterFromString:(NSString *)string;
+
+/**
+ *  Given a string, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases.
+ *
+ *  For example,
+ *  "A man, a plan, a canal: Panama" is a palindrome.
+ *  "race a car" is not a palindrome.
+ */
++ (BOOL)isValidPalindromeFromString:(NSString *)string;
+
 @end

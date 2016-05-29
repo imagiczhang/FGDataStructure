@@ -102,4 +102,25 @@
     XCTAssertTrue([data1Result[@"d"] isEqualToString:@"fdjklfdsjs"]);
 }
 
+- (void)testLongestConsecutiveCharacterFromString {
+    /**
+     *  `this is a test sentence` => `thisisatestsentense`
+     *  `thiis iss a teest seentennce` => `iseen`
+     *  `thiiis iss aa teeest seentennnce` => `ien`
+     *  `thiiiis iss a teeest seeentennncccce` => `ic`
+     */
+    XCTAssertTrue([[FGFBQuestions longestConsecutiveCharacterFromString:@"this is a test sentence"] isEqualToString:@"thisisatestsentence"]);
+    XCTAssertTrue([[FGFBQuestions longestConsecutiveCharacterFromString:@"thiis iss a teest seentennce"] isEqualToString:@"iseen"]);
+    XCTAssertTrue([[FGFBQuestions longestConsecutiveCharacterFromString:@"thiiis iss aa teeest seentennnce"] isEqualToString:@"ien"]);
+    XCTAssertTrue([[FGFBQuestions longestConsecutiveCharacterFromString:@"thiiiis iss a teeest seeentennncccce"] isEqualToString:@"ic"]);
+}
+
+- (void)testIsValidPalindromeFromString {
+    XCTAssertTrue([FGFBQuestions isValidPalindromeFromString:@"A man, a plan, a canal, Panama!"]);
+    XCTAssertTrue([FGFBQuestions isValidPalindromeFromString:@"Amor, Roma"]);
+    XCTAssertTrue([FGFBQuestions isValidPalindromeFromString:@"race car"]);
+    XCTAssertFalse([FGFBQuestions isValidPalindromeFromString:@"race a car"]);
+                   
+}
+
 @end

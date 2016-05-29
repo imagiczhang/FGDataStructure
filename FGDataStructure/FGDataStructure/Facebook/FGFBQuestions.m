@@ -202,6 +202,53 @@
     
 }
 
++ (NSString *)longestConsecutiveCharacterFromString:(NSString *)string {
+    if (string.length == 0) return nil;
+    
+    NSString *result = @"";
+    NSInteger max = 1;
+    NSInteger count = 1;
+    NSString *previousCharacter = @"";
+    
+    for (NSInteger i = 0; i < string.length; i++) {
+        NSString *currentCharacter = [string substringWithRange:NSMakeRange(i, 1)];
+        
+        if ([currentCharacter isEqualToString:previousCharacter]) {
+            count++;
+            
+            if (count > max) {
+                max = count;
+                result = currentCharacter;
+            } else if (count == max) {
+                result = [NSString stringWithFormat:@"%@%@", result, currentCharacter];
+            }
+        } else {
+            if (max == 1 && ![currentCharacter isEqualToString:@" "]) {
+                result = [NSString stringWithFormat:@"%@%@", result, currentCharacter];
+            }
+            count = 1;
+        }
+        
+        previousCharacter = currentCharacter;
+    }
+    
+    return result;
+}
+
++ (BOOL)isValidPalindromeFromString:(NSString *)string {
+    NSRegularExpression *regularExpression = [NSRegularExpression regularExpressionWithPattern:@"[^A-Za-z0-9]" options:0 error:nil];
+    NSString *filteredString = [[regularExpression stringByReplacingMatchesInString:string options:0 range:NSMakeRange(0, string.length) withTemplate:@""] lowercaseString];
+    
+    for (NSInteger i = 0; i < filteredString.length; i++) {
+        NSString *letter = [filteredString substringWithRange:NSMakeRange(i, 1)];
+        NSString *reversedLetter = [filteredString substringWithRange:NSMakeRange(filteredString.length - 1 - i, 1)];
+        
+        if (![letter isEqualToString:reversedLetter]) return NO;
+    }
+    
+    return YES;
+}
+
 #pragma mark - Private
 + (NSInteger)decimalFromBinary:(NSInteger)binary {
     NSInteger result = 0;
