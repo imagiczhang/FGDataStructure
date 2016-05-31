@@ -6,11 +6,11 @@
 //  Copyright © 2016 Feng Guo. All rights reserved.
 //
 
-#import "NSMutableArray+FGQuickSort.h"
+#import "NSArray+FGQuickSort.h"
 
-@implementation NSMutableArray (FGQuickSort)
+@implementation NSArray (FGQuickSort)
 
-- (NSMutableArray *)quickSort
+- (NSArray *)quickSort
 {
     NSUInteger count = [self count];
     
@@ -42,7 +42,7 @@
     [sortedArray addObjectsFromArray:[moreArray quickSort]]; // right array recursive till only one element
     
     
-    return sortedArray;
+    return [sortedArray copy];;
 }
 
 @end

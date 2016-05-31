@@ -10,7 +10,7 @@
 
 @class FGHRLinkedListNode;
 @interface FGHRLinkedList : NSObject
-
+@property (nonatomic, strong) FGHRLinkedListNode *head;
 - (instancetype)initWithHead:(FGHRLinkedListNode *)head;
 
 /**
@@ -425,5 +425,6 @@
 @property (nonatomic, assign) int data;
 
 - (instancetype)initWithData:(int)data next:(FGHRLinkedListNode *)next;
+- (NSUInteger)size;
 
 @end

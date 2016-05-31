@@ -34,13 +34,13 @@
     XCTAssertTrue(tree1.root.children[@"e"] == nil);
 }
 
-//- (void)testHasWordWithPattern {
-//    FGTrieTree *tree1 = [self tree1];
-//    
-//    XCTAssertTrue([tree1 hasWordWithPattern:@"cat"]);
-//    XCTAssertTrue([tree1 hasWordWithPattern:@"c.t"]);
-//    XCTAssertFalse([tree1 hasWordWithPattern:@"cat1"]);
-//}
+- (void)testHasWordWithPattern {
+    FGTrieTree *tree1 = [self tree1];
+    
+    XCTAssertTrue([tree1 isFindWord:@"cat"]);
+    XCTAssertTrue([tree1 isFindWord:@"c.t"]);
+    XCTAssertFalse([tree1 isFindWord:@"cat1"]);
+}
 
 - (FGTrieTree *)tree1 {
     FGTrieTree *tree1 = [[FGTrieTree alloc] init];

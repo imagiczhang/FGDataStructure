@@ -14,6 +14,7 @@
 @property (nonatomic, strong) FGTrieTreeNode *root;
 
 - (void)addWord:(NSString *)word;
+- (BOOL)isFindWord:(NSString *)word;
 //- (BOOL)hasWordWithPattern:(NSString *)pattern;
 
 @end

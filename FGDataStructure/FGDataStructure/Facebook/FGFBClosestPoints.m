@@ -15,6 +15,8 @@
         return [self closestPointsWithSorting2DPoints:points forK:k];
     } else if (type == FGFBClosestPointsCalculatorTypeRecursive) {
         return [self closestPointsWithRecursive2DPoints:points forK:k];
+    } else if (type == FGFBClosestPointsCalculatorTypeQuickSort) {
+        return [self closestPointsWithQuickSorting2DPoints:points forK:k];
     }
     
     return nil;
@@ -37,6 +39,21 @@
     }];
     
     // o(k)
+    NSUInteger sortedCount = sortedPoints.count;
+    NSMutableArray *closestArray = [NSMutableArray array];
+    
+    for (NSInteger i = 0; i < k; i++) {
+        if (sortedCount > i) [closestArray addObject:sortedPoints[i]];
+    }
+    
+    return closestArray;
+}
+
++ (NSArray<FGFBPoint *> *)closestPointsWithQuickSorting2DPoints:(NSArray<FGFBPoint *> *)points forK:(NSInteger)k {
+    if (k > points.count) return nil;
+    
+    NSArray<FGFBPoint *> *sortedPoints = [self findClosestPointsWithPoints:points forK:k];
+    
     NSUInteger sortedCount = sortedPoints.count;
     NSMutableArray *closestArray = [NSMutableArray array];
     
@@ -75,6 +92,57 @@
     }
     
     return closestPoints;
+}
+
+#pragma mark - Private
+
++ (NSComparisonResult)compareDistanceWithPoint1:(FGFBPoint *)point1 point2:(FGFBPoint *)point2 {
+    float distance1 = sqrt(point1.x * point1.x + point1.y * point1.y);
+    float distance2 = sqrt(point2.x * point2.x + point2.y * point2.y);
+    
+    if (distance1 > distance2) {
+        return NSOrderedDescending;
+    } else if (distance1 < distance2) {
+        return NSOrderedAscending;
+    } else {
+        return NSOrderedSame;
+    }
+}
+
++ (NSArray<FGFBPoint *> *)findClosestPointsWithPoints:(NSArray<FGFBPoint *> *)points forK:(NSInteger)k {
+    
+    NSMutableArray<FGFBPoint *> *leftPoints = [NSMutableArray array];
+    NSMutableArray<FGFBPoint *> *rightPoints = [NSMutableArray array];
+    
+    FGFBPoint *pivot = points[points.count / 2];
+    
+    for (FGFBPoint *point in points) {
+        if (point == pivot) continue;
+        
+        if ([self compareDistanceWithPoint1:point point2:pivot] == NSOrderedAscending) {
+            [leftPoints addObject:point];
+        } else {
+            [rightPoints addObject:point];
+        }
+    }
+    
+    NSMutableArray *sortedArray = [NSMutableArray array];
+    
+    if (k > leftPoints.count) {
+        [sortedArray addObjectsFromArray:leftPoints];
+        [sortedArray addObject:pivot];
+        [sortedArray addObjectsFromArray:[self closestPointsWithQuickSorting2DPoints:rightPoints forK:(k - leftPoints.count + 1)]];
+    } else if (k < leftPoints.count) {
+        [sortedArray addObjectsFromArray:[self closestPointsWithQuickSorting2DPoints:leftPoints forK:k]];
+        [sortedArray addObject:pivot];
+        [sortedArray addObjectsFromArray:rightPoints];
+    } else {
+        [sortedArray addObjectsFromArray:leftPoints];
+        [sortedArray addObject:pivot];
+        [sortedArray addObjectsFromArray:rightPoints];
+    }
+    
+    return sortedArray;
 }
 
 @end

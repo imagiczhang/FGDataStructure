@@ -120,7 +120,12 @@
     XCTAssertTrue([FGFBQuestions isValidPalindromeFromString:@"Amor, Roma"]);
     XCTAssertTrue([FGFBQuestions isValidPalindromeFromString:@"race car"]);
     XCTAssertFalse([FGFBQuestions isValidPalindromeFromString:@"race a car"]);
-                   
+}
+
+- (void)testSortedColour {
+    NSArray *data1 = @[@1, @0, @0, @2, @1, @1];
+    NSArray *data1Result = @[@0, @0, @1, @1, @1, @2];
+    XCTAssertTrue([[FGFBQuestions sortColour:data1] isEqualToArray:data1Result]);
 }
 
 @end

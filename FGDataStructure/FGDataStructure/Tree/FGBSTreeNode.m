@@ -22,13 +22,17 @@
 - (void)enumerateNodeByUsingBlock:(void (^)(FGBSTreeObject *object))block withOrderType:(FGTreeOrderType)type {
     if (!block) return;
     if (type == FGTreeOrderTypePreOrder) {
-        
-    } else if (type == FGTreeOrderTypeInOrder) {
-        [self.left enumerateNodeByUsingBlock:block withOrderType:FGTreeOrderTypeInOrder];
         block(self.data);
-        [self.right enumerateNodeByUsingBlock:block withOrderType:FGTreeOrderTypeInOrder];
+        if (self.left) [self.left enumerateNodeByUsingBlock:block withOrderType:FGTreeOrderTypeInOrder];
+        if (self.right) [self.right enumerateNodeByUsingBlock:block withOrderType:FGTreeOrderTypeInOrder];
+    } else if (type == FGTreeOrderTypeInOrder) {
+        if (self.left) [self.left enumerateNodeByUsingBlock:block withOrderType:FGTreeOrderTypeInOrder];
+        block(self.data);
+        if (self.right) [self.right enumerateNodeByUsingBlock:block withOrderType:FGTreeOrderTypeInOrder];
     } else {
-        
+        if (self.left) [self.left enumerateNodeByUsingBlock:block withOrderType:FGTreeOrderTypeInOrder];
+        block(self.data);
+        if (self.right) [self.right enumerateNodeByUsingBlock:block withOrderType:FGTreeOrderTypeInOrder];
     }
     
 }

@@ -60,7 +60,7 @@
         NSSet *wordsSet = [NSSet setWithArray:words];
         return [wordsSet allObjects];
     }
-
+    
 }
 
 + (BOOL)hasSumOf3IntsFromArray:(NSArray *)array target:(NSInteger)target {
@@ -71,7 +71,7 @@
     for (NSInteger i = 0; i < sortedArray.count; i++) {
         NSInteger leftIndex = i + 1;
         NSInteger rightIndex = sortedArray.count - 1;
-
+        
         while (leftIndex < rightIndex) {
             NSInteger currentValue = [sortedArray[i] integerValue];
             NSInteger leftValue = [sortedArray[leftIndex] integerValue];
@@ -85,7 +85,7 @@
             if (sum < target) leftIndex++;
         }
     }
-            
+    
     return NO;
 }
 
@@ -247,6 +247,24 @@
     }
     
     return YES;
+}
+
++ (NSArray *)sortColour:(NSArray *)colours {
+    NSMutableArray *copyedColours = colours.mutableCopy;
+    NSInteger redIndex = 0;
+    NSInteger blueIndex = colours.count - 1;
+    NSInteger i = 0;
+    while (i < blueIndex+1) {
+        if([copyedColours[i] isEqualToNumber:@0]) {
+            [copyedColours exchangeObjectAtIndex:i withObjectAtIndex:redIndex];
+            redIndex++;
+        } else if ([copyedColours[i] isEqualToNumber:@2]) {
+            [copyedColours exchangeObjectAtIndex:i withObjectAtIndex:blueIndex];
+            blueIndex--;
+        }
+        i++;
+    }
+    return copyedColours.copy;
 }
 
 #pragma mark - Private

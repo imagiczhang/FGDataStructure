@@ -38,12 +38,39 @@
         [_children setObject:newNode forKey:firstCharacter];
         [newNode addWord:restCharacters];
     }
-
 }
 
 - (BOOL)isFinal {
     return (_children.count == 0);
 }
+
+- (BOOL)isFindWord:(NSString *)word index:(NSInteger)index {
+    if(index == word.length) {
+        return [self isFinal];
+    }
+    
+    NSString *c = [word substringWithRange:NSMakeRange(index, 1)];
+    if ([self.children objectForKey:c]) {
+        if(index == word.length - 1 && [[self.children objectForKey:c] isFinal]){
+            return YES;
+        }
+        return [self.children[c] isFindWord:word index:index + 1];
+    } else if ([c isEqualToString:@"."]) {
+        BOOL result = NO;
+        for (FGTrieTreeNode *child in self.children.allValues) {
+            if (index == word.length - 1 && [child isFinal]) {
+                return YES;
+            }
+            
+            //if any path is true, set result to be true;
+            result = [child isFindWord:word index:index + 1];
+        }
+        return result;
+    }
+    
+    return NO;
+}
+
 
 //- (NSArray *)filterWordWithPattern:(NSString *)pattern {
 //    self.filteredWords = [NSMutableArray array];

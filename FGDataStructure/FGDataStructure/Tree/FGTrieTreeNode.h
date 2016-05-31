@@ -16,6 +16,6 @@
 - (instancetype)initWithValue:(NSString *)value;
 - (void)addWord:(NSString *)word;
 - (BOOL)isFinal;
-//- (BOOL)hasWordWithPattern:(NSString *)pattern;
+- (BOOL)isFindWord:(NSString *)word index:(NSInteger)index;
 
 @end

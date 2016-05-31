@@ -164,6 +164,19 @@
     XCTAssertTrue([list2 hasCycle]);
 }
 
+- (void)testFindMergeNode {
+    FGHRLinkedList *list1 = [self createListWithArray:@[@1, @3, @5, @6]];
+    FGHRLinkedListNode *list2 = [self createNodeWithArray:@[@2, @4, @6, @8, @9]];
+    
+    FGHRLinkedListNode *sharedNode = [self createNodeWithArray:@[@12, @15, @18]];
+    list1.head.next.next.next.next = sharedNode;
+    list2.next.next.next.next.next = sharedNode;
+    
+    FGHRLinkedListNode *node = [list1 findMergeNode:list2];
+    
+    XCTAssertTrue(node == sharedNode);
+}
+
 #pragma mark - Helper
 
 - (FGHRLinkedList *)createListWithArray:(NSArray *)array {

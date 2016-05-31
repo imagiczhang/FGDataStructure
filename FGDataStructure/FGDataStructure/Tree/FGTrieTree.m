@@ -22,6 +22,10 @@
 - (void)addWord:(NSString *)word {
     [self.root addWord:word];
 }
+
+- (BOOL)isFindWord:(NSString *)word {
+    return [self.root isFindWord:word index:0];
+}
 //
 //- (BOOL)hasWordWithPattern:(NSString *)pattern {
 //    return [self.root hasWordWithPattern:pattern];

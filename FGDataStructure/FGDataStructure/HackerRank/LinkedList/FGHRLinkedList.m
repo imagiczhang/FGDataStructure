@@ -11,7 +11,6 @@
 @interface FGHRLinkedList ()
 
 @property (nonatomic, strong) NSMutableArray *result;
-@property (nonatomic, strong) FGHRLinkedListNode *head;
 
 @end
 
@@ -220,23 +219,26 @@
     FGHRLinkedListNode *headA = self.head;
     FGHRLinkedListNode *headB = head;
     
-    Boolean isHeadA = true;
+    NSInteger sizeA = [headA size];
+    NSInteger sizeB = [headB size];
     
-    while (headA || headB) {
-        if (headA.data == headB.data) return headA;
-        
-        if (isHeadA) {
-            if (headA) headA = headA.next;
-            isHeadA = false;
-        } else {
-            if (headB) headB = headB.next;
-            isHeadA = true;
+    if (sizeA - sizeB > 0) {
+        for (NSInteger i = 0; i < sizeA - sizeB; i++) {
+            headA = headA.next;
+        }
+    } else if (sizeA - sizeB < 0) {
+        for (NSInteger i = 0; i < sizeB - sizeA; i++) {
+            headB = headB.next;
         }
     }
     
-    return nil;
+    while (headA.next != headB.next) {
+        headA = headA.next;
+        headB = headB.next;
+    }
+    
+    return headA.next;
 }
-
 
 
 @end
@@ -259,7 +261,17 @@
     nodeCopy.data = _data;
     
     return nodeCopy;
+}
+
+- (NSUInteger)size {
+    NSUInteger size = 0;
+    FGHRLinkedListNode *currentNode = self;
+    while (currentNode) {
+        size++;
+        currentNode = currentNode.next;
+    }
     
+    return size;
 }
 
 @end

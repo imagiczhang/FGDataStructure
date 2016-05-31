@@ -8,8 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSMutableArray (FGQuickSort)
+@interface NSArray (FGQuickSort)
 
-- (NSMutableArray *)quickSort;
+- (NSArray *)quickSort;
 
 @end

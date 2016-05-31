@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		650289171CFBCE9F00A2B130 /* NSArray+FGQuickSortTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 650289161CFBCE9F00A2B130 /* NSArray+FGQuickSortTest.m */; };
 		6506356F1CD02FA2000347E7 /* FGHeap.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506356E1CD02FA2000347E7 /* FGHeap.m */; };
 		650635ED1CD17B86000347E7 /* FGListedList.m in Sources */ = {isa = PBXBuildFile; fileRef = 650635EC1CD17B86000347E7 /* FGListedList.m */; };
 		65223E721CCB362F003FC03F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 65223E711CCB362F003FC03F /* main.m */; };
@@ -40,7 +41,6 @@
 		65E5C1FD1CECFF10003E1B26 /* FGBSTreeObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E5C1FC1CECFF10003E1B26 /* FGBSTreeObject.m */; };
 		65E5C1FF1CED001B003E1B26 /* FGBSTreeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E5C1FE1CED001B003E1B26 /* FGBSTreeTest.m */; };
 		65E5C20D1CF2904F003E1B26 /* FGFBCancelableBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E5C20C1CF2904F003E1B26 /* FGFBCancelableBlock.m */; };
-		65E5C2131CF2E846003E1B26 /* FGQuickSelectSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E5C2121CF2E846003E1B26 /* FGQuickSelectSort.m */; };
 		65EEBAD51CE8312900EA6186 /* FGFBQuestionsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EEBAD41CE8312900EA6186 /* FGFBQuestionsTest.m */; };
 		65EEBAD81CE940B400EA6186 /* FGFBNestedArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EEBAD71CE940B400EA6186 /* FGFBNestedArray.m */; };
 		65EEBADA1CE9449200EA6186 /* FGFBNestedArrayTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EEBAD91CE9449200EA6186 /* FGFBNestedArrayTest.m */; };
@@ -67,7 +67,7 @@
 		65F7077B1CF6A7CF009A4006 /* FGTrieTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F7077A1CF6A7CF009A4006 /* FGTrieTree.m */; };
 		65F7077F1CF6A7F5009A4006 /* FGTrieTreeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F7077E1CF6A7F5009A4006 /* FGTrieTreeNode.m */; };
 		65F707811CF6C13B009A4006 /* FGTrieTreeNodeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F707801CF6C13B009A4006 /* FGTrieTreeNodeTest.m */; };
-		65F7079F1CFAC2A3009A4006 /* NSMutableArray+FGQuickSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F7079E1CFAC2A3009A4006 /* NSMutableArray+FGQuickSort.m */; };
+		65F7079F1CFAC2A3009A4006 /* NSArray+FGQuickSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F7079E1CFAC2A3009A4006 /* NSArray+FGQuickSort.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +81,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		650289161CFBCE9F00A2B130 /* NSArray+FGQuickSortTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+FGQuickSortTest.m"; sourceTree = "<group>"; };
 		6506356D1CD02FA2000347E7 /* FGHeap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FGHeap.h; path = Heap/FGHeap.h; sourceTree = "<group>"; };
 		6506356E1CD02FA2000347E7 /* FGHeap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FGHeap.m; path = Heap/FGHeap.m; sourceTree = "<group>"; };
 		650635EB1CD17B86000347E7 /* FGListedList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FGListedList.h; path = LinkedList/FGListedList.h; sourceTree = "<group>"; };
@@ -139,8 +140,6 @@
 		65E5C2061CEFD73D003E1B26 /* FGFBCancelableBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FGFBCancelableBlock.h; path = Facebook/FGFBCancelableBlock.h; sourceTree = "<group>"; };
 		65E5C20C1CF2904F003E1B26 /* FGFBCancelableBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGFBCancelableBlock.m; sourceTree = "<group>"; };
 		65E5C20E1CF2C904003E1B26 /* FGFBCancelableBlock2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FGFBCancelableBlock2.h; path = Facebook/FGFBCancelableBlock2.h; sourceTree = "<group>"; };
-		65E5C2111CF2E846003E1B26 /* FGQuickSelectSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FGQuickSelectSort.h; path = Sorting/FGQuickSelectSort.h; sourceTree = "<group>"; };
-		65E5C2121CF2E846003E1B26 /* FGQuickSelectSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FGQuickSelectSort.m; path = Sorting/FGQuickSelectSort.m; sourceTree = "<group>"; };
 		65EEBAD41CE8312900EA6186 /* FGFBQuestionsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGFBQuestionsTest.m; sourceTree = "<group>"; };
 		65EEBAD61CE940B400EA6186 /* FGFBNestedArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FGFBNestedArray.h; path = Facebook/FGFBNestedArray.h; sourceTree = "<group>"; };
 		65EEBAD71CE940B400EA6186 /* FGFBNestedArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FGFBNestedArray.m; path = Facebook/FGFBNestedArray.m; sourceTree = "<group>"; };
@@ -182,8 +181,8 @@
 		65F7077D1CF6A7F5009A4006 /* FGTrieTreeNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FGTrieTreeNode.h; path = Tree/FGTrieTreeNode.h; sourceTree = "<group>"; };
 		65F7077E1CF6A7F5009A4006 /* FGTrieTreeNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FGTrieTreeNode.m; path = Tree/FGTrieTreeNode.m; sourceTree = "<group>"; };
 		65F707801CF6C13B009A4006 /* FGTrieTreeNodeTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGTrieTreeNodeTest.m; sourceTree = "<group>"; };
-		65F7079D1CFAC2A3009A4006 /* NSMutableArray+FGQuickSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSMutableArray+FGQuickSort.h"; path = "Sorting/NSMutableArray+FGQuickSort.h"; sourceTree = "<group>"; };
-		65F7079E1CFAC2A3009A4006 /* NSMutableArray+FGQuickSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSMutableArray+FGQuickSort.m"; path = "Sorting/NSMutableArray+FGQuickSort.m"; sourceTree = "<group>"; };
+		65F7079D1CFAC2A3009A4006 /* NSArray+FGQuickSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSArray+FGQuickSort.h"; path = "Sorting/NSArray+FGQuickSort.h"; sourceTree = "<group>"; };
+		65F7079E1CFAC2A3009A4006 /* NSArray+FGQuickSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+FGQuickSort.m"; path = "Sorting/NSArray+FGQuickSort.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -302,6 +301,7 @@
 				65E5C1FE1CED001B003E1B26 /* FGBSTreeTest.m */,
 				65E5C20C1CF2904F003E1B26 /* FGFBCancelableBlock.m */,
 				65F707801CF6C13B009A4006 /* FGTrieTreeNodeTest.m */,
+				650289161CFBCE9F00A2B130 /* NSArray+FGQuickSortTest.m */,
 			);
 			path = FGDataStructureTests;
 			sourceTree = "<group>";
@@ -318,10 +318,8 @@
 		65223E9A1CCB3954003FC03F /* Sorting */ = {
 			isa = PBXGroup;
 			children = (
-				65E5C2111CF2E846003E1B26 /* FGQuickSelectSort.h */,
-				65E5C2121CF2E846003E1B26 /* FGQuickSelectSort.m */,
-				65F7079D1CFAC2A3009A4006 /* NSMutableArray+FGQuickSort.h */,
-				65F7079E1CFAC2A3009A4006 /* NSMutableArray+FGQuickSort.m */,
+				65F7079D1CFAC2A3009A4006 /* NSArray+FGQuickSort.h */,
+				65F7079E1CFAC2A3009A4006 /* NSArray+FGQuickSort.m */,
 			);
 			name = Sorting;
 			sourceTree = "<group>";
@@ -630,13 +628,12 @@
 				654D8EAC1CD9B83D00B89F86 /* NSArray+FGHRArrayDS.m in Sources */,
 				65EEBB301CEBED5900EA6186 /* FGFBFindMirrorData.m in Sources */,
 				65EEBB261CEBE33000EA6186 /* FGFBFindMirrorTree.m in Sources */,
-				65E5C2131CF2E846003E1B26 /* FGQuickSelectSort.m in Sources */,
 				65EEBB2D1CEBE38500EA6186 /* FGFBFindMirrorTreeStructure.m in Sources */,
 				65223E9D1CCB399B003FC03F /* FGBSTree.m in Sources */,
 				65223E781CCB362F003FC03F /* ViewController.m in Sources */,
 				650635ED1CD17B86000347E7 /* FGListedList.m in Sources */,
 				65EEBAF91CEA76ED00EA6186 /* FGFBAnagramsFinder.m in Sources */,
-				65F7079F1CFAC2A3009A4006 /* NSMutableArray+FGQuickSort.m in Sources */,
+				65F7079F1CFAC2A3009A4006 /* NSArray+FGQuickSort.m in Sources */,
 				65E5C1FD1CECFF10003E1B26 /* FGBSTreeObject.m in Sources */,
 				65EEBB071CEAC80D00EA6186 /* FGFBMergeSortArray.m in Sources */,
 				65223E751CCB362F003FC03F /* AppDelegate.m in Sources */,
@@ -656,6 +653,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				650289171CFBCE9F00A2B130 /* NSArray+FGQuickSortTest.m in Sources */,
 				65E5C1FA1CEC53C6003E1B26 /* FGAPPLEPopularObjectTest.m in Sources */,
 				65E5C20D1CF2904F003E1B26 /* FGFBCancelableBlock.m in Sources */,
 				65EEBB041CEAA82700EA6186 /* FGFBAnagramsFinderTest.m in Sources */,
