@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		650289171CFBCE9F00A2B130 /* NSArray+FGQuickSortTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 650289161CFBCE9F00A2B130 /* NSArray+FGQuickSortTest.m */; };
+		650289331CFD247900A2B130 /* FGAVLTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 650289321CFD247900A2B130 /* FGAVLTree.m */; };
+		650289361CFD248A00A2B130 /* FGAVLTreeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 650289351CFD248A00A2B130 /* FGAVLTreeNode.m */; };
+		6502893A1CFD3B0200A2B130 /* NSNumber+FGComparsion.m in Sources */ = {isa = PBXBuildFile; fileRef = 650289391CFD3B0200A2B130 /* NSNumber+FGComparsion.m */; };
 		6506356F1CD02FA2000347E7 /* FGHeap.m in Sources */ = {isa = PBXBuildFile; fileRef = 6506356E1CD02FA2000347E7 /* FGHeap.m */; };
 		650635ED1CD17B86000347E7 /* FGListedList.m in Sources */ = {isa = PBXBuildFile; fileRef = 650635EC1CD17B86000347E7 /* FGListedList.m */; };
 		65223E721CCB362F003FC03F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 65223E711CCB362F003FC03F /* main.m */; };
@@ -82,6 +85,12 @@
 
 /* Begin PBXFileReference section */
 		650289161CFBCE9F00A2B130 /* NSArray+FGQuickSortTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+FGQuickSortTest.m"; sourceTree = "<group>"; };
+		650289311CFD247900A2B130 /* FGAVLTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FGAVLTree.h; path = Tree/FGAVLTree.h; sourceTree = "<group>"; };
+		650289321CFD247900A2B130 /* FGAVLTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FGAVLTree.m; path = Tree/FGAVLTree.m; sourceTree = "<group>"; };
+		650289341CFD248A00A2B130 /* FGAVLTreeNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FGAVLTreeNode.h; path = Tree/FGAVLTreeNode.h; sourceTree = "<group>"; };
+		650289351CFD248A00A2B130 /* FGAVLTreeNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FGAVLTreeNode.m; path = Tree/FGAVLTreeNode.m; sourceTree = "<group>"; };
+		650289381CFD3B0200A2B130 /* NSNumber+FGComparsion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSNumber+FGComparsion.h"; path = "Utilities/NSNumber+FGComparsion.h"; sourceTree = "<group>"; };
+		650289391CFD3B0200A2B130 /* NSNumber+FGComparsion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSNumber+FGComparsion.m"; path = "Utilities/NSNumber+FGComparsion.m"; sourceTree = "<group>"; };
 		6506356D1CD02FA2000347E7 /* FGHeap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FGHeap.h; path = Heap/FGHeap.h; sourceTree = "<group>"; };
 		6506356E1CD02FA2000347E7 /* FGHeap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FGHeap.m; path = Heap/FGHeap.m; sourceTree = "<group>"; };
 		650635EB1CD17B86000347E7 /* FGListedList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FGListedList.h; path = LinkedList/FGListedList.h; sourceTree = "<group>"; };
@@ -203,6 +212,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		650289301CFD245C00A2B130 /* AVL */ = {
+			isa = PBXGroup;
+			children = (
+				650289311CFD247900A2B130 /* FGAVLTree.h */,
+				650289321CFD247900A2B130 /* FGAVLTree.m */,
+				650289341CFD248A00A2B130 /* FGAVLTreeNode.h */,
+				650289351CFD248A00A2B130 /* FGAVLTreeNode.m */,
+			);
+			name = AVL;
+			sourceTree = "<group>";
+		};
+		650289371CFD3AB800A2B130 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				650289381CFD3B0200A2B130 /* NSNumber+FGComparsion.h */,
+				650289391CFD3B0200A2B130 /* NSNumber+FGComparsion.m */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
 		6506356C1CD02F94000347E7 /* Heap */ = {
 			isa = PBXGroup;
 			children = (
@@ -242,6 +271,7 @@
 		65223E6F1CCB362F003FC03F /* FGDataStructure */ = {
 			isa = PBXGroup;
 			children = (
+				650289371CFD3AB800A2B130 /* Utilities */,
 				65EEBB3E1CEC46B100EA6186 /* Apple */,
 				65EEBB381CEC212000EA6186 /* Groupon */,
 				65EEBAE21CE9820300EA6186 /* Google */,
@@ -309,6 +339,7 @@
 		65223E991CCB394C003FC03F /* Tree */ = {
 			isa = PBXGroup;
 			children = (
+				650289301CFD245C00A2B130 /* AVL */,
 				65F7077C1CF6A7DE009A4006 /* Trie */,
 				65F707781CF6A7A3009A4006 /* BinaryTree */,
 			);
@@ -619,6 +650,8 @@
 				65223EA31CCB39DD003FC03F /* FGBSTreeNode.m in Sources */,
 				65EEBAD81CE940B400EA6186 /* FGFBNestedArray.m in Sources */,
 				65F7077F1CF6A7F5009A4006 /* FGTrieTreeNode.m in Sources */,
+				650289361CFD248A00A2B130 /* FGAVLTreeNode.m in Sources */,
+				6502893A1CFD3B0200A2B130 /* NSNumber+FGComparsion.m in Sources */,
 				65223EB21CCEF66D003FC03F /* FGHashTable.m in Sources */,
 				65F7077B1CF6A7CF009A4006 /* FGTrieTree.m in Sources */,
 				65223EAE1CCEEF88003FC03F /* FGQueue.m in Sources */,
@@ -645,6 +678,7 @@
 				65223EAA1CCED89E003FC03F /* FGStack.m in Sources */,
 				6555C6621CE42F92004DA145 /* FGHRBalancedTree.m in Sources */,
 				65974CCD1CE1457600B3B340 /* FGHRTree.m in Sources */,
+				650289331CFD247900A2B130 /* FGAVLTree.m in Sources */,
 				65231E461CE7D422002B6821 /* FGFBClosestPoints.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

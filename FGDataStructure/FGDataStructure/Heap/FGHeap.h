@@ -13,7 +13,7 @@
  */
 @interface FGHeap : NSObject
 
-- (void)insertNumber:(NSNumber *)number;
+- (void)add:(NSNumber *)number;
 - (NSNumber *)deleteMin;
 
 @end

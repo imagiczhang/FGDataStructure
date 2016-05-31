@@ -27,7 +27,7 @@
     return self;
 }
 
-- (void)insertNumber:(NSNumber *)number
+- (void)add:(NSNumber *)number
 {
     [self.heap addObject:number];
     
