@@ -8,46 +8,61 @@
 
 #import "FGFBAnagramsFinder.h"
 
+// Assume there are n words in the array and average word length is l
+// The time complexity of this solution is O(nl*logl)
+
 @implementation FGFBAnagramsFinder
 
-+ (BOOL)hasAnagramsByUsingSortFromArray:(NSArray *)words {
-    NSMutableArray *sortedWords = [NSMutableArray array];
++ (BOOL)hasAnagramsByUsingSortFromArray:(NSArray *)words
+{
+    NSMutableSet *set = [[NSMutableSet alloc] init];
     
     for (NSString *word in words) {
-        // o(n)
-        NSArray *characters = [self separateCharacterFromWord:word];
-        // o(nlogn)
-        NSArray *sortedCharacters = [characters sortedArrayUsingComparator:^NSComparisonResult(NSString *stringA, NSString *stringB) {
-            if ([stringA characterAtIndex:0] > [stringB characterAtIndex:0]) {
-                return NSOrderedDescending;
-            } else if ([stringA characterAtIndex:0] > [stringB characterAtIndex:0]) {
-                return NSOrderedAscending;
+        NSArray *sortedCharacters = [self sortedCharactersForWord:word];
+        if (sortedCharacters) {
+            if ([set containsObject:sortedCharacters]) {
+                return YES;
+            } else {
+                [set addObject:sortedCharacters];
             }
-            
+        }
+    }
+    return NO;
+}
+
++ (NSArray *)sortedCharactersForWord:(NSString *)word
+{
+    NSArray<NSString *> *characters = [self charactersForWord:word];
+    
+    if (characters.count > 0) {
+        
+        NSArray *sorted = [characters sortedArrayUsingComparator:^NSComparisonResult(id  _Nonnull obj1, id  _Nonnull obj2) {
+            unichar char1 = [(NSString *)obj1 characterAtIndex:0];
+            unichar char2 = [(NSString *)obj2 characterAtIndex:0];
+            if (char1 < char2) {
+                return NSOrderedAscending;
+            } else if (char1 > char2) {
+                return NSOrderedDescending;
+            }
             return NSOrderedSame;
         }];
         
-        // o(n)
-        NSString *sortedWord = [sortedCharacters componentsJoinedByString:@""];
-        [sortedWords addObject:sortedWord];
+        return sorted;
     }
-    
-    NSSet *sortedWordsSet = [NSSet setWithArray:sortedWords];
-    
-    return (sortedWordsSet.count != sortedWords.count);
-
+    return nil;
 }
 
-+ (NSArray *)separateCharacterFromWord:(NSString *)word {
-    NSMutableArray *characterArray = [NSMutableArray array];
-    [word enumerateSubstringsInRange:NSMakeRange(0, [word length])
-                                options:(NSStringEnumerationByComposedCharacterSequences)
-                             usingBlock:^(NSString *substring, NSRange substringRange, NSRange enclosingRange, BOOL *stop) {
-                                 [characterArray addObject:substring];
-                             }];
++ (NSArray<NSString *> *)charactersForWord:(NSString *)word
+{
+    NSMutableArray<NSString *> *characters = [[NSMutableArray alloc] init];
     
-    return characterArray;
+    [[word lowercaseString] enumerateSubstringsInRange:NSMakeRange(0, word.length) options:NSStringEnumerationByComposedCharacterSequences usingBlock:^(NSString * _Nullable substring, NSRange substringRange, NSRange enclosingRange, BOOL * _Nonnull stop) {
+        if (substring) {
+            [characters addObject:substring];
+        }
+    }];
     
+    return [characters copy];
 }
 
 @end
