@@ -31,61 +31,71 @@
     return newNumbers;
 }
 
-
-+ (NSArray *)arrayByQuickMovingZeroWithNumbers:(NSArray *)numbers {
-    NSMutableArray *mutableNumbers = [numbers mutableCopy];
-    NSInteger zeroIndex = numbers.count - 1;
-    
-    for (NSInteger count = 0; count < mutableNumbers.count; count++) {
-        while ([mutableNumbers[zeroIndex] isEqualToNumber:@0] && zeroIndex > count) {
-            zeroIndex--;
++ (NSArray *)arrayByQuickMovingZeroWithNumbers:(NSArray *)numbers
+{
+    NSMutableArray *array = [numbers mutableCopy];
+    NSUInteger i = 0;
+    NSUInteger j = array.count - 1;
+    while ( i < j) {
+        while (i < j && [array[i] integerValue] == 0) {
+            i++;
+        }
+        while (i < j && [array[j] integerValue] != 0) {
+            j--;
         }
         
-        if (count >= zeroIndex) break;
-        
-        if ([mutableNumbers[count] isEqualToNumber:@0]) {
-            [mutableNumbers exchangeObjectAtIndex:count withObjectAtIndex:zeroIndex];
+        if (i < j) {
+            [array exchangeObjectAtIndex:i withObjectAtIndex:j];
         }
     }
-    
-    return [mutableNumbers copy]
-    ;
+    return [array copy];
 }
 
-+ (NSArray *)removeDuplicatedWords:(NSArray *)words perserveOrder:(BOOL)perserveOrder {
-    if (perserveOrder) {
-        NSOrderedSet *wordsSet = [NSOrderedSet orderedSetWithArray:words];
-        return [wordsSet array];
++ (NSArray *)removeDuplicatedWords:(NSArray *)words preserveOrder:(BOOL)preserveOrder
+{
+    if (preserveOrder) {
+        NSOrderedSet *orderedSet = [NSOrderedSet orderedSetWithArray:words];
+        return [orderedSet array];
     } else {
-        NSSet *wordsSet = [NSSet setWithArray:words];
-        return [wordsSet allObjects];
+        NSSet *set = [[NSSet alloc] initWithArray:words];
+        return [set allObjects];
     }
-    
 }
 
-+ (BOOL)hasSumOf3IntsFromArray:(NSArray *)array target:(NSInteger)target {
-    NSArray *sortedArray = [array sortedArrayUsingComparator:^NSComparisonResult(NSNumber *number1, NSNumber *number2) {
-        return [number1 compare:number2];
+
++ (BOOL)hasSumOf3IntsFromArray:(NSArray *)array target:(NSInteger)target
+{
+    NSArray *sortedArray = [array sortedArrayUsingComparator:^NSComparisonResult(id  _Nonnull obj1, id  _Nonnull obj2) {
+        NSNumber *num1 = obj1;
+        NSNumber *num2 = obj2;
+        return [num1 compare:num2];
     }];
     
-    for (NSInteger i = 0; i < sortedArray.count; i++) {
-        NSInteger leftIndex = i + 1;
-        NSInteger rightIndex = sortedArray.count - 1;
-        
-        while (leftIndex < rightIndex) {
-            NSInteger currentValue = [sortedArray[i] integerValue];
-            NSInteger leftValue = [sortedArray[leftIndex] integerValue];
-            NSInteger rightValue = [sortedArray[rightIndex] integerValue];
-            
-            NSInteger sum = currentValue + leftValue + rightValue;
-            
-            if (sum == target) return YES;
-            
-            if (sum > target) rightIndex--;
-            if (sum < target) leftIndex++;
+    for (NSUInteger i = 0; i < sortedArray.count; i++) {
+        NSNumber *num = sortedArray[i];
+        if ([self hasSumOf2IntsFromSortedArray:sortedArray target:target-[num integerValue] start:i+1 end:sortedArray.count-1]) {
+            return YES;
         }
     }
     
+    return NO;
+}
+
++ (BOOL)hasSumOf2IntsFromSortedArray:(NSArray *)array target:(NSInteger)target start:(NSUInteger)start end:(NSUInteger)end
+{
+    NSUInteger i = start;
+    NSUInteger j = end;
+    
+    while ( i < j) {
+        NSInteger sum = [array[i] integerValue] + [array[j] integerValue];
+        if ( sum == target) {
+            return YES;
+        } else if ( sum > target) {
+            j--;
+        } else if ( sum < target) {
+            i++;
+        }
+    }
     return NO;
 }
 
@@ -118,28 +128,42 @@
     return [strings copy];
 }
 
-+ (NSInteger)findLongestSubstringInString:(NSString *)string {
-    NSInteger longestLength = 0;
-    for (NSInteger i = 0; i < string.length; i++) {
-        NSInteger currentLength = 0;
-        NSMutableDictionary *currentDictionary = [NSMutableDictionary dictionary];
-        while (YES) {
-            if ((i + currentLength) == string.length) break;
-            NSString *currentCharacter = [string substringWithRange:NSMakeRange(i + currentLength, 1)];
-            if ([currentDictionary objectForKey:currentCharacter]) {
-                if (currentLength > longestLength) {
-                    longestLength = currentLength;
-                }
-                break;
++ (NSInteger)findLongestSubstringInString:(NSString *)string
+{
+    //build the lastAppearanceIndex
+    NSMutableDictionary *dict = [[NSMutableDictionary alloc] init];
+    NSMutableArray *lastAppearanceIndex = [NSMutableArray array];
+    
+    [string enumerateSubstringsInRange:NSMakeRange(0, string.length) options:NSStringEnumerationByComposedCharacterSequences usingBlock:^(NSString * _Nullable substring, NSRange substringRange, NSRange enclosingRange, BOOL * _Nonnull stop) {
+        if (substring) {
+            if (dict[substring]) {
+                [lastAppearanceIndex addObject:dict[substring]];
             } else {
-                [currentDictionary setObject:@0 forKey:currentCharacter];
-                currentLength++;
+                [lastAppearanceIndex addObject:@(NSUIntegerMax)];
+            }
+            dict[substring] = @(substringRange.location);
+        }
+    }];
+    
+    //traverse strign with help of lastAppearanceIndex
+    __block NSUInteger longestSubstringLength = 0;
+    __block NSUInteger currentStart = 0;
+    
+    [string enumerateSubstringsInRange:NSMakeRange(0, string.length) options:NSStringEnumerationByComposedCharacterSequences usingBlock:^(NSString * _Nullable substring, NSRange substringRange, NSRange enclosingRange, BOOL * _Nonnull stop) {
+        if (substring) {
+            NSUInteger current = substringRange.location;
+            NSUInteger lastAppearance = [lastAppearanceIndex[current] unsignedIntegerValue];
+            if (lastAppearance != NSUIntegerMax) {
+                currentStart = currentStart > lastAppearance ? currentStart : lastAppearance + 1;
             }
             
+            NSUInteger currentLength= current - currentStart + 1;
+            
+            longestSubstringLength = currentLength > longestSubstringLength ? currentLength : longestSubstringLength;
         }
-    }
+    }];
     
-    return longestLength;
+    return longestSubstringLength;
 }
 
 + (NSInteger)binaryNumber1:(NSInteger)binary1 addBinaryNumber2:(NSInteger)binary2 {

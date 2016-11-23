@@ -23,7 +23,7 @@
 /**
  *  given an array of words, how to eliminate the duplicates?
  */
-+ (NSArray *)removeDuplicatedWords:(NSArray *)words perserveOrder:(BOOL)perserveOrder;
++ (NSArray *)removeDuplicatedWords:(NSArray *)words preserveOrder:(BOOL)preserveOrder;
 
 /**
  In an unsorted array of negative and positive integers, write a function, hasSumOf3Ints(array, n), that returns true if you find three numbers in the array that add up to a passed number, "n".
