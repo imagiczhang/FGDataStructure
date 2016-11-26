@@ -35,10 +35,11 @@
 
 /**
  Give the count and the number following in the series.
- for e.g 1122344
- first line output : 21221324
+ for e.g 1122344 because it has two 1s, two 2s, one 3 and two 4s,
+ so first line output : 21221324
  next line : 12112211121214 and so on...
  */
++ (NSString *)countConsecutiveNumbersFromString:(NSString *)string;
 + (NSArray *)countNumbersFromString:(NSString *)string numberOfRecursives:(NSInteger)numberOfRecursives;
 
 /**
@@ -51,6 +52,7 @@
  */
 + (NSInteger)binaryNumber1:(NSInteger)binary1 addBinaryNumber2:(NSInteger)binary2;
 + (NSInteger)quickBinaryNumber1:(NSInteger)binary1 addBinaryNumber2:(NSInteger)binary2;
++ (NSInteger)simpleQuickBinaryNumber1:(NSInteger)binary1 addBinaryNumber2:(NSInteger)binary2;
 
 /**
  *  Find kth largest in an array

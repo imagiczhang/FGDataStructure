@@ -128,6 +128,42 @@
     return [strings copy];
 }
 
++ (NSString *)countConsecutiveNumbersFromString:(NSString *)string
+{
+    NSUInteger length = string.length;
+    NSUInteger i = 0;
+    NSMutableString *mutableString = [[NSMutableString alloc] init];
+    while (i < length) {
+        unichar num = [string characterAtIndex:i];
+        NSUInteger end = [self searchConsecutiveChar:num fromString:string withStart:i];
+        if (end != NSUIntegerMax && end >= i) {
+            [mutableString appendFormat:@"%ld%c", end-i+1, num];
+            i = end + 1;
+        } else {
+            i++;
+        }
+    }
+    return [mutableString copy];
+}
+
++ (NSUInteger)searchConsecutiveChar:(unichar)character fromString:(NSString *)string withStart:(NSUInteger)start
+{
+    NSUInteger j = start;
+    NSUInteger length = string.length;
+    while ( j < length) {
+        if (character == [string characterAtIndex:j]) {
+            j++;
+        } else {
+            if ( j > 0) {
+                return j - 1;
+            } else {
+                return NSUIntegerMax;
+            }
+        }
+    }
+    return length - 1;
+}
+
 + (NSInteger)findLongestSubstringInString:(NSString *)string
 {
     //build the lastAppearanceIndex
@@ -208,6 +244,26 @@
     
 }
 
+
++ (NSInteger)simpleQuickBinaryNumber1:(NSInteger)binary1 addBinaryNumber2:(NSInteger)binary2
+{
+    NSInteger binarySum = binary1 + binary2;
+    NSMutableString *result = [[NSMutableString alloc] init];
+    while (binarySum > 0) {
+        NSInteger remainder = binarySum % 10;
+        
+        [result insertString:[NSString stringWithFormat:@"%ld", remainder%2] atIndex:0];
+        
+        binarySum = binarySum/10 + remainder/2;
+    }
+    
+    if (result.length > 0) {
+        return [result integerValue];
+    }
+    
+    return 0;
+}
+
 + (NSDictionary *)dictionaryFromFilename:(NSString *)fileName {
     NSString *fileNameString = [[fileName componentsSeparatedByString:@"."] firstObject];
     NSArray *fileNames = [fileNameString componentsSeparatedByString:@"_"];
@@ -218,7 +274,11 @@
         if ([name isEqualToString:@"johndoe"]) {
             nameDictionary[@"NAME"] = @"johndoe";
         } else {
-            [nameDictionary setObject:[name substringFromIndex:1] forKey:[name substringWithRange:NSMakeRange(0, 1)]];
+            NSString *key = [name substringWithRange:NSMakeRange(0, 1)];
+            NSString *value = [name substringFromIndex:1];
+            if (key && value) {
+                [nameDictionary setObject:value forKey:key];
+            }
         }
     }
     
