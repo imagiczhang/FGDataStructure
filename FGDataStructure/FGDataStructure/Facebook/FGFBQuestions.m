@@ -401,11 +401,13 @@
         if([copyedColours[i] isEqualToNumber:@0]) {
             [copyedColours exchangeObjectAtIndex:i withObjectAtIndex:redIndex];
             redIndex++;
+            i++;
         } else if ([copyedColours[i] isEqualToNumber:@2]) {
             [copyedColours exchangeObjectAtIndex:i withObjectAtIndex:blueIndex];
             blueIndex--;
+        } else {
+            i++;
         }
-        i++;
     }
     return copyedColours.copy;
 }
