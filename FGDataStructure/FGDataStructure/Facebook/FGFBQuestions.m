@@ -378,11 +378,15 @@
     NSRegularExpression *regularExpression = [NSRegularExpression regularExpressionWithPattern:@"[^A-Za-z0-9]" options:0 error:nil];
     NSString *filteredString = [[regularExpression stringByReplacingMatchesInString:string options:0 range:NSMakeRange(0, string.length) withTemplate:@""] lowercaseString];
     
-    for (NSInteger i = 0; i < filteredString.length; i++) {
-        NSString *letter = [filteredString substringWithRange:NSMakeRange(i, 1)];
-        NSString *reversedLetter = [filteredString substringWithRange:NSMakeRange(filteredString.length - 1 - i, 1)];
-        
-        if (![letter isEqualToString:reversedLetter]) return NO;
+    NSUInteger i = 0;
+    NSUInteger j = filteredString.length - 1;
+    while (i < j) {
+        if ([filteredString characterAtIndex:i] == [filteredString characterAtIndex:j]) {
+            i++;
+            j--;
+        } else {
+            return NO;
+        }
     }
     
     return YES;
