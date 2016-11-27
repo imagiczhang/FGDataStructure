@@ -90,6 +90,7 @@
  *  `thiiiis iss a teeest seeentennncccce` => `ic`
  */
 + (NSString *)longestConsecutiveCharacterFromString:(NSString *)string;
++ (NSString *)anotherLongestConsecutiveCharacterFromString:(NSString *)string;
 
 /**
  *  Given a string, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases.

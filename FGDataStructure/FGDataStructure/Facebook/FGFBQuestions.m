@@ -319,6 +319,61 @@
     return result;
 }
 
+// It is not the best solution but it can deal with string like @"thi iis" -> @"i"
++ (NSString *)anotherLongestConsecutiveCharacterFromString:(NSString *)string
+{
+    NSString *input = [string stringByReplacingOccurrencesOfString:@" " withString:@""];
+    
+    NSUInteger longestLength = 0;
+    for (NSInteger i = 0; i < string.length;) {
+        NSUInteger consecutiveLength = [self searchForConsecutiveLengthWithString:input from:i];
+        if (consecutiveLength > longestLength) {
+            longestLength = consecutiveLength;
+        }
+        
+        if (consecutiveLength > 0) {
+            i += consecutiveLength;
+        } else {
+            i++;
+        }
+    }
+    
+    if (longestLength <= 1) {
+        return input;
+    } else {
+        NSMutableString *result = [[NSMutableString alloc] init];
+        for (NSInteger i = 0; i < string.length;) {
+            NSUInteger consecutiveLength = [self searchForConsecutiveLengthWithString:input from:i];
+            if (consecutiveLength == longestLength) {
+                [result appendFormat:@"%@", [input substringWithRange:NSMakeRange(i, 1)]];
+            }
+            
+            if (consecutiveLength > 0) {
+                i += consecutiveLength;
+            } else {
+                i++;
+            }
+        }
+        return [result copy];
+    }
+}
+
++ (NSUInteger)searchForConsecutiveLengthWithString:(NSString *)input from:(NSInteger)start
+{
+    NSAssert(start >= 0, @"start should be greater than or equal to 0");
+    unichar character = [input characterAtIndex:start];
+    NSUInteger result = 1;
+    for (NSInteger i = start + 1; i < input.length; i++) {
+        if (character == [input characterAtIndex:i]) {
+            result++;
+        } else {
+            break;
+        }
+    }
+    
+    return result;
+}
+
 + (BOOL)isValidPalindromeFromString:(NSString *)string {
     NSRegularExpression *regularExpression = [NSRegularExpression regularExpressionWithPattern:@"[^A-Za-z0-9]" options:0 error:nil];
     NSString *filteredString = [[regularExpression stringByReplacingMatchesInString:string options:0 range:NSMakeRange(0, string.length) withTemplate:@""] lowercaseString];
