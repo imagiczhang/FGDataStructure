@@ -18,5 +18,6 @@
 @interface FGFBAnagramsFinder : NSObject
 
 + (BOOL)hasAnagramsByUsingSortFromArray:(NSArray *)words;
++ (BOOL)hasAnagramsByUsingHashFromArray:(NSArray<NSString *> *)words;
 
 @end
