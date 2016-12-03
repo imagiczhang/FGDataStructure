@@ -12,7 +12,7 @@
  */
 @interface FGFBWordsMatch : NSObject
 
-+ (NSArray *)filterWordsByRegexFromArray:(NSArray *)words withPattern:(NSString *)pattern;
-+ (NSArray *)filterWordsByPredicateFromArray:(NSArray *)words withPattern:(NSString *)pattern;
++ (NSArray<NSString *> *)filterWordsByRegexFromArray:(NSArray<NSString *> *)words withPattern:(NSString *)pattern;
++ (NSArray<NSString *> *)filterWordsByPredicateFromArray:(NSArray<NSString *> *)words withPattern:(NSString *)pattern;
 
 @end

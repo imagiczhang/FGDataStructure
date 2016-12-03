@@ -10,7 +10,7 @@
 
 @implementation FGFBWordsMatch
 
-+ (NSArray *)filterWordsByRegexFromArray:(NSArray *)words withPattern:(NSString *)pattern {
++ (NSArray<NSString *> *)filterWordsByRegexFromArray:(NSArray<NSString *> *)words withPattern:(NSString *)pattern {
     NSMutableArray *filteredWords = [NSMutableArray array];
     
     for (NSString *word in words) {
@@ -24,8 +24,8 @@
     return [filteredWords copy];
 }
 
-+ (NSArray *)filterWordsByPredicateFromArray:(NSArray *)words withPattern:(NSString *)pattern {
-    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF LIKE[c] %@", [pattern stringByReplacingOccurrencesOfString:@"." withString:@"?"]];
++ (NSArray<NSString *> *)filterWordsByPredicateFromArray:(NSArray<NSString *> *)words withPattern:(NSString *)pattern {
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF matches[c] %@", pattern];
     return [words filteredArrayUsingPredicate:predicate];
 }
 
