@@ -192,6 +192,7 @@
 		65F707801CF6C13B009A4006 /* FGTrieTreeNodeTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGTrieTreeNodeTest.m; sourceTree = "<group>"; };
 		65F7079D1CFAC2A3009A4006 /* NSArray+FGQuickSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSArray+FGQuickSort.h"; path = "Sorting/NSArray+FGQuickSort.h"; sourceTree = "<group>"; };
 		65F7079E1CFAC2A3009A4006 /* NSArray+FGQuickSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+FGQuickSort.m"; path = "Sorting/NSArray+FGQuickSort.m"; sourceTree = "<group>"; };
+		DCCB0ED41DF2753D00AA04C7 /* FGFBCancelableBlock3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FGFBCancelableBlock3.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -406,6 +407,7 @@
 				65EEBB341CEC163300EA6186 /* FGFBTelephoneKeypad.m */,
 				65E5C2061CEFD73D003E1B26 /* FGFBCancelableBlock.h */,
 				65E5C20E1CF2C904003E1B26 /* FGFBCancelableBlock2.h */,
+				DCCB0ED41DF2753D00AA04C7 /* FGFBCancelableBlock3.h */,
 			);
 			name = Facebook;
 			sourceTree = "<group>";
