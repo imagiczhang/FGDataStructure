@@ -67,27 +67,34 @@
 
 + (BOOL)hasAnagramsByUsingHashFromArray:(NSArray<NSString *> *)words;
 {
-    NSMutableSet<NSNumber *> *hashSet = [NSMutableSet set];
+    NSMutableSet<NSString *> *hashSet = [NSMutableSet set];
     
     for (NSString *word in words) {
-        if ([hashSet containsObject:@([self hashForWord:word])]) {
+        if ([hashSet containsObject:[self hashForWord:word]]) {
             return YES;
         } else {
-            [hashSet addObject:@([self hashForWord:word])];
+            [hashSet addObject:[self hashForWord:word]];
         }
     }
     return NO;
 }
 
-+ (NSUInteger)hashForWord:(NSString *)word
++ (NSString *)hashForWord:(NSString *)word
 {
-    unichar hash = 0;
+    word = [word lowercaseString];
+    NSMutableString *hash = [NSMutableString string];
+    int alphabet[26];
     
     for (int i = 0; i < word.length; i++) {
-        hash = hash ^ [word characterAtIndex:i];
+        unichar character = [word characterAtIndex:i];
+        alphabet[character-'a'] += 1;
     }
     
-    return (NSUInteger)hash;
+    for (int j = 0; j < 26; j++) {
+        [hash appendFormat:@"%d|", alphabet[j]];
+    }
+    
+    return [hash copy];
 }
 
 @end
