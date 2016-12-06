@@ -71,6 +71,7 @@
 		65F7077F1CF6A7F5009A4006 /* FGTrieTreeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F7077E1CF6A7F5009A4006 /* FGTrieTreeNode.m */; };
 		65F707811CF6C13B009A4006 /* FGTrieTreeNodeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F707801CF6C13B009A4006 /* FGTrieTreeNodeTest.m */; };
 		65F7079F1CFAC2A3009A4006 /* NSArray+FGQuickSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F7079E1CFAC2A3009A4006 /* NSArray+FGQuickSort.m */; };
+		DC20926B1DF6D7760036102A /* FGFBTraverseTree.m in Sources */ = {isa = PBXBuildFile; fileRef = DC20926A1DF6D7760036102A /* FGFBTraverseTree.m */; };
 		DC61C0A01DF681A90028948E /* FGHashHeap.m in Sources */ = {isa = PBXBuildFile; fileRef = DC61C09F1DF681A90028948E /* FGHashHeap.m */; };
 /* End PBXBuildFile section */
 
@@ -193,6 +194,8 @@
 		65F707801CF6C13B009A4006 /* FGTrieTreeNodeTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGTrieTreeNodeTest.m; sourceTree = "<group>"; };
 		65F7079D1CFAC2A3009A4006 /* NSArray+FGQuickSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSArray+FGQuickSort.h"; path = "Sorting/NSArray+FGQuickSort.h"; sourceTree = "<group>"; };
 		65F7079E1CFAC2A3009A4006 /* NSArray+FGQuickSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+FGQuickSort.m"; path = "Sorting/NSArray+FGQuickSort.m"; sourceTree = "<group>"; };
+		DC2092691DF6D7760036102A /* FGFBTraverseTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FGFBTraverseTree.h; path = Facebook/FGFBTraverseTree.h; sourceTree = "<group>"; };
+		DC20926A1DF6D7760036102A /* FGFBTraverseTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FGFBTraverseTree.m; path = Facebook/FGFBTraverseTree.m; sourceTree = "<group>"; };
 		DC61C09E1DF681A90028948E /* FGHashHeap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FGHashHeap.h; path = Heap/FGHashHeap.h; sourceTree = "<group>"; };
 		DC61C09F1DF681A90028948E /* FGHashHeap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FGHashHeap.m; path = Heap/FGHashHeap.m; sourceTree = "<group>"; };
 		DCCB0ED41DF2753D00AA04C7 /* FGFBCancelableBlock3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FGFBCancelableBlock3.h; sourceTree = "<group>"; };
@@ -502,6 +505,8 @@
 				65EEBB2C1CEBE38500EA6186 /* FGFBFindMirrorTreeStructure.m */,
 				65EEBB2E1CEBED5900EA6186 /* FGFBFindMirrorData.h */,
 				65EEBB2F1CEBED5900EA6186 /* FGFBFindMirrorData.m */,
+				DC2092691DF6D7760036102A /* FGFBTraverseTree.h */,
+				DC20926A1DF6D7760036102A /* FGFBTraverseTree.m */,
 			);
 			name = Tree;
 			sourceTree = "<group>";
@@ -687,6 +692,7 @@
 				DC61C0A01DF681A90028948E /* FGHashHeap.m in Sources */,
 				65974CCD1CE1457600B3B340 /* FGHRTree.m in Sources */,
 				650289331CFD247900A2B130 /* FGAVLTree.m in Sources */,
+				DC20926B1DF6D7760036102A /* FGFBTraverseTree.m in Sources */,
 				65231E461CE7D422002B6821 /* FGFBClosestPoints.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
