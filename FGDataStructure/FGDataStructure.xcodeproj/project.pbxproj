@@ -71,6 +71,7 @@
 		65F7077F1CF6A7F5009A4006 /* FGTrieTreeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F7077E1CF6A7F5009A4006 /* FGTrieTreeNode.m */; };
 		65F707811CF6C13B009A4006 /* FGTrieTreeNodeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F707801CF6C13B009A4006 /* FGTrieTreeNodeTest.m */; };
 		65F7079F1CFAC2A3009A4006 /* NSArray+FGQuickSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F7079E1CFAC2A3009A4006 /* NSArray+FGQuickSort.m */; };
+		DC61C0A01DF681A90028948E /* FGHashHeap.m in Sources */ = {isa = PBXBuildFile; fileRef = DC61C09F1DF681A90028948E /* FGHashHeap.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -192,6 +193,8 @@
 		65F707801CF6C13B009A4006 /* FGTrieTreeNodeTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGTrieTreeNodeTest.m; sourceTree = "<group>"; };
 		65F7079D1CFAC2A3009A4006 /* NSArray+FGQuickSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSArray+FGQuickSort.h"; path = "Sorting/NSArray+FGQuickSort.h"; sourceTree = "<group>"; };
 		65F7079E1CFAC2A3009A4006 /* NSArray+FGQuickSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+FGQuickSort.m"; path = "Sorting/NSArray+FGQuickSort.m"; sourceTree = "<group>"; };
+		DC61C09E1DF681A90028948E /* FGHashHeap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FGHashHeap.h; path = Heap/FGHashHeap.h; sourceTree = "<group>"; };
+		DC61C09F1DF681A90028948E /* FGHashHeap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FGHashHeap.m; path = Heap/FGHashHeap.m; sourceTree = "<group>"; };
 		DCCB0ED41DF2753D00AA04C7 /* FGFBCancelableBlock3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FGFBCancelableBlock3.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -238,6 +241,8 @@
 			children = (
 				6506356D1CD02FA2000347E7 /* FGHeap.h */,
 				6506356E1CD02FA2000347E7 /* FGHeap.m */,
+				DC61C09E1DF681A90028948E /* FGHashHeap.h */,
+				DC61C09F1DF681A90028948E /* FGHashHeap.m */,
 			);
 			name = Heap;
 			sourceTree = "<group>";
@@ -679,6 +684,7 @@
 				654D8EB11CD9CE7C00B89F86 /* FGHR2DArrayDS.m in Sources */,
 				65223EAA1CCED89E003FC03F /* FGStack.m in Sources */,
 				6555C6621CE42F92004DA145 /* FGHRBalancedTree.m in Sources */,
+				DC61C0A01DF681A90028948E /* FGHashHeap.m in Sources */,
 				65974CCD1CE1457600B3B340 /* FGHRTree.m in Sources */,
 				650289331CFD247900A2B130 /* FGAVLTree.m in Sources */,
 				65231E461CE7D422002B6821 /* FGFBClosestPoints.m in Sources */,
