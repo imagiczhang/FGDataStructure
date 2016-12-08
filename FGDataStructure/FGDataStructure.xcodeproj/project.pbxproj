@@ -73,6 +73,8 @@
 		65F7079F1CFAC2A3009A4006 /* NSArray+FGQuickSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F7079E1CFAC2A3009A4006 /* NSArray+FGQuickSort.m */; };
 		DC20926B1DF6D7760036102A /* FGFBTraverseTree.m in Sources */ = {isa = PBXBuildFile; fileRef = DC20926A1DF6D7760036102A /* FGFBTraverseTree.m */; };
 		DC20926E1DF8C3340036102A /* FGFBNestedArray2.m in Sources */ = {isa = PBXBuildFile; fileRef = DC20926D1DF8C3340036102A /* FGFBNestedArray2.m */; };
+		DC2092711DF8DB5F0036102A /* FGFBIslands.m in Sources */ = {isa = PBXBuildFile; fileRef = DC2092701DF8DB5F0036102A /* FGFBIslands.m */; };
+		DC2092731DF921980036102A /* FGIslandsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DC2092721DF921980036102A /* FGIslandsTest.m */; };
 		DC61C0A01DF681A90028948E /* FGHashHeap.m in Sources */ = {isa = PBXBuildFile; fileRef = DC61C09F1DF681A90028948E /* FGHashHeap.m */; };
 /* End PBXBuildFile section */
 
@@ -199,6 +201,9 @@
 		DC20926A1DF6D7760036102A /* FGFBTraverseTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FGFBTraverseTree.m; path = Facebook/FGFBTraverseTree.m; sourceTree = "<group>"; };
 		DC20926C1DF8C3340036102A /* FGFBNestedArray2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FGFBNestedArray2.h; path = Facebook/FGFBNestedArray2.h; sourceTree = "<group>"; };
 		DC20926D1DF8C3340036102A /* FGFBNestedArray2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FGFBNestedArray2.m; path = Facebook/FGFBNestedArray2.m; sourceTree = "<group>"; };
+		DC20926F1DF8DB5F0036102A /* FGFBIslands.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FGFBIslands.h; path = Facebook/FGFBIslands.h; sourceTree = "<group>"; };
+		DC2092701DF8DB5F0036102A /* FGFBIslands.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FGFBIslands.m; path = Facebook/FGFBIslands.m; sourceTree = "<group>"; };
+		DC2092721DF921980036102A /* FGIslandsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGIslandsTest.m; sourceTree = "<group>"; };
 		DC61C09E1DF681A90028948E /* FGHashHeap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FGHashHeap.h; path = Heap/FGHashHeap.h; sourceTree = "<group>"; };
 		DC61C09F1DF681A90028948E /* FGHashHeap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FGHashHeap.m; path = Heap/FGHashHeap.m; sourceTree = "<group>"; };
 		DCCB0ED41DF2753D00AA04C7 /* FGFBCancelableBlock3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FGFBCancelableBlock3.h; sourceTree = "<group>"; };
@@ -344,6 +349,7 @@
 				65E5C20C1CF2904F003E1B26 /* FGFBCancelableBlock.m */,
 				65F707801CF6C13B009A4006 /* FGTrieTreeNodeTest.m */,
 				650289161CFBCE9F00A2B130 /* NSArray+FGQuickSortTest.m */,
+				DC2092721DF921980036102A /* FGIslandsTest.m */,
 			);
 			path = FGDataStructureTests;
 			sourceTree = "<group>";
@@ -404,6 +410,8 @@
 				65EEBADE1CE95C3700EA6186 /* NestedArray */,
 				65231E411CE7D3F6002B6821 /* FGFBQuestions.h */,
 				65231E421CE7D3F6002B6821 /* FGFBQuestions.m */,
+				DC20926F1DF8DB5F0036102A /* FGFBIslands.h */,
+				DC2092701DF8DB5F0036102A /* FGFBIslands.m */,
 				65231E441CE7D422002B6821 /* FGFBClosestPoints.h */,
 				65231E451CE7D422002B6821 /* FGFBClosestPoints.m */,
 				65EEBAF11CEA635800EA6186 /* FGFBWordsMatch.h */,
@@ -694,6 +702,7 @@
 				65EEBB211CEBC3B000EA6186 /* FGFBRemoveDuplicates.m in Sources */,
 				654D8EB11CD9CE7C00B89F86 /* FGHR2DArrayDS.m in Sources */,
 				65223EAA1CCED89E003FC03F /* FGStack.m in Sources */,
+				DC2092711DF8DB5F0036102A /* FGFBIslands.m in Sources */,
 				6555C6621CE42F92004DA145 /* FGHRBalancedTree.m in Sources */,
 				DC61C0A01DF681A90028948E /* FGHashHeap.m in Sources */,
 				65974CCD1CE1457600B3B340 /* FGHRTree.m in Sources */,
@@ -728,6 +737,7 @@
 				65E5C1FF1CED001B003E1B26 /* FGBSTreeTest.m in Sources */,
 				65EEBB371CEC1E4800EA6186 /* FGFBTelephoneKeypadTest.m in Sources */,
 				65223EBD1CCF21CB003FC03F /* FGHashTableTest.m in Sources */,
+				DC2092731DF921980036102A /* FGIslandsTest.m in Sources */,
 				65223ED51CD0234F003FC03F /* FGStackTest.m in Sources */,
 				65EEBADA1CE9449200EA6186 /* FGFBNestedArrayTest.m in Sources */,
 			);
