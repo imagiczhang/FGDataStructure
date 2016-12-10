@@ -78,6 +78,8 @@
 		DC61C0A01DF681A90028948E /* FGHashHeap.m in Sources */ = {isa = PBXBuildFile; fileRef = DC61C09F1DF681A90028948E /* FGHashHeap.m */; };
 		DCF742991DF975DD002181F8 /* FGFBIslandsUnionFind.m in Sources */ = {isa = PBXBuildFile; fileRef = DCF742981DF975DD002181F8 /* FGFBIslandsUnionFind.m */; };
 		DCF7429B1DF97E01002181F8 /* FGIslandsUnionFindTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DCF7429A1DF97E01002181F8 /* FGIslandsUnionFindTest.m */; };
+		DCF7429E1DFA5A90002181F8 /* FGFBDynamicMedian.m in Sources */ = {isa = PBXBuildFile; fileRef = DCF7429D1DFA5A90002181F8 /* FGFBDynamicMedian.m */; };
+		DCF742A01DFA622D002181F8 /* FGFBDynamicMedianTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DCF7429F1DFA622D002181F8 /* FGFBDynamicMedianTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -212,6 +214,9 @@
 		DCF742971DF975DD002181F8 /* FGFBIslandsUnionFind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FGFBIslandsUnionFind.h; path = Facebook/FGFBIslandsUnionFind.h; sourceTree = "<group>"; };
 		DCF742981DF975DD002181F8 /* FGFBIslandsUnionFind.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FGFBIslandsUnionFind.m; path = Facebook/FGFBIslandsUnionFind.m; sourceTree = "<group>"; };
 		DCF7429A1DF97E01002181F8 /* FGIslandsUnionFindTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGIslandsUnionFindTest.m; sourceTree = "<group>"; };
+		DCF7429C1DFA5A90002181F8 /* FGFBDynamicMedian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FGFBDynamicMedian.h; path = Facebook/FGFBDynamicMedian.h; sourceTree = "<group>"; };
+		DCF7429D1DFA5A90002181F8 /* FGFBDynamicMedian.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FGFBDynamicMedian.m; path = Facebook/FGFBDynamicMedian.m; sourceTree = "<group>"; };
+		DCF7429F1DFA622D002181F8 /* FGFBDynamicMedianTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGFBDynamicMedianTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -356,6 +361,7 @@
 				650289161CFBCE9F00A2B130 /* NSArray+FGQuickSortTest.m */,
 				DC2092721DF921980036102A /* FGIslandsTest.m */,
 				DCF7429A1DF97E01002181F8 /* FGIslandsUnionFindTest.m */,
+				DCF7429F1DFA622D002181F8 /* FGFBDynamicMedianTest.m */,
 			);
 			path = FGDataStructureTests;
 			sourceTree = "<group>";
@@ -511,6 +517,8 @@
 		65EEBAF61CEA73EF00EA6186 /* Median */ = {
 			isa = PBXGroup;
 			children = (
+				DCF7429C1DFA5A90002181F8 /* FGFBDynamicMedian.h */,
+				DCF7429D1DFA5A90002181F8 /* FGFBDynamicMedian.m */,
 			);
 			name = Median;
 			sourceTree = "<group>";
@@ -689,6 +697,7 @@
 				65F7077B1CF6A7CF009A4006 /* FGTrieTree.m in Sources */,
 				65223EAE1CCEEF88003FC03F /* FGQueue.m in Sources */,
 				6506356F1CD02FA2000347E7 /* FGHeap.m in Sources */,
+				DCF7429E1DFA5A90002181F8 /* FGFBDynamicMedian.m in Sources */,
 				65EEBB431CEC47FE00EA6186 /* FGAPPLEPopularObject.m in Sources */,
 				65EEBB3B1CEC30B600EA6186 /* FGGPFibonacciCalculator.m in Sources */,
 				654D8EAC1CD9B83D00B89F86 /* NSArray+FGHRArrayDS.m in Sources */,
@@ -745,6 +754,7 @@
 				654D8EAE1CD9BA3400B89F86 /* FGHRArrayDSTest.m in Sources */,
 				65E5C1FF1CED001B003E1B26 /* FGBSTreeTest.m in Sources */,
 				65EEBB371CEC1E4800EA6186 /* FGFBTelephoneKeypadTest.m in Sources */,
+				DCF742A01DFA622D002181F8 /* FGFBDynamicMedianTest.m in Sources */,
 				65223EBD1CCF21CB003FC03F /* FGHashTableTest.m in Sources */,
 				DC2092731DF921980036102A /* FGIslandsTest.m in Sources */,
 				65223ED51CD0234F003FC03F /* FGStackTest.m in Sources */,
