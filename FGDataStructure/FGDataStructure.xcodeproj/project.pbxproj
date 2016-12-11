@@ -80,6 +80,7 @@
 		DCF7429B1DF97E01002181F8 /* FGIslandsUnionFindTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DCF7429A1DF97E01002181F8 /* FGIslandsUnionFindTest.m */; };
 		DCF7429E1DFA5A90002181F8 /* FGFBDynamicMedian.m in Sources */ = {isa = PBXBuildFile; fileRef = DCF7429D1DFA5A90002181F8 /* FGFBDynamicMedian.m */; };
 		DCF742A01DFA622D002181F8 /* FGFBDynamicMedianTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DCF7429F1DFA622D002181F8 /* FGFBDynamicMedianTest.m */; };
+		DCF742A21DFBDC75002181F8 /* FGFBTreeTraverseTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DCF742A11DFBDC75002181F8 /* FGFBTreeTraverseTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -217,6 +218,7 @@
 		DCF7429C1DFA5A90002181F8 /* FGFBDynamicMedian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FGFBDynamicMedian.h; path = Facebook/FGFBDynamicMedian.h; sourceTree = "<group>"; };
 		DCF7429D1DFA5A90002181F8 /* FGFBDynamicMedian.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FGFBDynamicMedian.m; path = Facebook/FGFBDynamicMedian.m; sourceTree = "<group>"; };
 		DCF7429F1DFA622D002181F8 /* FGFBDynamicMedianTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGFBDynamicMedianTest.m; sourceTree = "<group>"; };
+		DCF742A11DFBDC75002181F8 /* FGFBTreeTraverseTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGFBTreeTraverseTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -362,6 +364,7 @@
 				DC2092721DF921980036102A /* FGIslandsTest.m */,
 				DCF7429A1DF97E01002181F8 /* FGIslandsUnionFindTest.m */,
 				DCF7429F1DFA622D002181F8 /* FGFBDynamicMedianTest.m */,
+				DCF742A11DFBDC75002181F8 /* FGFBTreeTraverseTest.m */,
 			);
 			path = FGDataStructureTests;
 			sourceTree = "<group>";
@@ -734,6 +737,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCF742A21DFBDC75002181F8 /* FGFBTreeTraverseTest.m in Sources */,
 				650289171CFBCE9F00A2B130 /* NSArray+FGQuickSortTest.m in Sources */,
 				65E5C1FA1CEC53C6003E1B26 /* FGAPPLEPopularObjectTest.m in Sources */,
 				65E5C20D1CF2904F003E1B26 /* FGFBCancelableBlock.m in Sources */,
