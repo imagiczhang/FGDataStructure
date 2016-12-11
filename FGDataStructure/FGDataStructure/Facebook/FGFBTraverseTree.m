@@ -10,12 +10,20 @@
 
 @implementation FGFBTreeNode
 
-- (instancetype)initWithValue:(id)value
+- (instancetype)initWithValue:(NSObject<NSCopying> *)value
 {
     if (self = [super init]) {
-        _value = value;
+        _value = [value copy];
     }
     return self;
+}
+
+- (id)copyWithZone:(NSZone *)zone
+{
+    FGFBTreeNode *node = [[[self class] allocWithZone:zone] initWithValue:self.value];
+    node.left = [self.left copy];
+    node.right = [self.right copy];
+    return node;
 }
 
 @end
@@ -67,6 +75,207 @@
         [self postOrderTraverseTree:root.right];
     }
     self.visit(root);
+}
+
+@end
+
+@interface FGFBInOrderTreeEnumerator()
+
+@property (nonatomic, strong) FGFBTreeNode *root;
+@property (nonatomic, strong) FGFBTreeNode *current;
+@property (nonatomic, strong) NSMutableArray<FGFBTreeNode *> *ancestors;
+
+@end
+
+@implementation FGFBInOrderTreeEnumerator
+
+- (instancetype)initWithTree:(FGFBTreeNode *)root
+{
+    if (self = [super init]) {
+        _root = root;
+        _ancestors = [NSMutableArray array];
+    }
+    return self;
+}
+
+- (id)nextObject
+{
+    if (!self.current) {
+        self.current = [self findNextFromStart:self.root];
+    } else {
+        self.current = [self findNextFromCompletedNode:self.current];
+    }
+    return self.current;
+}
+
+- (id)findNextFromStart:(FGFBTreeNode *)node
+{
+    while (node.left) {
+        [self.ancestors addObject:node];
+        node = node.left;
+    }
+    self.current = node;
+    return node;
+}
+
+- (id)findNextFromCompletedNode:(FGFBTreeNode *)node
+{
+    if (node.right) {
+        [self.ancestors addObject:node];
+        return [self findNextFromStart:node.right];
+    }
+    
+    FGFBTreeNode *current = node;
+    FGFBTreeNode *parent = [self.ancestors lastObject];
+    FGFBTreeNode *next;
+    
+    while(current && parent && !next) {
+        if (current == parent.left) {
+            next = parent;
+            [self.ancestors removeLastObject];
+        } else {
+            current = parent;
+            [self.ancestors removeLastObject];
+            parent = [self.ancestors lastObject];
+        }
+    }
+    self.current = next;
+    return next;
+}
+
+@end
+
+@interface FGFBPreOrderTreeEnumerator()
+
+@property (nonatomic, strong) FGFBTreeNode *root;
+@property (nonatomic, strong) FGFBTreeNode *current;
+@property (nonatomic, strong) NSMutableArray<FGFBTreeNode *> *ancestors;
+
+@end
+
+@implementation FGFBPreOrderTreeEnumerator
+
+- (instancetype)initWithTree:(FGFBTreeNode *)root
+{
+    if (self = [super init]) {
+        _root = root;
+        _ancestors = [NSMutableArray array];
+    }
+    return self;
+}
+
+- (id)nextObject
+{
+    if (!self.current) {
+        self.current = self.root;
+    } else {
+        if (self.current.left) {
+            [self.ancestors addObject:self.current];
+            self.current = self.current.left;
+        } else if (self.current.right) {
+            [self.ancestors addObject:self.current];
+            self.current = self.current.right;
+        } else {
+            FGFBTreeNode *current = self.current;
+            FGFBTreeNode *parent = [self.ancestors lastObject];
+            FGFBTreeNode *next;
+            while (parent && current && !next) {
+                if (current == parent.left) {
+                    next = parent.right;
+                } else {
+                    current = parent;
+                    [self.ancestors removeLastObject];
+                    parent = [self.ancestors lastObject];
+                }
+            }
+            self.current = next;
+        }
+    }
+    return self.current;
+}
+
+@end
+
+@interface FGFBPostOrderTreeEnumerator()
+
+@property (nonatomic, strong) FGFBTreeNode *root;
+@property (nonatomic, strong) FGFBTreeNode *current;
+@property (nonatomic, strong) NSMutableArray<FGFBTreeNode *> *ancestors;
+
+@end
+
+@implementation FGFBPostOrderTreeEnumerator
+
+- (instancetype)initWithTree:(FGFBTreeNode *)root
+{
+    if (self = [super init]) {
+        _root = root;
+        _ancestors = [NSMutableArray array];
+    }
+    return self;
+}
+
+- (id)nextObject
+{
+    if (!self.current) {
+        [self findNextFromStart:self.root];
+    } else {
+        [self findNextFromCompletedNode:self.current];
+    }
+    return self.current;
+}
+
+- (id)findNextFromStart:(FGFBTreeNode *)node
+{
+    while (node.left) {
+        [self.ancestors addObject:node];
+        node = node.left;
+    }
+    self.current = node;
+    return node;
+}
+
+- (id)findNextFromCompletedNode:(FGFBTreeNode *)node
+{
+    FGFBTreeNode *current = node;
+    FGFBTreeNode *parent = [self.ancestors lastObject];
+    FGFBTreeNode *next;
+    if (current == parent.left && parent.right) {
+        next = [self findNextFromStart:parent.right];
+    } else {
+        next = parent;
+        [self.ancestors removeLastObject];
+    }
+    self.current = next;
+    return next;
+}
+
+@end
+
+@implementation FGFBInOrderTreeBuilder
+
+- (FGFBTreeNode *)buildTreeWithInOrderSequence:(NSArray<NSNumber *> *)numbers
+{
+    return [self buildTreeWithInOrderSequence:numbers range:NSMakeRange(0, numbers.count)];
+}
+
+- (FGFBTreeNode *)buildTreeWithInOrderSequence:(NSArray<NSNumber *> *)numbers range:(NSRange)range;
+{
+    NSAssert(range.length > 0, @"range must have more than one element");
+    FGFBTreeNode *node;
+    if (range.length == 1) {
+        node = [[FGFBTreeNode alloc] initWithValue:numbers[range.location]];
+    } else {
+        NSUInteger middle = range.location + (range.length - 1)/2;
+        node = [[FGFBTreeNode alloc] initWithValue:numbers[middle]];
+        if (middle != range.location) {
+            node.left = [self buildTreeWithInOrderSequence:numbers range:NSMakeRange(range.location, middle-range.location)];
+        }
+        if (middle != range.location + range.length - 1) {
+            node.right = [self buildTreeWithInOrderSequence:numbers range:NSMakeRange(middle + 1, range.location + range.length - middle - 1)];
+        }
+    }
+    return node;
 }
 
 @end
