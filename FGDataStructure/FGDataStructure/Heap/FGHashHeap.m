@@ -24,6 +24,8 @@
     if (self = [super init]) {
         _comparator = comparator;
         _array = [NSMutableArray array];
+        _location = [NSMutableDictionary dictionary];
+        _count = [NSMutableDictionary dictionary];
     }
     return self;
 }
@@ -103,12 +105,12 @@
     while(index * 2 + 1 < self.array.count) {
         NSUInteger sonIndex = index*2 + 1;
         if (sonIndex + 1 < self.array.count) {
-            BOOL sonCompareResult = self.comparator(self.array[sonIndex], self.array[sonIndex+1]);
+            NSComparisonResult sonCompareResult = self.comparator(self.array[sonIndex], self.array[sonIndex+1]);
             if (sonCompareResult == NSOrderedDescending) {
                 sonIndex += 1;
             }
         }
-        BOOL compareResult = self.comparator(item, self.array[sonIndex]);
+        NSComparisonResult compareResult = self.comparator(item, self.array[sonIndex]);
         if (compareResult == NSOrderedDescending) {
             self.location[self.array[sonIndex]] = @(index);
             [self.array exchangeObjectAtIndex:index withObjectAtIndex:sonIndex];
