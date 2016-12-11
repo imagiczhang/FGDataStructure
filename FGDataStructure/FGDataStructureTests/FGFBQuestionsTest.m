@@ -50,7 +50,7 @@
 
 - (void)testRemoveDuplicatedWords {
     NSArray *data1 = @[@"one", @"two", @"three", @"four", @"two"];
-    NSArray *data1Result = [FGFBQuestions removeDuplicatedWords:data1 perserveOrder:NO];
+    NSArray *data1Result = [FGFBQuestions removeDuplicatedWords:data1 preserveOrder:NO];
     
     XCTAssertTrue(data1Result.count == 4);
     XCTAssertTrue([data1Result containsObject:@"one"]);
@@ -58,7 +58,7 @@
     XCTAssertTrue([data1Result containsObject:@"three"]);
     XCTAssertTrue([data1Result containsObject:@"four"]);
     
-    NSArray *data2Result = [FGFBQuestions removeDuplicatedWords:data1 perserveOrder:YES];
+    NSArray *data2Result = [FGFBQuestions removeDuplicatedWords:data1 preserveOrder:YES];
     NSArray *data2ExpectedResult = @[@"one", @"two", @"three", @"four"];
     XCTAssertTrue([data2Result isEqualToArray:data2ExpectedResult]);
 }

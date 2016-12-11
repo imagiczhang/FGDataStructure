@@ -37,10 +37,10 @@
     NSUInteger i = 0;
     NSUInteger j = array.count - 1;
     while ( i < j) {
-        while (i < j && [array[i] integerValue] == 0) {
+        while (i < j && [array[i] integerValue] != 0) {
             i++;
         }
-        while (i < j && [array[j] integerValue] != 0) {
+        while (i < j && [array[j] integerValue] == 0) {
             j--;
         }
         
