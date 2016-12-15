@@ -181,7 +181,7 @@
         }
     }];
     
-    //traverse strign with help of lastAppearanceIndex
+    //traverse string with help of lastAppearanceIndex
     __block NSUInteger longestSubstringLength = 0;
     __block NSUInteger currentStart = 0;
     

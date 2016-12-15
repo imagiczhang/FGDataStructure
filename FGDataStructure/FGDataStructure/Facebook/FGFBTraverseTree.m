@@ -279,3 +279,55 @@
 }
 
 @end
+
+
+@implementation FGFBTreeSerializer
+
++ (NSArray *)serializeTree:(FGFBTreeNode *)root
+{
+    NSMutableArray *array = [NSMutableArray array];
+    [self serializeTree:root withOutput:array];
+    return [array copy];
+}
+
++ (void)serializeTree:(FGFBTreeNode *)root withOutput:(NSMutableArray *)array
+{
+    if(root) {
+        [array addObject:root.value];
+        [self serializeTree:root.left withOutput:array];
+        [self serializeTree:root.right withOutput:array];
+    } else {
+        [array addObject:[NSNull null]];
+    }
+}
+
++ (FGFBTreeNode *)deserializeFromArray:(NSArray *)array
+{
+    if (array.count == 0) {
+        return nil;
+    }
+    
+    NSUInteger index = 0;
+    return [self deserializeFromArray:array fromIndex:&index];
+}
+
++ (FGFBTreeNode *)deserializeFromArray:(NSArray *)array fromIndex:(NSUInteger *)index
+{
+    if (*index >= array.count) {
+        return nil;
+    }
+    id Obj = array[*index];
+    if([Obj isKindOfClass:[NSNull class]]) {
+        *index += 1;
+        return nil;
+    }
+    
+    FGFBTreeNode *node = [[FGFBTreeNode alloc] initWithValue:Obj];
+    *index += 1;
+    node.left = [self deserializeFromArray:array fromIndex:index];
+    node.right = [self deserializeFromArray:array fromIndex:index];
+    
+    return node;
+}
+
+@end

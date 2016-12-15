@@ -64,4 +64,9 @@ typedef void(^tree_node_visit_block_t)(FGFBTreeNode *treeNode);
 
 @end
 
+@interface FGFBTreeSerializer : NSObject
++ (NSArray *)serializeTree:(FGFBTreeNode *)root;
++ (FGFBTreeNode *)deserializeFromArray:(NSArray *)array;
+@end
+
 NS_ASSUME_NONNULL_END
