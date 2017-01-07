@@ -10,6 +10,12 @@
 #import "FGTrieTreeNode.h"
 #import "FGTrieTree.h"
 
+@interface FGTrieTree()
+
+@property (nonatomic, strong) FGTrieTreeNode *root;
+
+@end
+
 @interface FGTrieTreeNodeTest : XCTestCase
 
 @end
@@ -37,9 +43,14 @@
 - (void)testHasWordWithPattern {
     FGTrieTree *tree1 = [self tree1];
     
-    XCTAssertTrue([tree1 isFindWord:@"cat"]);
-    XCTAssertTrue([tree1 isFindWord:@"c.t"]);
-    XCTAssertFalse([tree1 isFindWord:@"cat1"]);
+    XCTAssertTrue([tree1 isWordFound:@"cat"]);
+    XCTAssertTrue([tree1 isWordFound:@"c.t"]);
+    XCTAssertTrue([tree1 isWordFound:@"ca."]);
+    XCTAssertTrue([tree1 isWordFound:@"c.."]);
+    XCTAssertTrue([tree1 isWordFound:@"..."]);
+    XCTAssertTrue([tree1 isWordFound:@"...."]);
+    XCTAssertFalse([tree1 isWordFound:@"cat1"]);
+    XCTAssertFalse([tree1 isWordFound:@"....."]);
 }
 
 - (FGTrieTree *)tree1 {

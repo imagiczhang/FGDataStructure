@@ -10,12 +10,11 @@
 
 @interface FGTrieTreeNode : NSObject
 
-@property (nonatomic, copy, readonly) NSString *value;
-@property (nonatomic, strong, readonly) NSMutableDictionary *children;
+@property (nonatomic, strong, readonly) NSMutableDictionary<NSString *, FGTrieTreeNode *> *children;
+@property (nonatomic) BOOL isWord;
 
-- (instancetype)initWithValue:(NSString *)value;
-- (void)addWord:(NSString *)word;
-- (BOOL)isFinal;
-- (BOOL)isFindWord:(NSString *)word index:(NSInteger)index;
+//- (instancetype)initWithValue:(NSString *)value;
+//- (void)addWord:(NSString *)word;
+//- (BOOL)isFindWord:(NSString *)word index:(NSInteger)index;
 
 @end

@@ -11,10 +11,9 @@
 @class FGTrieTreeNode;
 @interface FGTrieTree : NSObject
 
-@property (nonatomic, strong) FGTrieTreeNode *root;
-
 - (void)addWord:(NSString *)word;
-- (BOOL)isFindWord:(NSString *)word;
+- (BOOL)isWordFound:(NSString *)word;
+- (BOOL)isWord:(NSString *)word foundFrom:(FGTrieTreeNode *)node;
 //- (BOOL)hasWordWithPattern:(NSString *)pattern;
 
 @end
