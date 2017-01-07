@@ -43,7 +43,7 @@
     XCTAssertTrue([data1RecursiveResult containsObject:self.point1]);
     XCTAssertTrue([data1RecursiveResult containsObject:self.point4]);
     
-    NSArray<FGFBPoint *> *data1QuickSortResult = [FGFBClosestPoints closestPointsWith2DPoints:data1 forK:2 type:FGFBClosestPointsCalculatorTypeQuickSort];
+    NSArray<FGFBPoint *> *data1QuickSortResult = [FGFBClosestPoints closestPointsWith2DPoints:data1 forK:2 type:FGFBClosestPointsCalculatorTypeRecursive];
     XCTAssertTrue([data1QuickSortResult containsObject:self.point1]);
     XCTAssertTrue([data1QuickSortResult containsObject:self.point4]);
     

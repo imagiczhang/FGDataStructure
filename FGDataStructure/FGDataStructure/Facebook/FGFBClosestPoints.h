@@ -11,7 +11,7 @@
 
 typedef NS_ENUM(NSUInteger, FGFBClosestPointsCalculatorType) {
     FGFBClosestPointsCalculatorTypeSort,
-    FGFBClosestPointsCalculatorTypeQuickSort,
+    FGFBClosestPointsCalculatorTypeQuickSelect,
     FGFBClosestPointsCalculatorTypeRecursive
 };
 
