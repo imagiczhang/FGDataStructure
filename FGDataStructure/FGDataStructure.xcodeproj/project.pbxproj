@@ -80,6 +80,11 @@
 		DC2832341E015A9900E0E7F1 /* FGFBFindCloneView.m in Sources */ = {isa = PBXBuildFile; fileRef = DC2832331E015A9900E0E7F1 /* FGFBFindCloneView.m */; };
 		DC2832361E015F6F00E0E7F1 /* FGFBFindCloneViewTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DC2832351E015F6F00E0E7F1 /* FGFBFindCloneViewTest.m */; };
 		DC61C0A01DF681A90028948E /* FGHashHeap.m in Sources */ = {isa = PBXBuildFile; fileRef = DC61C09F1DF681A90028948E /* FGHashHeap.m */; };
+		DC9537BC1E20E815000DEB7A /* FGKLargestInNArrays.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9537BB1E20E815000DEB7A /* FGKLargestInNArrays.m */; };
+		DC9537BE1E210292000DEB7A /* FGKLargestInNArraysTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9537BD1E210292000DEB7A /* FGKLargestInNArraysTest.m */; };
+		DC9537C11E2251AF000DEB7A /* FGTwoSumII.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9537C01E2251AF000DEB7A /* FGTwoSumII.m */; };
+		DC9537C31E22553C000DEB7A /* FGTwoSumIITest.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9537C21E22553C000DEB7A /* FGTwoSumIITest.m */; };
+		DC9537C61E225785000DEB7A /* FindKthInSortedMatrix.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9537C51E225785000DEB7A /* FindKthInSortedMatrix.m */; };
 		DCF742991DF975DD002181F8 /* FGFBIslandsUnionFind.m in Sources */ = {isa = PBXBuildFile; fileRef = DCF742981DF975DD002181F8 /* FGFBIslandsUnionFind.m */; };
 		DCF7429B1DF97E01002181F8 /* FGIslandsUnionFindTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DCF7429A1DF97E01002181F8 /* FGIslandsUnionFindTest.m */; };
 		DCF7429E1DFA5A90002181F8 /* FGFBDynamicMedian.m in Sources */ = {isa = PBXBuildFile; fileRef = DCF7429D1DFA5A90002181F8 /* FGFBDynamicMedian.m */; };
@@ -222,6 +227,14 @@
 		DC2832351E015F6F00E0E7F1 /* FGFBFindCloneViewTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGFBFindCloneViewTest.m; sourceTree = "<group>"; };
 		DC61C09E1DF681A90028948E /* FGHashHeap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FGHashHeap.h; path = Heap/FGHashHeap.h; sourceTree = "<group>"; };
 		DC61C09F1DF681A90028948E /* FGHashHeap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FGHashHeap.m; path = Heap/FGHashHeap.m; sourceTree = "<group>"; };
+		DC9537BA1E20E815000DEB7A /* FGKLargestInNArrays.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGKLargestInNArrays.h; sourceTree = "<group>"; };
+		DC9537BB1E20E815000DEB7A /* FGKLargestInNArrays.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGKLargestInNArrays.m; sourceTree = "<group>"; };
+		DC9537BD1E210292000DEB7A /* FGKLargestInNArraysTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGKLargestInNArraysTest.m; sourceTree = "<group>"; };
+		DC9537BF1E2251AF000DEB7A /* FGTwoSumII.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGTwoSumII.h; sourceTree = "<group>"; };
+		DC9537C01E2251AF000DEB7A /* FGTwoSumII.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGTwoSumII.m; sourceTree = "<group>"; };
+		DC9537C21E22553C000DEB7A /* FGTwoSumIITest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGTwoSumIITest.m; sourceTree = "<group>"; };
+		DC9537C41E225785000DEB7A /* FindKthInSortedMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindKthInSortedMatrix.h; sourceTree = "<group>"; };
+		DC9537C51E225785000DEB7A /* FindKthInSortedMatrix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindKthInSortedMatrix.m; sourceTree = "<group>"; };
 		DCCB0ED41DF2753D00AA04C7 /* FGFBCancelableBlock3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FGFBCancelableBlock3.h; sourceTree = "<group>"; };
 		DCF742971DF975DD002181F8 /* FGFBIslandsUnionFind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FGFBIslandsUnionFind.h; path = Facebook/FGFBIslandsUnionFind.h; sourceTree = "<group>"; };
 		DCF742981DF975DD002181F8 /* FGFBIslandsUnionFind.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FGFBIslandsUnionFind.m; path = Facebook/FGFBIslandsUnionFind.m; sourceTree = "<group>"; };
@@ -317,6 +330,7 @@
 				65EEBB3E1CEC46B100EA6186 /* Apple */,
 				65EEBB381CEC212000EA6186 /* Groupon */,
 				65EEBAE21CE9820300EA6186 /* Google */,
+				DC9537B91E20E7D2000DEB7A /* Excercise */,
 				65231E401CE7D3D7002B6821 /* Facebook */,
 				654D8EA81CD9B81500B89F86 /* HackerRank */,
 				650635EA1CD17B6E000347E7 /* ListedList */,
@@ -380,6 +394,8 @@
 				DCF742A11DFBDC75002181F8 /* FGFBTreeTraverseTest.m */,
 				DC10451D1DFEC795005EF0AC /* FGQuickSortTest.m */,
 				DC2832351E015F6F00E0E7F1 /* FGFBFindCloneViewTest.m */,
+				DC9537BD1E210292000DEB7A /* FGKLargestInNArraysTest.m */,
+				DC9537C21E22553C000DEB7A /* FGTwoSumIITest.m */,
 			);
 			path = FGDataStructureTests;
 			sourceTree = "<group>";
@@ -607,6 +623,19 @@
 			name = Trie;
 			sourceTree = "<group>";
 		};
+		DC9537B91E20E7D2000DEB7A /* Excercise */ = {
+			isa = PBXGroup;
+			children = (
+				DC9537BA1E20E815000DEB7A /* FGKLargestInNArrays.h */,
+				DC9537BB1E20E815000DEB7A /* FGKLargestInNArrays.m */,
+				DC9537BF1E2251AF000DEB7A /* FGTwoSumII.h */,
+				DC9537C01E2251AF000DEB7A /* FGTwoSumII.m */,
+				DC9537C41E225785000DEB7A /* FindKthInSortedMatrix.h */,
+				DC9537C51E225785000DEB7A /* FindKthInSortedMatrix.m */,
+			);
+			path = Excercise;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -724,6 +753,7 @@
 				6506356F1CD02FA2000347E7 /* FGHeap.m in Sources */,
 				DCF7429E1DFA5A90002181F8 /* FGFBDynamicMedian.m in Sources */,
 				65EEBB431CEC47FE00EA6186 /* FGAPPLEPopularObject.m in Sources */,
+				DC9537BC1E20E815000DEB7A /* FGKLargestInNArrays.m in Sources */,
 				65EEBB3B1CEC30B600EA6186 /* FGGPFibonacciCalculator.m in Sources */,
 				654D8EAC1CD9B83D00B89F86 /* NSArray+FGHRArrayDS.m in Sources */,
 				65EEBB301CEBED5900EA6186 /* FGFBFindMirrorData.m in Sources */,
@@ -731,6 +761,7 @@
 				65EEBB2D1CEBE38500EA6186 /* FGFBFindMirrorTreeStructure.m in Sources */,
 				65223E9D1CCB399B003FC03F /* FGBSTree.m in Sources */,
 				65223E781CCB362F003FC03F /* ViewController.m in Sources */,
+				DC9537C11E2251AF000DEB7A /* FGTwoSumII.m in Sources */,
 				650635ED1CD17B86000347E7 /* FGListedList.m in Sources */,
 				65EEBAF91CEA76ED00EA6186 /* FGFBAnagramsFinder.m in Sources */,
 				65F7079F1CFAC2A3009A4006 /* NSArray+FGQuickSort.m in Sources */,
@@ -754,6 +785,7 @@
 				650289331CFD247900A2B130 /* FGAVLTree.m in Sources */,
 				DC20926B1DF6D7760036102A /* FGFBTraverseTree.m in Sources */,
 				65231E461CE7D422002B6821 /* FGFBClosestPoints.m in Sources */,
+				DC9537C61E225785000DEB7A /* FindKthInSortedMatrix.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -774,7 +806,9 @@
 				654D8EC31CDAD7C700B89F86 /* FGHRLinkedListTest.m in Sources */,
 				65EEBAF51CEA655900EA6186 /* FGFBWordsMatchTest.m in Sources */,
 				65974CCF1CE1487100B3B340 /* FGHRTreeTest.m in Sources */,
+				DC9537BE1E210292000DEB7A /* FGKLargestInNArraysTest.m in Sources */,
 				65EEBAD51CE8312900EA6186 /* FGFBQuestionsTest.m in Sources */,
+				DC9537C31E22553C000DEB7A /* FGTwoSumIITest.m in Sources */,
 				65EEBB231CEBC44400EA6186 /* FGFBRemoveDuplicatesTest.m in Sources */,
 				654D8EBD1CDAC4C300B89F86 /* FGHR2DArrayDSTest.m in Sources */,
 				65F707811CF6C13B009A4006 /* FGTrieTreeNodeTest.m in Sources */,
