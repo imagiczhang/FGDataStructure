@@ -54,8 +54,10 @@
             [self.array removeLastObject];
             [self.location removeObjectForKey:item];
             [self.count removeObjectForKey:item];
-            [self siftDownWithIndex:index];
-            [self siftUpWithIndex:[self.location[lastItem] unsignedIntegerValue]];
+            if (index != lastIndex) {                
+                [self siftDownWithIndex:index];
+                [self siftUpWithIndex:[self.location[lastItem] unsignedIntegerValue]];
+            }
         } else {
             self.count[item] = @([self.count[item] unsignedIntegerValue] - 1);
         }
