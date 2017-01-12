@@ -90,6 +90,13 @@
 		DC9537CD1E239887000DEB7A /* FindKthSumInTwoArraysTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9537CC1E239887000DEB7A /* FindKthSumInTwoArraysTest.m */; };
 		DC9537D01E24EF3D000DEB7A /* FGTriangleCount.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9537CF1E24EF3D000DEB7A /* FGTriangleCount.m */; };
 		DC9537D21E24F230000DEB7A /* FGTriangleCountTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9537D11E24F230000DEB7A /* FGTriangleCountTest.m */; };
+		DCD3AD2F1E27971E00119D02 /* FGIslands.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD3AD2E1E27971E00119D02 /* FGIslands.m */; };
+		DCD3AD321E27975C00119D02 /* FGConnectingGraphIII.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD3AD311E27975C00119D02 /* FGConnectingGraphIII.m */; };
+		DCD3AD341E279BB900119D02 /* FGConnectingGraphIIITest.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD3AD331E279BB900119D02 /* FGConnectingGraphIIITest.m */; };
+		DCD3AD371E279DBC00119D02 /* FGConnectingGraphII.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD3AD361E279DBC00119D02 /* FGConnectingGraphII.m */; };
+		DCD3AD391E27A15300119D02 /* FGConnectingGraphIITest.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD3AD381E27A15300119D02 /* FGConnectingGraphIITest.m */; };
+		DCD3AD3C1E27A34600119D02 /* FGConnectingGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD3AD3B1E27A34600119D02 /* FGConnectingGraph.m */; };
+		DCD3AD3E1E27A55500119D02 /* FGConnectingGraphTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD3AD3D1E27A55500119D02 /* FGConnectingGraphTest.m */; };
 		DCF742991DF975DD002181F8 /* FGFBIslandsUnionFind.m in Sources */ = {isa = PBXBuildFile; fileRef = DCF742981DF975DD002181F8 /* FGFBIslandsUnionFind.m */; };
 		DCF7429B1DF97E01002181F8 /* FGIslandsUnionFindTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DCF7429A1DF97E01002181F8 /* FGIslandsUnionFindTest.m */; };
 		DCF7429E1DFA5A90002181F8 /* FGFBDynamicMedian.m in Sources */ = {isa = PBXBuildFile; fileRef = DCF7429D1DFA5A90002181F8 /* FGFBDynamicMedian.m */; };
@@ -248,6 +255,17 @@
 		DC9537CF1E24EF3D000DEB7A /* FGTriangleCount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGTriangleCount.m; sourceTree = "<group>"; };
 		DC9537D11E24F230000DEB7A /* FGTriangleCountTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGTriangleCountTest.m; sourceTree = "<group>"; };
 		DCCB0ED41DF2753D00AA04C7 /* FGFBCancelableBlock3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FGFBCancelableBlock3.h; sourceTree = "<group>"; };
+		DCD3AD2D1E27971E00119D02 /* FGIslands.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGIslands.h; sourceTree = "<group>"; };
+		DCD3AD2E1E27971E00119D02 /* FGIslands.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGIslands.m; sourceTree = "<group>"; };
+		DCD3AD301E27975C00119D02 /* FGConnectingGraphIII.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGConnectingGraphIII.h; sourceTree = "<group>"; };
+		DCD3AD311E27975C00119D02 /* FGConnectingGraphIII.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGConnectingGraphIII.m; sourceTree = "<group>"; };
+		DCD3AD331E279BB900119D02 /* FGConnectingGraphIIITest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGConnectingGraphIIITest.m; sourceTree = "<group>"; };
+		DCD3AD351E279DBC00119D02 /* FGConnectingGraphII.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGConnectingGraphII.h; sourceTree = "<group>"; };
+		DCD3AD361E279DBC00119D02 /* FGConnectingGraphII.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGConnectingGraphII.m; sourceTree = "<group>"; };
+		DCD3AD381E27A15300119D02 /* FGConnectingGraphIITest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGConnectingGraphIITest.m; sourceTree = "<group>"; };
+		DCD3AD3A1E27A34600119D02 /* FGConnectingGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGConnectingGraph.h; sourceTree = "<group>"; };
+		DCD3AD3B1E27A34600119D02 /* FGConnectingGraph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGConnectingGraph.m; sourceTree = "<group>"; };
+		DCD3AD3D1E27A55500119D02 /* FGConnectingGraphTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGConnectingGraphTest.m; sourceTree = "<group>"; };
 		DCF742971DF975DD002181F8 /* FGFBIslandsUnionFind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FGFBIslandsUnionFind.h; path = Facebook/FGFBIslandsUnionFind.h; sourceTree = "<group>"; };
 		DCF742981DF975DD002181F8 /* FGFBIslandsUnionFind.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FGFBIslandsUnionFind.m; path = Facebook/FGFBIslandsUnionFind.m; sourceTree = "<group>"; };
 		DCF7429A1DF97E01002181F8 /* FGIslandsUnionFindTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGIslandsUnionFindTest.m; sourceTree = "<group>"; };
@@ -411,6 +429,9 @@
 				DC9537C71E234FEB000DEB7A /* FindKthInSortedMatrixTest.m */,
 				DC9537CC1E239887000DEB7A /* FindKthSumInTwoArraysTest.m */,
 				DC9537D11E24F230000DEB7A /* FGTriangleCountTest.m */,
+				DCD3AD331E279BB900119D02 /* FGConnectingGraphIIITest.m */,
+				DCD3AD381E27A15300119D02 /* FGConnectingGraphIITest.m */,
+				DCD3AD3D1E27A55500119D02 /* FGConnectingGraphTest.m */,
 			);
 			path = FGDataStructureTests;
 			sourceTree = "<group>";
@@ -651,6 +672,14 @@
 				DC9537CA1E239228000DEB7A /* FindKthSumInTwoArrays.m */,
 				DC9537CE1E24EF3D000DEB7A /* FGTriangleCount.h */,
 				DC9537CF1E24EF3D000DEB7A /* FGTriangleCount.m */,
+				DCD3AD2D1E27971E00119D02 /* FGIslands.h */,
+				DCD3AD2E1E27971E00119D02 /* FGIslands.m */,
+				DCD3AD301E27975C00119D02 /* FGConnectingGraphIII.h */,
+				DCD3AD311E27975C00119D02 /* FGConnectingGraphIII.m */,
+				DCD3AD351E279DBC00119D02 /* FGConnectingGraphII.h */,
+				DCD3AD361E279DBC00119D02 /* FGConnectingGraphII.m */,
+				DCD3AD3A1E27A34600119D02 /* FGConnectingGraph.h */,
+				DCD3AD3B1E27A34600119D02 /* FGConnectingGraph.m */,
 			);
 			path = Excercise;
 			sourceTree = "<group>";
@@ -772,6 +801,7 @@
 				6506356F1CD02FA2000347E7 /* FGHeap.m in Sources */,
 				DCF7429E1DFA5A90002181F8 /* FGFBDynamicMedian.m in Sources */,
 				65EEBB431CEC47FE00EA6186 /* FGAPPLEPopularObject.m in Sources */,
+				DCD3AD2F1E27971E00119D02 /* FGIslands.m in Sources */,
 				DC9537BC1E20E815000DEB7A /* FGKLargestInNArrays.m in Sources */,
 				65EEBB3B1CEC30B600EA6186 /* FGGPFibonacciCalculator.m in Sources */,
 				654D8EAC1CD9B83D00B89F86 /* NSArray+FGHRArrayDS.m in Sources */,
@@ -784,7 +814,9 @@
 				650635ED1CD17B86000347E7 /* FGListedList.m in Sources */,
 				65EEBAF91CEA76ED00EA6186 /* FGFBAnagramsFinder.m in Sources */,
 				65F7079F1CFAC2A3009A4006 /* NSArray+FGQuickSort.m in Sources */,
+				DCD3AD371E279DBC00119D02 /* FGConnectingGraphII.m in Sources */,
 				65E5C1FD1CECFF10003E1B26 /* FGBSTreeObject.m in Sources */,
+				DCD3AD321E27975C00119D02 /* FGConnectingGraphIII.m in Sources */,
 				65EEBB071CEAC80D00EA6186 /* FGFBMergeSortArray.m in Sources */,
 				65223E751CCB362F003FC03F /* AppDelegate.m in Sources */,
 				DC20926E1DF8C3340036102A /* FGFBNestedArray2.m in Sources */,
@@ -805,6 +837,7 @@
 				DCF742991DF975DD002181F8 /* FGFBIslandsUnionFind.m in Sources */,
 				650289331CFD247900A2B130 /* FGAVLTree.m in Sources */,
 				DC20926B1DF6D7760036102A /* FGFBTraverseTree.m in Sources */,
+				DCD3AD3C1E27A34600119D02 /* FGConnectingGraph.m in Sources */,
 				65231E461CE7D422002B6821 /* FGFBClosestPoints.m in Sources */,
 				DC9537C61E225785000DEB7A /* FindKthInSortedMatrix.m in Sources */,
 			);
@@ -833,11 +866,14 @@
 				65EEBAD51CE8312900EA6186 /* FGFBQuestionsTest.m in Sources */,
 				DC9537C31E22553C000DEB7A /* FGTwoSumIITest.m in Sources */,
 				65EEBB231CEBC44400EA6186 /* FGFBRemoveDuplicatesTest.m in Sources */,
+				DCD3AD3E1E27A55500119D02 /* FGConnectingGraphTest.m in Sources */,
+				DCD3AD341E279BB900119D02 /* FGConnectingGraphIIITest.m in Sources */,
 				654D8EBD1CDAC4C300B89F86 /* FGHR2DArrayDSTest.m in Sources */,
 				65F707811CF6C13B009A4006 /* FGTrieTreeNodeTest.m in Sources */,
 				65EEBAEA1CE98A6B00EA6186 /* FGGGNumberGroupTest.m in Sources */,
 				654D8EAE1CD9BA3400B89F86 /* FGHRArrayDSTest.m in Sources */,
 				65E5C1FF1CED001B003E1B26 /* FGBSTreeTest.m in Sources */,
+				DCD3AD391E27A15300119D02 /* FGConnectingGraphIITest.m in Sources */,
 				65EEBB371CEC1E4800EA6186 /* FGFBTelephoneKeypadTest.m in Sources */,
 				DCF742A01DFA622D002181F8 /* FGFBDynamicMedianTest.m in Sources */,
 				65223EBD1CCF21CB003FC03F /* FGHashTableTest.m in Sources */,
