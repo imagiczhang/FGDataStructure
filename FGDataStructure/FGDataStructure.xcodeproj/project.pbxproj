@@ -99,6 +99,8 @@
 		DCD3AD3E1E27A55500119D02 /* FGConnectingGraphTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD3AD3D1E27A55500119D02 /* FGConnectingGraphTest.m */; };
 		DCD3AD411E283B9200119D02 /* FGNumOfAirplanes.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD3AD401E283B9200119D02 /* FGNumOfAirplanes.m */; };
 		DCD3AD431E28C9BF00119D02 /* FGNumOfAirplanesTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD3AD421E28C9BF00119D02 /* FGNumOfAirplanesTest.m */; };
+		DCD3AD461E28D12400119D02 /* FGGraphValidTree.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD3AD451E28D12400119D02 /* FGGraphValidTree.m */; };
+		DCD3AD481E28D73100119D02 /* FGGraphValidTreeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD3AD471E28D73100119D02 /* FGGraphValidTreeTest.m */; };
 		DCF742991DF975DD002181F8 /* FGFBIslandsUnionFind.m in Sources */ = {isa = PBXBuildFile; fileRef = DCF742981DF975DD002181F8 /* FGFBIslandsUnionFind.m */; };
 		DCF7429B1DF97E01002181F8 /* FGIslandsUnionFindTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DCF7429A1DF97E01002181F8 /* FGIslandsUnionFindTest.m */; };
 		DCF7429E1DFA5A90002181F8 /* FGFBDynamicMedian.m in Sources */ = {isa = PBXBuildFile; fileRef = DCF7429D1DFA5A90002181F8 /* FGFBDynamicMedian.m */; };
@@ -271,6 +273,9 @@
 		DCD3AD3F1E283B9200119D02 /* FGNumOfAirplanes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGNumOfAirplanes.h; sourceTree = "<group>"; };
 		DCD3AD401E283B9200119D02 /* FGNumOfAirplanes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGNumOfAirplanes.m; sourceTree = "<group>"; };
 		DCD3AD421E28C9BF00119D02 /* FGNumOfAirplanesTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGNumOfAirplanesTest.m; sourceTree = "<group>"; };
+		DCD3AD441E28D12400119D02 /* FGGraphValidTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGGraphValidTree.h; sourceTree = "<group>"; };
+		DCD3AD451E28D12400119D02 /* FGGraphValidTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGGraphValidTree.m; sourceTree = "<group>"; };
+		DCD3AD471E28D73100119D02 /* FGGraphValidTreeTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGGraphValidTreeTest.m; sourceTree = "<group>"; };
 		DCF742971DF975DD002181F8 /* FGFBIslandsUnionFind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FGFBIslandsUnionFind.h; path = Facebook/FGFBIslandsUnionFind.h; sourceTree = "<group>"; };
 		DCF742981DF975DD002181F8 /* FGFBIslandsUnionFind.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FGFBIslandsUnionFind.m; path = Facebook/FGFBIslandsUnionFind.m; sourceTree = "<group>"; };
 		DCF7429A1DF97E01002181F8 /* FGIslandsUnionFindTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGIslandsUnionFindTest.m; sourceTree = "<group>"; };
@@ -438,6 +443,7 @@
 				DCD3AD381E27A15300119D02 /* FGConnectingGraphIITest.m */,
 				DCD3AD3D1E27A55500119D02 /* FGConnectingGraphTest.m */,
 				DCD3AD421E28C9BF00119D02 /* FGNumOfAirplanesTest.m */,
+				DCD3AD471E28D73100119D02 /* FGGraphValidTreeTest.m */,
 			);
 			path = FGDataStructureTests;
 			sourceTree = "<group>";
@@ -688,6 +694,8 @@
 				DCD3AD3B1E27A34600119D02 /* FGConnectingGraph.m */,
 				DCD3AD3F1E283B9200119D02 /* FGNumOfAirplanes.h */,
 				DCD3AD401E283B9200119D02 /* FGNumOfAirplanes.m */,
+				DCD3AD441E28D12400119D02 /* FGGraphValidTree.h */,
+				DCD3AD451E28D12400119D02 /* FGGraphValidTree.m */,
 			);
 			path = Excercise;
 			sourceTree = "<group>";
@@ -846,6 +854,7 @@
 				DCF742991DF975DD002181F8 /* FGFBIslandsUnionFind.m in Sources */,
 				650289331CFD247900A2B130 /* FGAVLTree.m in Sources */,
 				DC20926B1DF6D7760036102A /* FGFBTraverseTree.m in Sources */,
+				DCD3AD461E28D12400119D02 /* FGGraphValidTree.m in Sources */,
 				DCD3AD3C1E27A34600119D02 /* FGConnectingGraph.m in Sources */,
 				65231E461CE7D422002B6821 /* FGFBClosestPoints.m in Sources */,
 				DC9537C61E225785000DEB7A /* FindKthInSortedMatrix.m in Sources */,
@@ -869,6 +878,7 @@
 				65EEBB3D1CEC44B200EA6186 /* FGGPFibonacciCalculatorTest.m in Sources */,
 				DC9537D21E24F230000DEB7A /* FGTriangleCountTest.m in Sources */,
 				65EEBB321CEC038300EA6186 /* FGFBFindMirrorTreeTest.m in Sources */,
+				DCD3AD481E28D73100119D02 /* FGGraphValidTreeTest.m in Sources */,
 				654D8EC31CDAD7C700B89F86 /* FGHRLinkedListTest.m in Sources */,
 				65EEBAF51CEA655900EA6186 /* FGFBWordsMatchTest.m in Sources */,
 				65974CCF1CE1487100B3B340 /* FGHRTreeTest.m in Sources */,
