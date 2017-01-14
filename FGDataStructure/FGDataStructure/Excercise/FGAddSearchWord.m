@@ -8,13 +8,6 @@
 
 #import "FGAddSearchWord.h"
 
-@interface FGWordTreeNode : NSObject
-
-@property (nonatomic, strong) NSMutableDictionary<NSString *, FGWordTreeNode *> *children;
-@property (nonatomic) BOOL isWord;
-
-@end
-
 @implementation FGWordTreeNode
 
 - (instancetype)init
@@ -25,13 +18,6 @@
     }
     return self;
 }
-
-@end
-
-
-@interface FGAddSearchWord ()
-
-@property (nonatomic, strong) FGWordTreeNode *root;
 
 @end
 
@@ -59,6 +45,7 @@
     }];
     if (current != self.root) {
         current.isWord = YES;
+        current.word = word;
     }
 }
 

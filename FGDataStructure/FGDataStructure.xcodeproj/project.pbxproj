@@ -105,6 +105,8 @@
 		DCD3AD501E28E3FD00119D02 /* FGAddSearchWordTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD3AD4F1E28E3FD00119D02 /* FGAddSearchWordTest.m */; };
 		DCD3AD531E28F72000119D02 /* FGWordSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD3AD521E28F72000119D02 /* FGWordSearch.m */; };
 		DCD3AD551E28FE1400119D02 /* FGWordSearchTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD3AD541E28FE1400119D02 /* FGWordSearchTest.m */; };
+		DCD3AD581E2995F500119D02 /* FGWordSearchII.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD3AD571E2995F500119D02 /* FGWordSearchII.m */; };
+		DCD3AD5A1E29A04A00119D02 /* FGWordSearchIITest.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD3AD591E29A04A00119D02 /* FGWordSearchIITest.m */; };
 		DCF742991DF975DD002181F8 /* FGFBIslandsUnionFind.m in Sources */ = {isa = PBXBuildFile; fileRef = DCF742981DF975DD002181F8 /* FGFBIslandsUnionFind.m */; };
 		DCF7429B1DF97E01002181F8 /* FGIslandsUnionFindTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DCF7429A1DF97E01002181F8 /* FGIslandsUnionFindTest.m */; };
 		DCF7429E1DFA5A90002181F8 /* FGFBDynamicMedian.m in Sources */ = {isa = PBXBuildFile; fileRef = DCF7429D1DFA5A90002181F8 /* FGFBDynamicMedian.m */; };
@@ -286,6 +288,9 @@
 		DCD3AD511E28F72000119D02 /* FGWordSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGWordSearch.h; sourceTree = "<group>"; };
 		DCD3AD521E28F72000119D02 /* FGWordSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGWordSearch.m; sourceTree = "<group>"; };
 		DCD3AD541E28FE1400119D02 /* FGWordSearchTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGWordSearchTest.m; sourceTree = "<group>"; };
+		DCD3AD561E2995F500119D02 /* FGWordSearchII.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGWordSearchII.h; sourceTree = "<group>"; };
+		DCD3AD571E2995F500119D02 /* FGWordSearchII.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGWordSearchII.m; sourceTree = "<group>"; };
+		DCD3AD591E29A04A00119D02 /* FGWordSearchIITest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGWordSearchIITest.m; sourceTree = "<group>"; };
 		DCF742971DF975DD002181F8 /* FGFBIslandsUnionFind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FGFBIslandsUnionFind.h; path = Facebook/FGFBIslandsUnionFind.h; sourceTree = "<group>"; };
 		DCF742981DF975DD002181F8 /* FGFBIslandsUnionFind.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FGFBIslandsUnionFind.m; path = Facebook/FGFBIslandsUnionFind.m; sourceTree = "<group>"; };
 		DCF7429A1DF97E01002181F8 /* FGIslandsUnionFindTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGIslandsUnionFindTest.m; sourceTree = "<group>"; };
@@ -456,6 +461,7 @@
 				DCD3AD471E28D73100119D02 /* FGGraphValidTreeTest.m */,
 				DCD3AD4F1E28E3FD00119D02 /* FGAddSearchWordTest.m */,
 				DCD3AD541E28FE1400119D02 /* FGWordSearchTest.m */,
+				DCD3AD591E29A04A00119D02 /* FGWordSearchIITest.m */,
 			);
 			path = FGDataStructureTests;
 			sourceTree = "<group>";
@@ -712,6 +718,8 @@
 				DCD3AD4A1E28DB0600119D02 /* FGAddSearchWord.m */,
 				DCD3AD511E28F72000119D02 /* FGWordSearch.h */,
 				DCD3AD521E28F72000119D02 /* FGWordSearch.m */,
+				DCD3AD561E2995F500119D02 /* FGWordSearchII.h */,
+				DCD3AD571E2995F500119D02 /* FGWordSearchII.m */,
 			);
 			path = Excercise;
 			sourceTree = "<group>";
@@ -840,6 +848,7 @@
 				65EEBB3B1CEC30B600EA6186 /* FGGPFibonacciCalculator.m in Sources */,
 				654D8EAC1CD9B83D00B89F86 /* NSArray+FGHRArrayDS.m in Sources */,
 				65EEBB301CEBED5900EA6186 /* FGFBFindMirrorData.m in Sources */,
+				DCD3AD581E2995F500119D02 /* FGWordSearchII.m in Sources */,
 				65EEBB261CEBE33000EA6186 /* FGFBFindMirrorTree.m in Sources */,
 				65EEBB2D1CEBE38500EA6186 /* FGFBFindMirrorTreeStructure.m in Sources */,
 				65223E9D1CCB399B003FC03F /* FGBSTree.m in Sources */,
@@ -887,6 +896,7 @@
 				DCF742A21DFBDC75002181F8 /* FGFBTreeTraverseTest.m in Sources */,
 				650289171CFBCE9F00A2B130 /* NSArray+FGQuickSortTest.m in Sources */,
 				65E5C1FA1CEC53C6003E1B26 /* FGAPPLEPopularObjectTest.m in Sources */,
+				DCD3AD5A1E29A04A00119D02 /* FGWordSearchIITest.m in Sources */,
 				DCD3AD431E28C9BF00119D02 /* FGNumOfAirplanesTest.m in Sources */,
 				65E5C20D1CF2904F003E1B26 /* FGFBCancelableBlock.m in Sources */,
 				65EEBB041CEAA82700EA6186 /* FGFBAnagramsFinderTest.m in Sources */,

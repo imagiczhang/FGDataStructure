@@ -26,7 +26,17 @@
 //search(".ad")  // return true
 //search("b..")  // return true
 
+@interface FGWordTreeNode : NSObject
+
+@property (nonatomic, strong) NSMutableDictionary<NSString *, FGWordTreeNode *> *children;
+@property (nonatomic) BOOL isWord;
+@property (nonatomic, copy) NSString *word;
+
+@end
+
 @interface FGAddSearchWord : NSObject
+
+@property (nonatomic, strong, readonly) FGWordTreeNode *root;
 
 - (void)addWord:(NSString *)word;
 - (BOOL)searchWord:(NSString *)word;
