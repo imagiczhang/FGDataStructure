@@ -107,6 +107,8 @@
 		DCD3AD551E28FE1400119D02 /* FGWordSearchTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD3AD541E28FE1400119D02 /* FGWordSearchTest.m */; };
 		DCD3AD581E2995F500119D02 /* FGWordSearchII.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD3AD571E2995F500119D02 /* FGWordSearchII.m */; };
 		DCD3AD5A1E29A04A00119D02 /* FGWordSearchIITest.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD3AD591E29A04A00119D02 /* FGWordSearchIITest.m */; };
+		DCD3AD5D1E29F81700119D02 /* FGTrapRainWater.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD3AD5C1E29F81700119D02 /* FGTrapRainWater.m */; };
+		DCD3AD5F1E29FB9F00119D02 /* FGTrapRainWaterTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD3AD5E1E29FB9F00119D02 /* FGTrapRainWaterTest.m */; };
 		DCF742991DF975DD002181F8 /* FGFBIslandsUnionFind.m in Sources */ = {isa = PBXBuildFile; fileRef = DCF742981DF975DD002181F8 /* FGFBIslandsUnionFind.m */; };
 		DCF7429B1DF97E01002181F8 /* FGIslandsUnionFindTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DCF7429A1DF97E01002181F8 /* FGIslandsUnionFindTest.m */; };
 		DCF7429E1DFA5A90002181F8 /* FGFBDynamicMedian.m in Sources */ = {isa = PBXBuildFile; fileRef = DCF7429D1DFA5A90002181F8 /* FGFBDynamicMedian.m */; };
@@ -291,6 +293,9 @@
 		DCD3AD561E2995F500119D02 /* FGWordSearchII.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGWordSearchII.h; sourceTree = "<group>"; };
 		DCD3AD571E2995F500119D02 /* FGWordSearchII.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGWordSearchII.m; sourceTree = "<group>"; };
 		DCD3AD591E29A04A00119D02 /* FGWordSearchIITest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGWordSearchIITest.m; sourceTree = "<group>"; };
+		DCD3AD5B1E29F81700119D02 /* FGTrapRainWater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGTrapRainWater.h; sourceTree = "<group>"; };
+		DCD3AD5C1E29F81700119D02 /* FGTrapRainWater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGTrapRainWater.m; sourceTree = "<group>"; };
+		DCD3AD5E1E29FB9F00119D02 /* FGTrapRainWaterTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGTrapRainWaterTest.m; sourceTree = "<group>"; };
 		DCF742971DF975DD002181F8 /* FGFBIslandsUnionFind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FGFBIslandsUnionFind.h; path = Facebook/FGFBIslandsUnionFind.h; sourceTree = "<group>"; };
 		DCF742981DF975DD002181F8 /* FGFBIslandsUnionFind.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FGFBIslandsUnionFind.m; path = Facebook/FGFBIslandsUnionFind.m; sourceTree = "<group>"; };
 		DCF7429A1DF97E01002181F8 /* FGIslandsUnionFindTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGIslandsUnionFindTest.m; sourceTree = "<group>"; };
@@ -462,6 +467,7 @@
 				DCD3AD4F1E28E3FD00119D02 /* FGAddSearchWordTest.m */,
 				DCD3AD541E28FE1400119D02 /* FGWordSearchTest.m */,
 				DCD3AD591E29A04A00119D02 /* FGWordSearchIITest.m */,
+				DCD3AD5E1E29FB9F00119D02 /* FGTrapRainWaterTest.m */,
 			);
 			path = FGDataStructureTests;
 			sourceTree = "<group>";
@@ -720,6 +726,8 @@
 				DCD3AD521E28F72000119D02 /* FGWordSearch.m */,
 				DCD3AD561E2995F500119D02 /* FGWordSearchII.h */,
 				DCD3AD571E2995F500119D02 /* FGWordSearchII.m */,
+				DCD3AD5B1E29F81700119D02 /* FGTrapRainWater.h */,
+				DCD3AD5C1E29F81700119D02 /* FGTrapRainWater.m */,
 			);
 			path = Excercise;
 			sourceTree = "<group>";
@@ -881,6 +889,7 @@
 				DCF742991DF975DD002181F8 /* FGFBIslandsUnionFind.m in Sources */,
 				650289331CFD247900A2B130 /* FGAVLTree.m in Sources */,
 				DC20926B1DF6D7760036102A /* FGFBTraverseTree.m in Sources */,
+				DCD3AD5D1E29F81700119D02 /* FGTrapRainWater.m in Sources */,
 				DCD3AD461E28D12400119D02 /* FGGraphValidTree.m in Sources */,
 				DCD3AD3C1E27A34600119D02 /* FGConnectingGraph.m in Sources */,
 				65231E461CE7D422002B6821 /* FGFBClosestPoints.m in Sources */,
@@ -893,6 +902,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC9537CD1E239887000DEB7A /* FindKthSumInTwoArraysTest.m in Sources */,
+				DCD3AD5F1E29FB9F00119D02 /* FGTrapRainWaterTest.m in Sources */,
 				DCF742A21DFBDC75002181F8 /* FGFBTreeTraverseTest.m in Sources */,
 				650289171CFBCE9F00A2B130 /* NSArray+FGQuickSortTest.m in Sources */,
 				65E5C1FA1CEC53C6003E1B26 /* FGAPPLEPopularObjectTest.m in Sources */,
