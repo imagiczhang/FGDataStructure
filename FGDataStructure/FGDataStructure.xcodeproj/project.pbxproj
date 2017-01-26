@@ -79,6 +79,8 @@
 		DC2832311E0158E000E0E7F1 /* FGFBRange.m in Sources */ = {isa = PBXBuildFile; fileRef = DC2832301E0158E000E0E7F1 /* FGFBRange.m */; };
 		DC2832341E015A9900E0E7F1 /* FGFBFindCloneView.m in Sources */ = {isa = PBXBuildFile; fileRef = DC2832331E015A9900E0E7F1 /* FGFBFindCloneView.m */; };
 		DC2832361E015F6F00E0E7F1 /* FGFBFindCloneViewTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DC2832351E015F6F00E0E7F1 /* FGFBFindCloneViewTest.m */; };
+		DC4686591E377A12008D555A /* FGHeapify.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4686581E377A12008D555A /* FGHeapify.m */; };
+		DC46865B1E377F79008D555A /* FGHeapifyTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DC46865A1E377F79008D555A /* FGHeapifyTest.m */; };
 		DC61C0A01DF681A90028948E /* FGHashHeap.m in Sources */ = {isa = PBXBuildFile; fileRef = DC61C09F1DF681A90028948E /* FGHashHeap.m */; };
 		DC9537BC1E20E815000DEB7A /* FGKLargestInNArrays.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9537BB1E20E815000DEB7A /* FGKLargestInNArrays.m */; };
 		DC9537BE1E210292000DEB7A /* FGKLargestInNArraysTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9537BD1E210292000DEB7A /* FGKLargestInNArraysTest.m */; };
@@ -249,6 +251,9 @@
 		DC2832321E015A9900E0E7F1 /* FGFBFindCloneView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FGFBFindCloneView.h; path = Facebook/FGFBFindCloneView.h; sourceTree = "<group>"; };
 		DC2832331E015A9900E0E7F1 /* FGFBFindCloneView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FGFBFindCloneView.m; path = Facebook/FGFBFindCloneView.m; sourceTree = "<group>"; };
 		DC2832351E015F6F00E0E7F1 /* FGFBFindCloneViewTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGFBFindCloneViewTest.m; sourceTree = "<group>"; };
+		DC4686571E377A12008D555A /* FGHeapify.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGHeapify.h; sourceTree = "<group>"; };
+		DC4686581E377A12008D555A /* FGHeapify.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGHeapify.m; sourceTree = "<group>"; };
+		DC46865A1E377F79008D555A /* FGHeapifyTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGHeapifyTest.m; sourceTree = "<group>"; };
 		DC61C09E1DF681A90028948E /* FGHashHeap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FGHashHeap.h; path = Heap/FGHashHeap.h; sourceTree = "<group>"; };
 		DC61C09F1DF681A90028948E /* FGHashHeap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FGHashHeap.m; path = Heap/FGHashHeap.m; sourceTree = "<group>"; };
 		DC9537BA1E20E815000DEB7A /* FGKLargestInNArrays.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGKLargestInNArrays.h; sourceTree = "<group>"; };
@@ -468,6 +473,7 @@
 				DCD3AD541E28FE1400119D02 /* FGWordSearchTest.m */,
 				DCD3AD591E29A04A00119D02 /* FGWordSearchIITest.m */,
 				DCD3AD5E1E29FB9F00119D02 /* FGTrapRainWaterTest.m */,
+				DC46865A1E377F79008D555A /* FGHeapifyTest.m */,
 			);
 			path = FGDataStructureTests;
 			sourceTree = "<group>";
@@ -728,6 +734,8 @@
 				DCD3AD571E2995F500119D02 /* FGWordSearchII.m */,
 				DCD3AD5B1E29F81700119D02 /* FGTrapRainWater.h */,
 				DCD3AD5C1E29F81700119D02 /* FGTrapRainWater.m */,
+				DC4686571E377A12008D555A /* FGHeapify.h */,
+				DC4686581E377A12008D555A /* FGHeapify.m */,
 			);
 			path = Excercise;
 			sourceTree = "<group>";
@@ -880,6 +888,7 @@
 				DC9537CB1E239228000DEB7A /* FindKthSumInTwoArrays.m in Sources */,
 				DC9537D01E24EF3D000DEB7A /* FGTriangleCount.m in Sources */,
 				65223EAA1CCED89E003FC03F /* FGStack.m in Sources */,
+				DC4686591E377A12008D555A /* FGHeapify.m in Sources */,
 				DC2092711DF8DB5F0036102A /* FGFBIslands.m in Sources */,
 				DC2832341E015A9900E0E7F1 /* FGFBFindCloneView.m in Sources */,
 				6555C6621CE42F92004DA145 /* FGHRBalancedTree.m in Sources */,
@@ -942,6 +951,7 @@
 				DC9537C81E234FEB000DEB7A /* FindKthInSortedMatrixTest.m in Sources */,
 				DCF7429B1DF97E01002181F8 /* FGIslandsUnionFindTest.m in Sources */,
 				DC10451E1DFEC795005EF0AC /* FGQuickSortTest.m in Sources */,
+				DC46865B1E377F79008D555A /* FGHeapifyTest.m in Sources */,
 				65EEBADA1CE9449200EA6186 /* FGFBNestedArrayTest.m in Sources */,
 				DC2832361E015F6F00E0E7F1 /* FGFBFindCloneViewTest.m in Sources */,
 			);
