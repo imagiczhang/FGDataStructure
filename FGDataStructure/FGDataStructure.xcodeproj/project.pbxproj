@@ -81,6 +81,8 @@
 		DC2832361E015F6F00E0E7F1 /* FGFBFindCloneViewTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DC2832351E015F6F00E0E7F1 /* FGFBFindCloneViewTest.m */; };
 		DC4686591E377A12008D555A /* FGHeapify.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4686581E377A12008D555A /* FGHeapify.m */; };
 		DC46865B1E377F79008D555A /* FGHeapifyTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DC46865A1E377F79008D555A /* FGHeapifyTest.m */; };
+		DC46865E1E39F36F008D555A /* FGTrapRainWaterII.m in Sources */ = {isa = PBXBuildFile; fileRef = DC46865D1E39F36F008D555A /* FGTrapRainWaterII.m */; };
+		DC4686601E39FC1F008D555A /* FGTrapRainWaterIITest.m in Sources */ = {isa = PBXBuildFile; fileRef = DC46865F1E39FC1F008D555A /* FGTrapRainWaterIITest.m */; };
 		DC61C0A01DF681A90028948E /* FGHashHeap.m in Sources */ = {isa = PBXBuildFile; fileRef = DC61C09F1DF681A90028948E /* FGHashHeap.m */; };
 		DC9537BC1E20E815000DEB7A /* FGKLargestInNArrays.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9537BB1E20E815000DEB7A /* FGKLargestInNArrays.m */; };
 		DC9537BE1E210292000DEB7A /* FGKLargestInNArraysTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9537BD1E210292000DEB7A /* FGKLargestInNArraysTest.m */; };
@@ -254,6 +256,9 @@
 		DC4686571E377A12008D555A /* FGHeapify.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGHeapify.h; sourceTree = "<group>"; };
 		DC4686581E377A12008D555A /* FGHeapify.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGHeapify.m; sourceTree = "<group>"; };
 		DC46865A1E377F79008D555A /* FGHeapifyTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGHeapifyTest.m; sourceTree = "<group>"; };
+		DC46865C1E39F36F008D555A /* FGTrapRainWaterII.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGTrapRainWaterII.h; sourceTree = "<group>"; };
+		DC46865D1E39F36F008D555A /* FGTrapRainWaterII.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGTrapRainWaterII.m; sourceTree = "<group>"; };
+		DC46865F1E39FC1F008D555A /* FGTrapRainWaterIITest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGTrapRainWaterIITest.m; sourceTree = "<group>"; };
 		DC61C09E1DF681A90028948E /* FGHashHeap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FGHashHeap.h; path = Heap/FGHashHeap.h; sourceTree = "<group>"; };
 		DC61C09F1DF681A90028948E /* FGHashHeap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FGHashHeap.m; path = Heap/FGHashHeap.m; sourceTree = "<group>"; };
 		DC9537BA1E20E815000DEB7A /* FGKLargestInNArrays.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGKLargestInNArrays.h; sourceTree = "<group>"; };
@@ -474,6 +479,7 @@
 				DCD3AD591E29A04A00119D02 /* FGWordSearchIITest.m */,
 				DCD3AD5E1E29FB9F00119D02 /* FGTrapRainWaterTest.m */,
 				DC46865A1E377F79008D555A /* FGHeapifyTest.m */,
+				DC46865F1E39FC1F008D555A /* FGTrapRainWaterIITest.m */,
 			);
 			path = FGDataStructureTests;
 			sourceTree = "<group>";
@@ -736,6 +742,8 @@
 				DCD3AD5C1E29F81700119D02 /* FGTrapRainWater.m */,
 				DC4686571E377A12008D555A /* FGHeapify.h */,
 				DC4686581E377A12008D555A /* FGHeapify.m */,
+				DC46865C1E39F36F008D555A /* FGTrapRainWaterII.h */,
+				DC46865D1E39F36F008D555A /* FGTrapRainWaterII.m */,
 			);
 			path = Excercise;
 			sourceTree = "<group>";
@@ -889,6 +897,7 @@
 				DC9537D01E24EF3D000DEB7A /* FGTriangleCount.m in Sources */,
 				65223EAA1CCED89E003FC03F /* FGStack.m in Sources */,
 				DC4686591E377A12008D555A /* FGHeapify.m in Sources */,
+				DC46865E1E39F36F008D555A /* FGTrapRainWaterII.m in Sources */,
 				DC2092711DF8DB5F0036102A /* FGFBIslands.m in Sources */,
 				DC2832341E015A9900E0E7F1 /* FGFBFindCloneView.m in Sources */,
 				6555C6621CE42F92004DA145 /* FGHRBalancedTree.m in Sources */,
@@ -942,6 +951,7 @@
 				65EEBAEA1CE98A6B00EA6186 /* FGGGNumberGroupTest.m in Sources */,
 				654D8EAE1CD9BA3400B89F86 /* FGHRArrayDSTest.m in Sources */,
 				65E5C1FF1CED001B003E1B26 /* FGBSTreeTest.m in Sources */,
+				DC4686601E39FC1F008D555A /* FGTrapRainWaterIITest.m in Sources */,
 				DCD3AD391E27A15300119D02 /* FGConnectingGraphIITest.m in Sources */,
 				65EEBB371CEC1E4800EA6186 /* FGFBTelephoneKeypadTest.m in Sources */,
 				DCF742A01DFA622D002181F8 /* FGFBDynamicMedianTest.m in Sources */,
