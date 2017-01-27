@@ -80,6 +80,8 @@
 		DC2832341E015A9900E0E7F1 /* FGFBFindCloneView.m in Sources */ = {isa = PBXBuildFile; fileRef = DC2832331E015A9900E0E7F1 /* FGFBFindCloneView.m */; };
 		DC2832361E015F6F00E0E7F1 /* FGFBFindCloneViewTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DC2832351E015F6F00E0E7F1 /* FGFBFindCloneViewTest.m */; };
 		DC2D0CD81E3AE3BE00E133EE /* FGSlidingWindowMedian.m in Sources */ = {isa = PBXBuildFile; fileRef = DC2D0CD71E3AE3BE00E133EE /* FGSlidingWindowMedian.m */; };
+		DC2D0CDB1E3B713000E133EE /* FGDataStreamMedian.m in Sources */ = {isa = PBXBuildFile; fileRef = DC2D0CDA1E3B713000E133EE /* FGDataStreamMedian.m */; };
+		DC2D0CDD1E3B758A00E133EE /* FGDataStreamMedianTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DC2D0CDC1E3B758A00E133EE /* FGDataStreamMedianTest.m */; };
 		DC4686591E377A12008D555A /* FGHeapify.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4686581E377A12008D555A /* FGHeapify.m */; };
 		DC46865B1E377F79008D555A /* FGHeapifyTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DC46865A1E377F79008D555A /* FGHeapifyTest.m */; };
 		DC46865E1E39F36F008D555A /* FGTrapRainWaterII.m in Sources */ = {isa = PBXBuildFile; fileRef = DC46865D1E39F36F008D555A /* FGTrapRainWaterII.m */; };
@@ -258,6 +260,9 @@
 		DC2832351E015F6F00E0E7F1 /* FGFBFindCloneViewTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGFBFindCloneViewTest.m; sourceTree = "<group>"; };
 		DC2D0CD61E3AE3BE00E133EE /* FGSlidingWindowMedian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGSlidingWindowMedian.h; sourceTree = "<group>"; };
 		DC2D0CD71E3AE3BE00E133EE /* FGSlidingWindowMedian.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGSlidingWindowMedian.m; sourceTree = "<group>"; };
+		DC2D0CD91E3B713000E133EE /* FGDataStreamMedian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGDataStreamMedian.h; sourceTree = "<group>"; };
+		DC2D0CDA1E3B713000E133EE /* FGDataStreamMedian.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGDataStreamMedian.m; sourceTree = "<group>"; };
+		DC2D0CDC1E3B758A00E133EE /* FGDataStreamMedianTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGDataStreamMedianTest.m; sourceTree = "<group>"; };
 		DC4686571E377A12008D555A /* FGHeapify.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGHeapify.h; sourceTree = "<group>"; };
 		DC4686581E377A12008D555A /* FGHeapify.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGHeapify.m; sourceTree = "<group>"; };
 		DC46865A1E377F79008D555A /* FGHeapifyTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGHeapifyTest.m; sourceTree = "<group>"; };
@@ -489,6 +494,7 @@
 				DC46865A1E377F79008D555A /* FGHeapifyTest.m */,
 				DC46865F1E39FC1F008D555A /* FGTrapRainWaterIITest.m */,
 				DC4686641E3AB04C008D555A /* FGFBBoardGameTest.m */,
+				DC2D0CDC1E3B758A00E133EE /* FGDataStreamMedianTest.m */,
 			);
 			path = FGDataStructureTests;
 			sourceTree = "<group>";
@@ -757,6 +763,8 @@
 				DC46865D1E39F36F008D555A /* FGTrapRainWaterII.m */,
 				DC2D0CD61E3AE3BE00E133EE /* FGSlidingWindowMedian.h */,
 				DC2D0CD71E3AE3BE00E133EE /* FGSlidingWindowMedian.m */,
+				DC2D0CD91E3B713000E133EE /* FGDataStreamMedian.h */,
+				DC2D0CDA1E3B713000E133EE /* FGDataStreamMedian.m */,
 			);
 			path = Excercise;
 			sourceTree = "<group>";
@@ -872,6 +880,7 @@
 				65F7077F1CF6A7F5009A4006 /* FGTrieTreeNode.m in Sources */,
 				DC2832311E0158E000E0E7F1 /* FGFBRange.m in Sources */,
 				650289361CFD248A00A2B130 /* FGAVLTreeNode.m in Sources */,
+				DC2D0CDB1E3B713000E133EE /* FGDataStreamMedian.m in Sources */,
 				6502893A1CFD3B0200A2B130 /* NSNumber+FGComparsion.m in Sources */,
 				DCD3AD531E28F72000119D02 /* FGWordSearch.m in Sources */,
 				65223EB21CCEF66D003FC03F /* FGHashTable.m in Sources */,
@@ -972,6 +981,7 @@
 				65EEBB371CEC1E4800EA6186 /* FGFBTelephoneKeypadTest.m in Sources */,
 				DCF742A01DFA622D002181F8 /* FGFBDynamicMedianTest.m in Sources */,
 				65223EBD1CCF21CB003FC03F /* FGHashTableTest.m in Sources */,
+				DC2D0CDD1E3B758A00E133EE /* FGDataStreamMedianTest.m in Sources */,
 				DC2092731DF921980036102A /* FGIslandsTest.m in Sources */,
 				65223ED51CD0234F003FC03F /* FGStackTest.m in Sources */,
 				DC9537C81E234FEB000DEB7A /* FindKthInSortedMatrixTest.m in Sources */,
