@@ -14,6 +14,7 @@
 @property (nonatomic, strong) NSMutableArray<id<NSCopying>> *array;
 @property (nonatomic, strong) NSMutableDictionary<id<NSCopying>, NSNumber *> *location;
 @property (nonatomic, strong) NSMutableDictionary<id<NSCopying>, NSNumber *> *count;
+@property (nonatomic) NSInteger itemsCount;
 
 @end
 
@@ -26,6 +27,7 @@
         _array = [NSMutableArray array];
         _location = [NSMutableDictionary dictionary];
         _count = [NSMutableDictionary dictionary];
+        _itemsCount = 0;
     }
     return self;
 }
@@ -40,9 +42,10 @@
         self.count[item] = @(1);
         [self siftUpWithIndex:self.array.count - 1];
     }
+    self.itemsCount++;
 }
 
-- (void)deleteItem:(id<NSCopying>)item
+- (BOOL)deleteItem:(id<NSCopying>)item
 {
     if (self.location[item]) {
         if ([self.count[item] isEqualToNumber:@1]) {
@@ -61,7 +64,10 @@
         } else {
             self.count[item] = @([self.count[item] unsignedIntegerValue] - 1);
         }
+        self.itemsCount--;
+        return YES;
     }
+    return NO;
 }
 
 - (id<NSCopying>)peek

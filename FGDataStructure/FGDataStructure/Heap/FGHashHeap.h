@@ -14,9 +14,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (instancetype)initWithComparator:(NSComparator)comparator;
 - (void)addItem:(ObjectType)item;
-- (void)deleteItem:(ObjectType)item;
+- (BOOL)deleteItem:(ObjectType)item;
 - (nullable ObjectType)peek;
 - (nullable ObjectType)poll;
+
+@property (nonatomic, readonly) NSInteger itemsCount;
 
 @end
 

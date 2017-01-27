@@ -79,6 +79,7 @@
 		DC2832311E0158E000E0E7F1 /* FGFBRange.m in Sources */ = {isa = PBXBuildFile; fileRef = DC2832301E0158E000E0E7F1 /* FGFBRange.m */; };
 		DC2832341E015A9900E0E7F1 /* FGFBFindCloneView.m in Sources */ = {isa = PBXBuildFile; fileRef = DC2832331E015A9900E0E7F1 /* FGFBFindCloneView.m */; };
 		DC2832361E015F6F00E0E7F1 /* FGFBFindCloneViewTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DC2832351E015F6F00E0E7F1 /* FGFBFindCloneViewTest.m */; };
+		DC2D0CD81E3AE3BE00E133EE /* FGSlidingWindowMedian.m in Sources */ = {isa = PBXBuildFile; fileRef = DC2D0CD71E3AE3BE00E133EE /* FGSlidingWindowMedian.m */; };
 		DC4686591E377A12008D555A /* FGHeapify.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4686581E377A12008D555A /* FGHeapify.m */; };
 		DC46865B1E377F79008D555A /* FGHeapifyTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DC46865A1E377F79008D555A /* FGHeapifyTest.m */; };
 		DC46865E1E39F36F008D555A /* FGTrapRainWaterII.m in Sources */ = {isa = PBXBuildFile; fileRef = DC46865D1E39F36F008D555A /* FGTrapRainWaterII.m */; };
@@ -255,6 +256,8 @@
 		DC2832321E015A9900E0E7F1 /* FGFBFindCloneView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FGFBFindCloneView.h; path = Facebook/FGFBFindCloneView.h; sourceTree = "<group>"; };
 		DC2832331E015A9900E0E7F1 /* FGFBFindCloneView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FGFBFindCloneView.m; path = Facebook/FGFBFindCloneView.m; sourceTree = "<group>"; };
 		DC2832351E015F6F00E0E7F1 /* FGFBFindCloneViewTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGFBFindCloneViewTest.m; sourceTree = "<group>"; };
+		DC2D0CD61E3AE3BE00E133EE /* FGSlidingWindowMedian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGSlidingWindowMedian.h; sourceTree = "<group>"; };
+		DC2D0CD71E3AE3BE00E133EE /* FGSlidingWindowMedian.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGSlidingWindowMedian.m; sourceTree = "<group>"; };
 		DC4686571E377A12008D555A /* FGHeapify.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGHeapify.h; sourceTree = "<group>"; };
 		DC4686581E377A12008D555A /* FGHeapify.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGHeapify.m; sourceTree = "<group>"; };
 		DC46865A1E377F79008D555A /* FGHeapifyTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGHeapifyTest.m; sourceTree = "<group>"; };
@@ -752,6 +755,8 @@
 				DC4686581E377A12008D555A /* FGHeapify.m */,
 				DC46865C1E39F36F008D555A /* FGTrapRainWaterII.h */,
 				DC46865D1E39F36F008D555A /* FGTrapRainWaterII.m */,
+				DC2D0CD61E3AE3BE00E133EE /* FGSlidingWindowMedian.h */,
+				DC2D0CD71E3AE3BE00E133EE /* FGSlidingWindowMedian.m */,
 			);
 			path = Excercise;
 			sourceTree = "<group>";
@@ -905,6 +910,7 @@
 				DC9537CB1E239228000DEB7A /* FindKthSumInTwoArrays.m in Sources */,
 				DC9537D01E24EF3D000DEB7A /* FGTriangleCount.m in Sources */,
 				65223EAA1CCED89E003FC03F /* FGStack.m in Sources */,
+				DC2D0CD81E3AE3BE00E133EE /* FGSlidingWindowMedian.m in Sources */,
 				DC4686591E377A12008D555A /* FGHeapify.m in Sources */,
 				DC46865E1E39F36F008D555A /* FGTrapRainWaterII.m in Sources */,
 				DC2092711DF8DB5F0036102A /* FGFBIslands.m in Sources */,
