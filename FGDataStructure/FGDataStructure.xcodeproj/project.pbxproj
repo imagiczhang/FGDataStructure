@@ -82,6 +82,8 @@
 		DC2D0CD81E3AE3BE00E133EE /* FGSlidingWindowMedian.m in Sources */ = {isa = PBXBuildFile; fileRef = DC2D0CD71E3AE3BE00E133EE /* FGSlidingWindowMedian.m */; };
 		DC2D0CDB1E3B713000E133EE /* FGDataStreamMedian.m in Sources */ = {isa = PBXBuildFile; fileRef = DC2D0CDA1E3B713000E133EE /* FGDataStreamMedian.m */; };
 		DC2D0CDD1E3B758A00E133EE /* FGDataStreamMedianTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DC2D0CDC1E3B758A00E133EE /* FGDataStreamMedianTest.m */; };
+		DC2D0CE01E3C3D7A00E133EE /* FGMinimalSizeSubarraySum.m in Sources */ = {isa = PBXBuildFile; fileRef = DC2D0CDF1E3C3D7A00E133EE /* FGMinimalSizeSubarraySum.m */; };
+		DC2D0CE21E3C446800E133EE /* FGMinimalSizeSubarraySumTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DC2D0CE11E3C446800E133EE /* FGMinimalSizeSubarraySumTest.m */; };
 		DC4686591E377A12008D555A /* FGHeapify.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4686581E377A12008D555A /* FGHeapify.m */; };
 		DC46865B1E377F79008D555A /* FGHeapifyTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DC46865A1E377F79008D555A /* FGHeapifyTest.m */; };
 		DC46865E1E39F36F008D555A /* FGTrapRainWaterII.m in Sources */ = {isa = PBXBuildFile; fileRef = DC46865D1E39F36F008D555A /* FGTrapRainWaterII.m */; };
@@ -263,6 +265,9 @@
 		DC2D0CD91E3B713000E133EE /* FGDataStreamMedian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGDataStreamMedian.h; sourceTree = "<group>"; };
 		DC2D0CDA1E3B713000E133EE /* FGDataStreamMedian.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGDataStreamMedian.m; sourceTree = "<group>"; };
 		DC2D0CDC1E3B758A00E133EE /* FGDataStreamMedianTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGDataStreamMedianTest.m; sourceTree = "<group>"; };
+		DC2D0CDE1E3C3D7A00E133EE /* FGMinimalSizeSubarraySum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGMinimalSizeSubarraySum.h; sourceTree = "<group>"; };
+		DC2D0CDF1E3C3D7A00E133EE /* FGMinimalSizeSubarraySum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGMinimalSizeSubarraySum.m; sourceTree = "<group>"; };
+		DC2D0CE11E3C446800E133EE /* FGMinimalSizeSubarraySumTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGMinimalSizeSubarraySumTest.m; sourceTree = "<group>"; };
 		DC4686571E377A12008D555A /* FGHeapify.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGHeapify.h; sourceTree = "<group>"; };
 		DC4686581E377A12008D555A /* FGHeapify.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGHeapify.m; sourceTree = "<group>"; };
 		DC46865A1E377F79008D555A /* FGHeapifyTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGHeapifyTest.m; sourceTree = "<group>"; };
@@ -495,6 +500,7 @@
 				DC46865F1E39FC1F008D555A /* FGTrapRainWaterIITest.m */,
 				DC4686641E3AB04C008D555A /* FGFBBoardGameTest.m */,
 				DC2D0CDC1E3B758A00E133EE /* FGDataStreamMedianTest.m */,
+				DC2D0CE11E3C446800E133EE /* FGMinimalSizeSubarraySumTest.m */,
 			);
 			path = FGDataStructureTests;
 			sourceTree = "<group>";
@@ -765,6 +771,8 @@
 				DC2D0CD71E3AE3BE00E133EE /* FGSlidingWindowMedian.m */,
 				DC2D0CD91E3B713000E133EE /* FGDataStreamMedian.h */,
 				DC2D0CDA1E3B713000E133EE /* FGDataStreamMedian.m */,
+				DC2D0CDE1E3C3D7A00E133EE /* FGMinimalSizeSubarraySum.h */,
+				DC2D0CDF1E3C3D7A00E133EE /* FGMinimalSizeSubarraySum.m */,
 			);
 			path = Excercise;
 			sourceTree = "<group>";
@@ -915,6 +923,7 @@
 				65EEBAE81CE9875A00EA6186 /* FGGGNumberGroup.m in Sources */,
 				65EEBB211CEBC3B000EA6186 /* FGFBRemoveDuplicates.m in Sources */,
 				DCF742A51DFE280F002181F8 /* FGQuickSort.m in Sources */,
+				DC2D0CE01E3C3D7A00E133EE /* FGMinimalSizeSubarraySum.m in Sources */,
 				654D8EB11CD9CE7C00B89F86 /* FGHR2DArrayDS.m in Sources */,
 				DC9537CB1E239228000DEB7A /* FindKthSumInTwoArrays.m in Sources */,
 				DC9537D01E24EF3D000DEB7A /* FGTriangleCount.m in Sources */,
@@ -981,6 +990,7 @@
 				65EEBB371CEC1E4800EA6186 /* FGFBTelephoneKeypadTest.m in Sources */,
 				DCF742A01DFA622D002181F8 /* FGFBDynamicMedianTest.m in Sources */,
 				65223EBD1CCF21CB003FC03F /* FGHashTableTest.m in Sources */,
+				DC2D0CE21E3C446800E133EE /* FGMinimalSizeSubarraySumTest.m in Sources */,
 				DC2D0CDD1E3B758A00E133EE /* FGDataStreamMedianTest.m in Sources */,
 				DC2092731DF921980036102A /* FGIslandsTest.m in Sources */,
 				65223ED51CD0234F003FC03F /* FGStackTest.m in Sources */,
