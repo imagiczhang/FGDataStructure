@@ -94,6 +94,7 @@
 		DC4686651E3AB04C008D555A /* FGFBBoardGameTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4686641E3AB04C008D555A /* FGFBBoardGameTest.m */; };
 		DC54A60A1E50018600DD4E34 /* FGFBCircularBarCodeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DC54A6091E50018600DD4E34 /* FGFBCircularBarCodeTest.m */; };
 		DC54A60C1E5063BC00DD4E34 /* FGFBStringConversionToNumberTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DC54A60B1E5063BC00DD4E34 /* FGFBStringConversionToNumberTest.m */; };
+		DC54A60E1E50660700DD4E34 /* FGFBPrintTreeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DC54A60D1E50660700DD4E34 /* FGFBPrintTreeTest.m */; };
 		DC61C0A01DF681A90028948E /* FGHashHeap.m in Sources */ = {isa = PBXBuildFile; fileRef = DC61C09F1DF681A90028948E /* FGHashHeap.m */; };
 		DC85EF831E498D3E00972D50 /* FGFBCircularBarCode.m in Sources */ = {isa = PBXBuildFile; fileRef = DC85EF821E498D3E00972D50 /* FGFBCircularBarCode.m */; };
 		DC85EF861E498F2600972D50 /* FGFBStringConversionToNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = DC85EF851E498F2600972D50 /* FGFBStringConversionToNumber.m */; };
@@ -289,6 +290,7 @@
 		DC4686641E3AB04C008D555A /* FGFBBoardGameTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGFBBoardGameTest.m; sourceTree = "<group>"; };
 		DC54A6091E50018600DD4E34 /* FGFBCircularBarCodeTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGFBCircularBarCodeTest.m; sourceTree = "<group>"; };
 		DC54A60B1E5063BC00DD4E34 /* FGFBStringConversionToNumberTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGFBStringConversionToNumberTest.m; sourceTree = "<group>"; };
+		DC54A60D1E50660700DD4E34 /* FGFBPrintTreeTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGFBPrintTreeTest.m; sourceTree = "<group>"; };
 		DC61C09E1DF681A90028948E /* FGHashHeap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FGHashHeap.h; path = Heap/FGHashHeap.h; sourceTree = "<group>"; };
 		DC61C09F1DF681A90028948E /* FGHashHeap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FGHashHeap.m; path = Heap/FGHashHeap.m; sourceTree = "<group>"; };
 		DC85EF811E498D3E00972D50 /* FGFBCircularBarCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FGFBCircularBarCode.h; path = Facebook/FGFBCircularBarCode.h; sourceTree = "<group>"; };
@@ -522,6 +524,7 @@
 				DC2D0CE61E3D9AEE00E133EE /* FGContainerWithMostWaterTest.m */,
 				DC54A6091E50018600DD4E34 /* FGFBCircularBarCodeTest.m */,
 				DC54A60B1E5063BC00DD4E34 /* FGFBStringConversionToNumberTest.m */,
+				DC54A60D1E50660700DD4E34 /* FGFBPrintTreeTest.m */,
 			);
 			path = FGDataStructureTests;
 			sourceTree = "<group>";
@@ -989,6 +992,7 @@
 				DC54A60C1E5063BC00DD4E34 /* FGFBStringConversionToNumberTest.m in Sources */,
 				DC9537CD1E239887000DEB7A /* FindKthSumInTwoArraysTest.m in Sources */,
 				DCD3AD5F1E29FB9F00119D02 /* FGTrapRainWaterTest.m in Sources */,
+				DC54A60E1E50660700DD4E34 /* FGFBPrintTreeTest.m in Sources */,
 				DCF742A21DFBDC75002181F8 /* FGFBTreeTraverseTest.m in Sources */,
 				650289171CFBCE9F00A2B130 /* NSArray+FGQuickSortTest.m in Sources */,
 				65E5C1FA1CEC53C6003E1B26 /* FGAPPLEPopularObjectTest.m in Sources */,
