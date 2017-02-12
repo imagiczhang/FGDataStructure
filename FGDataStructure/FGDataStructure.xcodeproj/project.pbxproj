@@ -92,7 +92,11 @@
 		DC4686601E39FC1F008D555A /* FGTrapRainWaterIITest.m in Sources */ = {isa = PBXBuildFile; fileRef = DC46865F1E39FC1F008D555A /* FGTrapRainWaterIITest.m */; };
 		DC4686631E39FD77008D555A /* FGFBBoardGame.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4686621E39FD77008D555A /* FGFBBoardGame.m */; };
 		DC4686651E3AB04C008D555A /* FGFBBoardGameTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4686641E3AB04C008D555A /* FGFBBoardGameTest.m */; };
+		DC54A60A1E50018600DD4E34 /* FGFBCircularBarCodeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DC54A6091E50018600DD4E34 /* FGFBCircularBarCodeTest.m */; };
 		DC61C0A01DF681A90028948E /* FGHashHeap.m in Sources */ = {isa = PBXBuildFile; fileRef = DC61C09F1DF681A90028948E /* FGHashHeap.m */; };
+		DC85EF831E498D3E00972D50 /* FGFBCircularBarCode.m in Sources */ = {isa = PBXBuildFile; fileRef = DC85EF821E498D3E00972D50 /* FGFBCircularBarCode.m */; };
+		DC85EF861E498F2600972D50 /* FGFBStringConversionToNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = DC85EF851E498F2600972D50 /* FGFBStringConversionToNumber.m */; };
+		DC85EF891E49911900972D50 /* FGFBPrintTree.m in Sources */ = {isa = PBXBuildFile; fileRef = DC85EF881E49911900972D50 /* FGFBPrintTree.m */; };
 		DC9537BC1E20E815000DEB7A /* FGKLargestInNArrays.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9537BB1E20E815000DEB7A /* FGKLargestInNArrays.m */; };
 		DC9537BE1E210292000DEB7A /* FGKLargestInNArraysTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9537BD1E210292000DEB7A /* FGKLargestInNArraysTest.m */; };
 		DC9537C11E2251AF000DEB7A /* FGTwoSumII.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9537C01E2251AF000DEB7A /* FGTwoSumII.m */; };
@@ -282,8 +286,15 @@
 		DC4686611E39FD77008D555A /* FGFBBoardGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGFBBoardGame.h; sourceTree = "<group>"; };
 		DC4686621E39FD77008D555A /* FGFBBoardGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGFBBoardGame.m; sourceTree = "<group>"; };
 		DC4686641E3AB04C008D555A /* FGFBBoardGameTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGFBBoardGameTest.m; sourceTree = "<group>"; };
+		DC54A6091E50018600DD4E34 /* FGFBCircularBarCodeTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGFBCircularBarCodeTest.m; sourceTree = "<group>"; };
 		DC61C09E1DF681A90028948E /* FGHashHeap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FGHashHeap.h; path = Heap/FGHashHeap.h; sourceTree = "<group>"; };
 		DC61C09F1DF681A90028948E /* FGHashHeap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FGHashHeap.m; path = Heap/FGHashHeap.m; sourceTree = "<group>"; };
+		DC85EF811E498D3E00972D50 /* FGFBCircularBarCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FGFBCircularBarCode.h; path = Facebook/FGFBCircularBarCode.h; sourceTree = "<group>"; };
+		DC85EF821E498D3E00972D50 /* FGFBCircularBarCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FGFBCircularBarCode.m; path = Facebook/FGFBCircularBarCode.m; sourceTree = "<group>"; };
+		DC85EF841E498F2600972D50 /* FGFBStringConversionToNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FGFBStringConversionToNumber.h; path = Facebook/FGFBStringConversionToNumber.h; sourceTree = "<group>"; };
+		DC85EF851E498F2600972D50 /* FGFBStringConversionToNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FGFBStringConversionToNumber.m; path = Facebook/FGFBStringConversionToNumber.m; sourceTree = "<group>"; };
+		DC85EF871E49911900972D50 /* FGFBPrintTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FGFBPrintTree.h; path = Facebook/FGFBPrintTree.h; sourceTree = "<group>"; };
+		DC85EF881E49911900972D50 /* FGFBPrintTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FGFBPrintTree.m; path = Facebook/FGFBPrintTree.m; sourceTree = "<group>"; };
 		DC9537BA1E20E815000DEB7A /* FGKLargestInNArrays.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGKLargestInNArrays.h; sourceTree = "<group>"; };
 		DC9537BB1E20E815000DEB7A /* FGKLargestInNArrays.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGKLargestInNArrays.m; sourceTree = "<group>"; };
 		DC9537BD1E210292000DEB7A /* FGKLargestInNArraysTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGKLargestInNArraysTest.m; sourceTree = "<group>"; };
@@ -507,6 +518,7 @@
 				DC2D0CDC1E3B758A00E133EE /* FGDataStreamMedianTest.m */,
 				DC2D0CE11E3C446800E133EE /* FGMinimalSizeSubarraySumTest.m */,
 				DC2D0CE61E3D9AEE00E133EE /* FGContainerWithMostWaterTest.m */,
+				DC54A6091E50018600DD4E34 /* FGFBCircularBarCodeTest.m */,
 			);
 			path = FGDataStructureTests;
 			sourceTree = "<group>";
@@ -594,6 +606,12 @@
 				DC2832331E015A9900E0E7F1 /* FGFBFindCloneView.m */,
 				DC4686611E39FD77008D555A /* FGFBBoardGame.h */,
 				DC4686621E39FD77008D555A /* FGFBBoardGame.m */,
+				DC85EF811E498D3E00972D50 /* FGFBCircularBarCode.h */,
+				DC85EF821E498D3E00972D50 /* FGFBCircularBarCode.m */,
+				DC85EF841E498F2600972D50 /* FGFBStringConversionToNumber.h */,
+				DC85EF851E498F2600972D50 /* FGFBStringConversionToNumber.m */,
+				DC85EF871E49911900972D50 /* FGFBPrintTree.h */,
+				DC85EF881E49911900972D50 /* FGFBPrintTree.m */,
 			);
 			name = Facebook;
 			sourceTree = "<group>";
@@ -885,6 +903,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC85EF891E49911900972D50 /* FGFBPrintTree.m in Sources */,
 				DCD3AD411E283B9200119D02 /* FGNumOfAirplanes.m in Sources */,
 				65EEBB351CEC163300EA6186 /* FGFBTelephoneKeypad.m in Sources */,
 				65223ED31CCF528C003FC03F /* FGHashTableNode.m in Sources */,
@@ -892,6 +911,7 @@
 				65EEBB2A1CEBE37900EA6186 /* FGFBFindMirrorTreeNode.m in Sources */,
 				65231E431CE7D3F6002B6821 /* FGFBQuestions.m in Sources */,
 				65223EA31CCB39DD003FC03F /* FGBSTreeNode.m in Sources */,
+				DC85EF831E498D3E00972D50 /* FGFBCircularBarCode.m in Sources */,
 				65EEBAD81CE940B400EA6186 /* FGFBNestedArray.m in Sources */,
 				65F7077F1CF6A7F5009A4006 /* FGTrieTreeNode.m in Sources */,
 				DC2832311E0158E000E0E7F1 /* FGFBRange.m in Sources */,
@@ -940,6 +960,7 @@
 				DC2D0CD81E3AE3BE00E133EE /* FGSlidingWindowMedian.m in Sources */,
 				DC4686591E377A12008D555A /* FGHeapify.m in Sources */,
 				DC46865E1E39F36F008D555A /* FGTrapRainWaterII.m in Sources */,
+				DC85EF861E498F2600972D50 /* FGFBStringConversionToNumber.m in Sources */,
 				DC2092711DF8DB5F0036102A /* FGFBIslands.m in Sources */,
 				DC2832341E015A9900E0E7F1 /* FGFBFindCloneView.m in Sources */,
 				6555C6621CE42F92004DA145 /* FGHRBalancedTree.m in Sources */,
@@ -967,6 +988,7 @@
 				DCF742A21DFBDC75002181F8 /* FGFBTreeTraverseTest.m in Sources */,
 				650289171CFBCE9F00A2B130 /* NSArray+FGQuickSortTest.m in Sources */,
 				65E5C1FA1CEC53C6003E1B26 /* FGAPPLEPopularObjectTest.m in Sources */,
+				DC54A60A1E50018600DD4E34 /* FGFBCircularBarCodeTest.m in Sources */,
 				DCD3AD5A1E29A04A00119D02 /* FGWordSearchIITest.m in Sources */,
 				DCD3AD431E28C9BF00119D02 /* FGNumOfAirplanesTest.m in Sources */,
 				65E5C20D1CF2904F003E1B26 /* FGFBCancelableBlock.m in Sources */,
